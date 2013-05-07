@@ -1,0 +1,15 @@
+Fix ontology:
+  
+	HTTP resolvable URIs at biordf.org
+	Delete Obsoletes
+	
+Future features:
+
+	DL reasoning and queries
+	Rules
+	LD dataset
+	KB like KUPKB
+	Add taxa with OPPL-Galaxy
+	Remove obsoletes with OPPL-Galaxy
+	Create a Galaxy tool for publishing ontologies (Add an ontology and it provides a resolvable URL somewhere in the same server)
+	

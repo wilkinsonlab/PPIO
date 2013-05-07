@@ -1,0 +1,1022 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:po="http://purl.obolibrary.org/obo/po#"
+     xmlns:Ontology1349167470488="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/po.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#has">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#has"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002202 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/po#has_participant -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/po#has_participant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#has"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#affects_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#affects_to"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#causes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#causes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#contains"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#has"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#has_entry_point -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#has_entry_point"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#has_potential_to_infect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#has_potential_to_infect">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#occurs_after -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#occurs_after"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#pathogen_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#pathogen_of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#results_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#results_in"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#susceptible_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#susceptible_to"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0009012 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0009012">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025183 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0025183">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#susceptible_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#entry_through_leaf_stomata"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/Plant_Anatomical_Entity -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/Plant_Anatomical_Entity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Chlorotic_halo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Chlorotic_halo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Symptom_production"/>
+        <rdfs:comment>Choloris affects the chlorophyl content of the plant affected tissue. Chlorotic halos can surround the necrotic lessions provoked by PsPto DC3000.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Environment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Host_plant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Host_plant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Plant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#susceptible_to"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Infectious_Agent"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Hypersensitive_response -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Hypersensitive_response">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Resistance_response"/>
+        <rdfs:comment>The hypersensitive response (HR) is a resistance mechanism characterized by the cell death of the affected tissue in order to avoid the expansion of the pathogen to the surrounding cells.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Infected_Soil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Infected_Soil">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#affects_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Plant"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Soil"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#contains"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Infectious_Agent"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#affects_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Microorganism"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#causes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#epiphytic_growth"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Infected_seed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Infected_seed">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#causes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pathogen_growth"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0009010"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#has"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Infectious_Agent"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Infectious_Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Infectious_Agent">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Inoculum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Microorganism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Inoculum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Inoculum">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#contains"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Microorganism"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#has_potential_to_infect"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Species"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Microorganism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Microorganism"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_1 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_1">
+        <rdfs:label xml:lang="la">root</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_1224 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_1224">
+        <rdfs:label xml:lang="la">Proteobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_1236 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_1236">
+        <rdfs:label xml:lang="la">Gammaproteobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_1224"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_131221 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_131221">
+        <rdfs:label xml:lang="la">Streptophytina</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_35493"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_131567 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_131567">
+        <rdfs:label xml:lang="la">cellular organisms</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_135621 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_135621">
+        <rdfs:label xml:lang="la">Pseudomonadaceae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_72274"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_136849 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_136849">
+        <rdfs:label xml:lang="la">Pseudomonas syringae group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_286"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_2">
+        <rdfs:label xml:lang="la">Bacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_131567"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_223283 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_223283">
+        <rdfs:label xml:lang="la">Pseudomonas syringae pv. tomato str. DC3000</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_323"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_251701 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_251701">
+        <rdfs:label xml:lang="la">Pseudomonas syringae group genomosp. 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_136849"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_2759 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_2759">
+        <rdfs:label xml:lang="la">Eukaryota</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_131567"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_286 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_286">
+        <rdfs:label xml:lang="la">Pseudomonas</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_135621"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3193 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3193">
+        <rdfs:label xml:lang="la">Embryophyta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_131221"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_323 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_323">
+        <rdfs:label xml:lang="la">Pseudomonas syringae pv. tomato</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_251701"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_33090 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_33090">
+        <rdfs:label xml:lang="la">Viridiplantae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_2759"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3398 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3398">
+        <rdfs:label xml:lang="la">Magnoliophyta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_58024"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_35493 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_35493">
+        <rdfs:label xml:lang="la">Streptophyta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_33090"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3699 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3699">
+        <rdfs:label xml:lang="la">Brassicales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_91836"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3700 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3700">
+        <rdfs:label xml:lang="la">Brassicaceae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3699"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3701 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3701">
+        <rdfs:label xml:lang="la">Arabidopsis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_980083"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3702 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3702">
+        <rdfs:label xml:lang="la">Arabidopsis thaliana</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3701"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_4069 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_4069">
+        <rdfs:label xml:lang="la">Solanales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_91888"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_4070 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_4070">
+        <rdfs:label xml:lang="la">Solanaceae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_4069"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_4085 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_4085">
+        <rdfs:label xml:lang="la">Nicotiana</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_424562"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_4100 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_4100">
+        <rdfs:label xml:lang="la">Nicotiana benthamiana</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_4085"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_4107 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_4107">
+        <rdfs:label xml:lang="la">Solanum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_424574"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_424551 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_424551">
+        <rdfs:label xml:lang="la">Solanoideae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_4070"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_424554 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_424554">
+        <rdfs:label xml:lang="la">Nicotianoideae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_4070"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_424562 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_424562">
+        <rdfs:label xml:lang="la">Nicotianeae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_424554"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_424574 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_424574">
+        <rdfs:label xml:lang="la">Solaneae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_424551"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_49274 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_49274">
+        <rdfs:label xml:lang="la">Lycopersicon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_4107"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_58023 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_58023">
+        <rdfs:label xml:lang="la">Tracheophyta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3193"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_58024 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_58024">
+        <rdfs:label xml:lang="la">Spermatophyta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_78536"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_71240 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_71240">
+        <rdfs:label xml:lang="la">eudicotyledons</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3398"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_71274 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_71274">
+        <rdfs:label xml:lang="la">asterids</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_91827"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_71275 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_71275">
+        <rdfs:label xml:lang="la">rosids</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_91827"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_72274 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_72274">
+        <rdfs:label xml:lang="la">Pseudomonadales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_1236"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_78536 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_78536">
+        <rdfs:label xml:lang="la">Euphyllophyta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_58023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_91827 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_91827">
+        <rdfs:label xml:lang="la">core eudicotyledons</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_71240"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_91836 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_91836">
+        <rdfs:label xml:lang="la">malvids</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_71275"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_91888 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_91888">
+        <rdfs:label xml:lang="la">lamiids</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_71274"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_95449 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_95449">
+        <rdfs:label xml:lang="la">Solanum lycopersicum x Solanum peruvianum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_49274"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_980083 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_980083">
+        <rdfs:label xml:lang="la">Camelineae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#NCBI_3700"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Necrotic_lession -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Necrotic_lession">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Symptom_production"/>
+        <rdfs:comment>Lession characterized by the  premature death of the plant cells/tissue, caused by the attack of a given plant pathogen.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Non_host_plant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Non_host_plant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Plant"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#susceptible_to"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Infectious_Agent"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Plant"/>
+        <rdfs:comment>Most plant pathogens have a high degree of host specificity. Non-host plant species express non-host resistance.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pathogen_entry_mode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pathogen_entry_mode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pathogen_trait"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pathogen_growth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pathogen_growth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pathogen_trait"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pathogen_trait -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pathogen_trait">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Plant_Pathogen"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>These biological traits refer to different aspects of the plant pathogenic bacteria, most of them related with physiological traits of the infection process</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Plant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Plant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Host_plant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Non_host_plant"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Species"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Plant_Pathogen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Plant_Pathogen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Plant_Pathogen">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#pathogen_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Plant"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/po#participates_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pathogen_growth"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Infectious_Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Resistance_response -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Resistance_response">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Non_host_plant"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Resistant_plant"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Resistant_plant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Resistant_plant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Plant"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#susceptible_to"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Infectious_Agent"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Soil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Soil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Species -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Species">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Symptom_production -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Symptom_production">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Host_plant"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#occurs_after"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#growth_in_intercellular_space"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>The alterations at the cellular level the pathogen exerts in the host plant is reflected in symptoms that can be observed in the affected plant.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#entry_through_leaf_stomata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#entry_through_leaf_stomata">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#affects_to"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025183"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#occurs_after"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#epiphytic_growth"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#entry_through_natural_openings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#entry_through_natural_openings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#entry_through_natural_openings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pathogen_entry_mode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#entry_through_wounds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#entry_through_wounds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pathogen_entry_mode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#epiphytic_growth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#epiphytic_growth">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#affects_to"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pathogen_growth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#growth_in_intercellular_space -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#growth_in_intercellular_space">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#results_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Symptom_production"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#occurs_after"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#entry_through_leaf_stomata"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#affects_to"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025379"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pathogen_growth"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Arabidopsis_thaliana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Arabidopsis_thaliana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Host_plant"/>
+        <susceptible_to rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pseudomonas_syringae_pv.tomato_DC3000"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Nicotiana_benthamiana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Nicotiana_benthamiana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Non_host_plant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pseudomonas_syringae_pv.tomato_DC3000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pseudomonas_syringae_pv.tomato_DC3000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Plant_Pathogen"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#entry_through_leaf_stomata"/>
+        <pathogen_of rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Arabidopsis_thaliana"/>
+        <pathogen_of rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Solanum_lycopersicum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Solanum_lycopersicum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Solanum_lycopersicum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Host_plant"/>
+        <susceptible_to rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Pseudomonas_syringae_pv.tomato_DC3000"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Zea_mays -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Zea_mays">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#Resistant_plant"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1806) http://owlapi.sourceforge.net -->
+
