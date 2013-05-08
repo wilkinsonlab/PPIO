@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1362666058987" name="duplicate:http://cbgp.upm.es/wilkinsonlab/ppio.owl" uri="PPIO_taxa.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362666058987" name="duplicate:http://cbgp.upm.es/wilkinsonlab/ppio.owl" uri="PPIO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362666058987" name="http://purl.obolibrary.org/obo/idoplant.owl" uri="ido_plant.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362666058987" name="http://purl.obolibrary.org/obo/po.owl" uri="plant_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362666058987" name="duplicate:http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl" uri="DC3000_A_A.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362666058987" name="duplicate:http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl" uri="DC3000_A_A_taxa.owl"/>
+    </group>
+</catalog>
