@@ -1,7 +1,0 @@
-ido.owl: Infectious Disease Ontology. The original one.
-
-ido_plant.owl: The one created by Ramona Walls and Barry Smith.
-
-plant_ontology.owl: Original plant ontology
-
-plant_trait_ontology.obo: Original plant trait ontology (in OBO format)
