@@ -186,6 +186,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/TO_0000387 -->
+
+    <rdf:Description rdf:about="&obo;TO_0000387">
+        <rdfs:subClassOf rdf:resource="&PPIO;Trait"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#Antimicrobial_chemicals -->
 
     <owl:Class rdf:about="&PPIO;Antimicrobial_chemicals">
