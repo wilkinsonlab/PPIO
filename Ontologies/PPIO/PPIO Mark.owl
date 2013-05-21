@@ -224,9 +224,9 @@
     
 
 
-    <!-- http://purl.oclc.org/PPIO#Chlorosis -->
+    <!-- http://purl.oclc.org/PPIO#Chlorotic_lesions -->
 
-    <owl:Class rdf:about="&PPIO;Chlorosis">
+    <owl:Class rdf:about="&PPIO;Chlorotic_lesions">
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
     </owl:Class>
     
