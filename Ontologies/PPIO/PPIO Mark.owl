@@ -25,7 +25,9 @@
      xmlns:ppio="http://cbgp.upm.es/wilkinsonlab/ppio.owl#"
      xmlns:po="&obo;po#"
      xmlns:Ontology1349167470488="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#">
-    <owl:Ontology rdf:about="http://purl.oclc.org/PPIO"/>
+    <owl:Ontology rdf:about="http://purl.oclc.org/PPIO">
+        <owl:imports rdf:resource="&obo;plant_trait_ontology.obo"/>
+    </owl:Ontology>
     
 
 
@@ -793,8 +795,6 @@
     <!-- http://purl.oclc.org/PPIO#Phenotype -->
 
     <owl:Class rdf:about="&PPIO;Phenotype">
-        <rdfs:comment>This class has been built to contain all the possible combinations of pathogenic bacteria, symptoms production and host range; it is useful to distinguish, for example, the host range of each pathogenic bacteria. The names of the individuals are built following the scheme: initials of the scientific name of the pathogen and the plant, and the first two letters of the related symptom
-(Obsolete)</rdfs:comment>
         <rdfs:comment>Value of trait</rdfs:comment>
     </owl:Class>
     
@@ -907,7 +907,7 @@
     <!-- http://purl.oclc.org/PPIO#Trait -->
 
     <owl:Class rdf:about="&PPIO;Trait">
-        <rdfs:comment>Retrieved from Plant Trait Ontology</rdfs:comment>
+        <rdfs:comment>Retrieved from Plant Trait Ontology or created</rdfs:comment>
     </owl:Class>
     
 
@@ -957,16 +957,13 @@
 
     <!-- http://purl.oclc.org/PPIO#Chlorotic_halo -->
 
-    <owl:NamedIndividual rdf:about="&PPIO;Chlorotic_halo">
-        <rdf:type rdf:resource="&PPIO;Trait"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="&PPIO;Chlorotic_halo"/>
     
 
 
     <!-- http://purl.oclc.org/PPIO#DCATCH -->
 
     <owl:NamedIndividual rdf:about="&PPIO;DCATCH">
-        <rdf:type rdf:resource="&PPIO;Phenotype"/>
         <PPIO:manifests_in_species rdf:resource="&PPIO;Arabidopsis_thaliana"/>
         <PPIO:has_symptom rdf:resource="&PPIO;Chlorotic_halo"/>
     </owl:NamedIndividual>
@@ -976,7 +973,6 @@
     <!-- http://purl.oclc.org/PPIO#DCATNC -->
 
     <owl:NamedIndividual rdf:about="&PPIO;DCATNC">
-        <rdf:type rdf:resource="&PPIO;Phenotype"/>
         <PPIO:manifests_in_species rdf:resource="&PPIO;Arabidopsis_thaliana"/>
         <PPIO:has_symptom rdf:resource="&PPIO;Necrotic_lessions"/>
     </owl:NamedIndividual>
@@ -986,7 +982,6 @@
     <!-- http://purl.oclc.org/PPIO#DCSLCH -->
 
     <owl:NamedIndividual rdf:about="&PPIO;DCSLCH">
-        <rdf:type rdf:resource="&PPIO;Phenotype"/>
         <PPIO:has_symptom rdf:resource="&PPIO;Chlorotic_halo"/>
         <PPIO:manifests_in_species rdf:resource="&PPIO;Solanum_lycopersicum"/>
     </owl:NamedIndividual>
@@ -996,7 +991,6 @@
     <!-- http://purl.oclc.org/PPIO#DCSLNC -->
 
     <owl:NamedIndividual rdf:about="&PPIO;DCSLNC">
-        <rdf:type rdf:resource="&PPIO;Phenotype"/>
         <PPIO:has_symptom rdf:resource="&PPIO;Necrotic_lessions"/>
         <PPIO:manifests_in_species rdf:resource="&PPIO;Solanum_lycopersicum"/>
     </owl:NamedIndividual>
@@ -1025,9 +1019,7 @@
 
     <!-- http://purl.oclc.org/PPIO#Necrotic_lessions -->
 
-    <owl:NamedIndividual rdf:about="&PPIO;Necrotic_lessions">
-        <rdf:type rdf:resource="&PPIO;Trait"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="&PPIO;Necrotic_lessions"/>
     
 
 
@@ -1042,7 +1034,6 @@
     <!-- http://purl.oclc.org/PPIO#PHPVCH -->
 
     <owl:NamedIndividual rdf:about="&PPIO;PHPVCH">
-        <rdf:type rdf:resource="&PPIO;Phenotype"/>
         <PPIO:has_symptom rdf:resource="&PPIO;Chlorotic_halo"/>
         <PPIO:manifests_in_species rdf:resource="&PPIO;Phaseolus_vulgaris"/>
     </owl:NamedIndividual>
@@ -1052,7 +1043,6 @@
     <!-- http://purl.oclc.org/PPIO#PHPVNC -->
 
     <owl:NamedIndividual rdf:about="&PPIO;PHPVNC">
-        <rdf:type rdf:resource="&PPIO;Phenotype"/>
         <PPIO:has_symptom rdf:resource="&PPIO;Necrotic_lessions"/>
         <PPIO:manifests_in_species rdf:resource="&PPIO;Phaseolus_vulgaris"/>
     </owl:NamedIndividual>
@@ -1062,7 +1052,6 @@
     <!-- http://purl.oclc.org/PPIO#PHPVWS -->
 
     <owl:NamedIndividual rdf:about="&PPIO;PHPVWS">
-        <rdf:type rdf:resource="&PPIO;Phenotype"/>
         <PPIO:manifests_in_species rdf:resource="&PPIO;Phaseolus_vulgaris"/>
         <PPIO:has_symptom rdf:resource="&PPIO;Water_soaked_lesions"/>
     </owl:NamedIndividual>
@@ -1138,7 +1127,6 @@
     <!-- http://purl.oclc.org/PPIO#Water_soaked_lesions -->
 
     <owl:NamedIndividual rdf:about="&PPIO;Water_soaked_lesions">
-        <rdf:type rdf:resource="&PPIO;Trait"/>
         <rdfs:comment>Leaf symptoms first appear as small, water-soaked lesions on the lower leaf surface. These lesions become necrotic rapidly. A chlorotic halo develops around the necrotic spots. In cases of severe infection, a generalized systemic chlorosis can occur.  </rdfs:comment>
     </owl:NamedIndividual>
     
