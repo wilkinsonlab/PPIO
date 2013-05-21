@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/plant_trait_ontology.obo" uri="file:/home/alexx/PPIO/Ontologies/plant_trait_ontology.obo"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1369139196211" name="http://cbgp.upm.es/wilkinsonlab/ppio.owl" uri="PPIO%20Mark.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1369139196211" name="duplicate:http://purl.obolibrary.org/obo/to.owl" uri="Other%20versions/converted.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1369139196211" name="duplicate:http://purl.obolibrary.org/obo/to.owl" uri="Other%20versions/PPIO%20edited%20.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1369139196211" name="shadowed:http://cbgp.upm.es/wilkinsonlab/ppio.owl" uri="Other%20versions/PPIO.owl"/>
+    </group>
+</catalog>
