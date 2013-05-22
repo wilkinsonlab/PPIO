@@ -131,6 +131,12 @@
     
 
 
+    <!-- http://purl.oclc.org/PPIO#modifies -->
+
+    <owl:ObjectProperty rdf:about="&PPIO;modifies"/>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#pathogen_of -->
 
     <owl:ObjectProperty rdf:about="&PPIO;pathogen_of">
@@ -151,6 +157,12 @@
     <!-- http://purl.oclc.org/PPIO#trait_of -->
 
     <owl:ObjectProperty rdf:about="&PPIO;trait_of"/>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#value_of -->
+
+    <owl:ObjectProperty rdf:about="&PPIO;value_of"/>
     
 
 
@@ -229,7 +241,13 @@
     <!-- http://purl.oclc.org/PPIO#Cell_Wall_reinforcement -->
 
     <owl:Class rdf:about="&PPIO;Cell_Wall_reinforcement">
-        <rdfs:subClassOf rdf:resource="&PPIO;Resistance_response"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0002683"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&PPIO;Resistance_response_phenotype"/>
     </owl:Class>
     
 
@@ -237,6 +255,18 @@
     <!-- http://purl.oclc.org/PPIO#Chlorotic_lesions -->
 
     <owl:Class rdf:about="&PPIO;Chlorotic_lesions">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
     </owl:Class>
     
@@ -271,7 +301,7 @@
     <!-- http://purl.oclc.org/PPIO#Hypersensitive_response -->
 
     <owl:Class rdf:about="&PPIO;Hypersensitive_response">
-        <rdfs:subClassOf rdf:resource="&PPIO;Resistance_response"/>
+        <rdfs:subClassOf rdf:resource="&PPIO;Resistance_response_phenotype"/>
         <rdfs:comment>The hypersensitive response (HR) is a resistance mechanism characterized by the cell death of the affected tissue in order to avoid the expansion of the pathogen to the surrounding cells</rdfs:comment>
     </owl:Class>
     
@@ -791,7 +821,7 @@
     <owl:Class rdf:about="&PPIO;Pathogen_trait">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:onProperty rdf:resource="&PPIO;trait_of"/>
                 <owl:someValuesFrom rdf:resource="&PPIO;Plant_Pathogen"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -803,7 +833,13 @@
     <!-- http://purl.oclc.org/PPIO#Phenotype -->
 
     <owl:Class rdf:about="&PPIO;Phenotype">
-        <rdfs:comment>Value of trait</rdfs:comment>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;value_of"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Trait"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>This class is refered to the value of the trait that corresponds. The phenotypic response is the outcome of the resistance response developed by the plant, but also can represent the susceptibility of the host to the attack of the bacteria. </rdfs:comment>
     </owl:Class>
     
 
@@ -854,20 +890,45 @@
     <!-- http://purl.oclc.org/PPIO#Production_of_antimicrobial_compounds -->
 
     <owl:Class rdf:about="&PPIO;Production_of_antimicrobial_compounds">
-        <rdfs:subClassOf rdf:resource="&PPIO;Resistance_response"/>
+        <rdfs:subClassOf rdf:resource="&PPIO;Resistance_response_phenotype"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.oclc.org/PPIO#Resistance_response -->
+    <!-- http://purl.oclc.org/PPIO#Resistance_response_phenotype -->
 
-    <owl:Class rdf:about="&PPIO;Resistance_response"/>
+    <owl:Class rdf:about="&PPIO;Resistance_response_phenotype">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;value_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000387"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;trait_of"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Resistant_plant"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&PPIO;Phenotype"/>
+    </owl:Class>
     
 
 
     <!-- http://purl.oclc.org/PPIO#Resistant_plant -->
 
     <owl:Class rdf:about="&PPIO;Resistant_plant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;Plant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Resistance_response_phenotype"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -915,7 +976,7 @@
     <!-- http://purl.oclc.org/PPIO#Trait -->
 
     <owl:Class rdf:about="&PPIO;Trait">
-        <rdfs:comment>Retrieved from Plant Trait Ontology or created</rdfs:comment>
+        <rdfs:comment>Retrieved from Plant Trait Ontology or newly created terms, referred only to plants.</rdfs:comment>
     </owl:Class>
     
 
