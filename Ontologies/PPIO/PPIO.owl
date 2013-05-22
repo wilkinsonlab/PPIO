@@ -289,7 +289,7 @@
                     <rdf:Description rdf:about="&PPIO;Plant"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Phenotype"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Susceptibility_phenotype"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -836,7 +836,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;value_of"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;Trait"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000387"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment>This class is refered to the value of the trait that corresponds. The phenotypic response is the outcome of the resistance response developed by the plant, but also can represent the susceptibility of the host to the attack of the bacteria. </rdfs:comment>
@@ -895,22 +895,24 @@
     
 
 
-    <!-- http://purl.oclc.org/PPIO#Resistance_response_phenotype -->
+    <!-- http://purl.oclc.org/PPIO#Resistance_phenotype -->
 
-    <owl:Class rdf:about="&PPIO;Resistance_response_phenotype">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;value_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000387"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
+    <owl:Class rdf:about="&PPIO;Resistance_phenotype">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;trait_of"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;Resistant_plant"/>
+                <owl:allValuesFrom rdf:resource="&PPIO;Resistant_plant"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Resistance_response_phenotype -->
+
+    <owl:Class rdf:about="&PPIO;Resistance_response_phenotype">
+        <rdfs:subClassOf rdf:resource="&PPIO;Resistance_phenotype"/>
     </owl:Class>
     
 
@@ -924,7 +926,7 @@
                     <rdf:Description rdf:about="&PPIO;Plant"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Resistance_response_phenotype"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Resistance_phenotype"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -969,6 +971,20 @@
 
     <owl:Class rdf:about="&PPIO;Spots">
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Susceptibility_phenotype -->
+
+    <owl:Class rdf:about="&PPIO;Susceptibility_phenotype">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;trait_of"/>
+                <owl:allValuesFrom rdf:resource="&PPIO;Host_plant"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&PPIO;Phenotype"/>
     </owl:Class>
     
 
