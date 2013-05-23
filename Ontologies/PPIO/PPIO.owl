@@ -148,6 +148,12 @@
     
 
 
+    <!-- http://purl.oclc.org/PPIO#results_in -->
+
+    <owl:ObjectProperty rdf:about="&PPIO;results_in"/>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#susceptible_to -->
 
     <owl:ObjectProperty rdf:about="&PPIO;susceptible_to"/>
@@ -258,13 +264,19 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000316"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
@@ -288,6 +300,17 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;Plant"/>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;susceptible_to"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Plant_pathogen"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;Plant"/>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
                         <owl:someValuesFrom rdf:resource="&PPIO;Susceptibility_phenotype"/>
                     </owl:Restriction>
@@ -302,6 +325,12 @@
 
     <owl:Class rdf:about="&PPIO;Hypersensitive_response">
         <rdfs:subClassOf rdf:resource="&PPIO;Resistance_response_phenotype"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;caused_by"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Necrosis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>The hypersensitive response (HR) is a resistance mechanism characterized by the cell death of the affected tissue in order to avoid the expansion of the pathogen to the surrounding cells</rdfs:comment>
     </owl:Class>
     
@@ -786,6 +815,18 @@
     <!-- http://purl.oclc.org/PPIO#Necrosis -->
 
     <owl:Class rdf:about="&PPIO;Necrosis">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;results_in"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000652"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0002686"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
     </owl:Class>
     
@@ -802,7 +843,7 @@
     <!-- http://purl.oclc.org/PPIO#Pathogen_ecology -->
 
     <owl:Class rdf:about="&PPIO;Pathogen_ecology">
-        <rdfs:subClassOf rdf:resource="&PPIO;Pathogen_trait"/>
+        <rdfs:subClassOf rdf:resource="&PPIO;Pathogen_traits"/>
         <rdfs:comment>The term ecology refers to the lifestyle of the plant pathogenic bacteria in the close environment</rdfs:comment>
     </owl:Class>
     
@@ -811,18 +852,18 @@
     <!-- http://purl.oclc.org/PPIO#Pathogen_entry_mode -->
 
     <owl:Class rdf:about="&PPIO;Pathogen_entry_mode">
-        <rdfs:subClassOf rdf:resource="&PPIO;Pathogen_trait"/>
+        <rdfs:subClassOf rdf:resource="&PPIO;Pathogen_traits"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.oclc.org/PPIO#Pathogen_trait -->
+    <!-- http://purl.oclc.org/PPIO#Pathogen_traits -->
 
-    <owl:Class rdf:about="&PPIO;Pathogen_trait">
+    <owl:Class rdf:about="&PPIO;Pathogen_traits">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;trait_of"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;Plant_Pathogen"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Plant_pathogen"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment>These biological traits refer to different aspects of the plant pathogenic bacteria, mainly related with physiological traits of the infection process</rdfs:comment>
@@ -833,12 +874,12 @@
     <!-- http://purl.oclc.org/PPIO#Phenotype -->
 
     <owl:Class rdf:about="&PPIO;Phenotype">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;value_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;TO_0000387"/>
             </owl:Restriction>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
         <rdfs:comment>This class is refered to the value of the trait that corresponds. The phenotypic response is the outcome of the resistance response developed by the plant, but also can represent the susceptibility of the host to the attack of the bacteria. </rdfs:comment>
     </owl:Class>
     
@@ -847,6 +888,12 @@
     <!-- http://purl.oclc.org/PPIO#Phenotypic_process -->
 
     <owl:Class rdf:about="&PPIO;Phenotypic_process">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000322"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:comment>The alterations at the cellular level the pathogen exerts in the host plant is reflected in symptoms that can be phenotypicallly observed in the affected plant.</rdfs:comment>
     </owl:Class>
     
@@ -856,14 +903,30 @@
 
     <owl:Class rdf:about="&PPIO;Plant">
         <rdfs:subClassOf rdf:resource="&PPIO;Organism"/>
-        <owl:disjointWith rdf:resource="&PPIO;Plant_Pathogen"/>
+        <owl:disjointWith rdf:resource="&PPIO;Plant_pathogen"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.oclc.org/PPIO#Plant_Pathogen -->
+    <!-- http://purl.oclc.org/PPIO#Plant_pathogen -->
 
-    <owl:Class rdf:about="&PPIO;Plant_Pathogen">
+    <owl:Class rdf:about="&PPIO;Plant_pathogen">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;causes"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&PPIO;Susceptibility_phenotype"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&PPIO;manifests_in_species"/>
+                                <owl:allValuesFrom rdf:resource="&PPIO;Host_plant"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -924,10 +987,14 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;Plant"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Resistance_phenotype"/>
-                    </owl:Restriction>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&PPIO;susceptible_to"/>
+                                <owl:someValuesFrom rdf:resource="&PPIO;Plant_pathogen"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -935,14 +1002,10 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;Plant"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&PPIO;susceptible_to"/>
-                                <owl:someValuesFrom rdf:resource="&PPIO;Plant_Pathogen"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Resistance_phenotype"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1163,7 +1226,7 @@
 
     <owl:NamedIndividual rdf:about="&PPIO;Pseudomonas_syringae_pv.phaseolicola">
         <rdf:type rdf:resource="&PPIO;NCBI_319"/>
-        <rdf:type rdf:resource="&PPIO;Plant_Pathogen"/>
+        <rdf:type rdf:resource="&PPIO;Plant_pathogen"/>
         <PPIO:causes rdf:resource="&PPIO;PHPVCH"/>
         <PPIO:causes rdf:resource="&PPIO;PHPVNC"/>
         <PPIO:causes rdf:resource="&PPIO;PHPVWS"/>
@@ -1175,7 +1238,7 @@
 
     <owl:NamedIndividual rdf:about="&PPIO;Pseudomonas_syringae_pv.tomato_DC3000">
         <rdf:type rdf:resource="&PPIO;NCBI_223283"/>
-        <rdf:type rdf:resource="&PPIO;Plant_Pathogen"/>
+        <rdf:type rdf:resource="&PPIO;Plant_pathogen"/>
         <PPIO:causes rdf:resource="&PPIO;DCATCH"/>
         <PPIO:causes rdf:resource="&PPIO;DCATNC"/>
         <PPIO:causes rdf:resource="&PPIO;DCSLCH"/>
