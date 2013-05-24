@@ -81,6 +81,12 @@
     
 
 
+    <!-- http://purl.oclc.org/PPIO#affects -->
+
+    <owl:ObjectProperty rdf:about="&PPIO;affects"/>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#caused_by -->
 
     <owl:ObjectProperty rdf:about="&PPIO;caused_by"/>
@@ -264,7 +270,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
@@ -276,7 +282,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
@@ -303,7 +309,21 @@
 
     <!-- http://purl.oclc.org/PPIO#Environmental_traits -->
 
-    <owl:Class rdf:about="&PPIO;Environmental_traits"/>
+    <owl:Class rdf:about="&PPIO;Environmental_traits">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;affects"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&PPIO;Plant"/>
+                            <rdf:Description rdf:about="&PPIO;Plant_pathogen"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
@@ -331,8 +351,8 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;Plant"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;susceptible_to"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Plant_pathogen"/>
+                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Susceptibility_phenotype"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -342,8 +362,8 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;Plant"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Susceptibility_phenotype"/>
+                        <owl:onProperty rdf:resource="&PPIO;susceptible_to"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Plant_pathogen"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -912,7 +932,7 @@
     <owl:Class rdf:about="&PPIO;Phenotypic_process">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:onProperty rdf:resource="&PPIO;affects"/>
                 <owl:someValuesFrom rdf:resource="&obo;TO_0000322"/>
             </owl:Restriction>
         </owl:equivalentClass>
