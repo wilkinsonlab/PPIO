@@ -81,12 +81,6 @@
     
 
 
-    <!-- http://purl.oclc.org/PPIO#affects -->
-
-    <owl:ObjectProperty rdf:about="&PPIO;affects"/>
-    
-
-
     <!-- http://purl.oclc.org/PPIO#caused_by -->
 
     <owl:ObjectProperty rdf:about="&PPIO;caused_by"/>
@@ -218,6 +212,14 @@
     
 
 
+    <!-- http://purl.oclc.org/PPIO#Air_mediated_dispersion -->
+
+    <owl:Class rdf:about="&PPIO;Air_mediated_dispersion">
+        <rdfs:subClassOf rdf:resource="&PPIO;Dispersion_mechanism"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#Antimicrobial_chemicals -->
 
     <owl:Class rdf:about="&PPIO;Antimicrobial_chemicals">
@@ -270,7 +272,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
@@ -282,10 +284,18 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Dispersion_mechanism -->
+
+    <owl:Class rdf:about="&PPIO;Dispersion_mechanism">
+        <rdfs:subClassOf rdf:resource="&PPIO;Ecology"/>
     </owl:Class>
     
 
@@ -310,19 +320,7 @@
     <!-- http://purl.oclc.org/PPIO#Environmental_traits -->
 
     <owl:Class rdf:about="&PPIO;Environmental_traits">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;affects"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&PPIO;Plant"/>
-                            <rdf:Description rdf:about="&PPIO;Plant_pathogen"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:equivalentClass>
+        <rdfs:comment>The environment is one of the three components that form the Disease triangle: the existence of a disease caused by a biotic agent requires the interaction of a susceptible host plant, a virulent pathogen, and an environment favorable for disease development. </rdfs:comment>
     </owl:Class>
     
 
@@ -351,8 +349,8 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;Plant"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Susceptibility_phenotype"/>
+                        <owl:onProperty rdf:resource="&PPIO;susceptible_to"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Plant_pathogen"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -362,8 +360,8 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;Plant"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;susceptible_to"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Plant_pathogen"/>
+                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Susceptibility_phenotype"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -391,6 +389,14 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>The hypersensitive response (HR) is a resistance mechanism characterized by the cell death of the affected tissue in order to avoid the expansion of the pathogen to the surrounding cells</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Insects -->
+
+    <owl:Class rdf:about="&PPIO;Insects">
+        <rdfs:subClassOf rdf:resource="&PPIO;Vectors"/>
     </owl:Class>
     
 
@@ -876,14 +882,14 @@
     <owl:Class rdf:about="&PPIO;Necrosis">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;results_in"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000652"/>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0002686"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0002686"/>
+                <owl:onProperty rdf:resource="&PPIO;results_in"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000652"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
@@ -899,6 +905,16 @@
     
 
 
+    <!-- http://purl.oclc.org/PPIO#Organism_mediated_survival -->
+
+    <owl:Class rdf:about="&PPIO;Organism_mediated_survival">
+        <rdfs:subClassOf rdf:resource="&PPIO;Survival"/>
+        <rdfs:comment>The survival of the pathogen is essential and requires the infection of the host plant. Sometimes this process is not possible due to the ecology of the host species, so the pathogen infects an alternate host.
+In other cases, the infection process to another plant requires the participation of an unrelated species known as vector.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#Pathogen_traits -->
 
     <owl:Class rdf:about="&PPIO;Pathogen_traits">
@@ -909,6 +925,14 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment>These biological traits refer to different aspects of the plant pathogenic bacteria, mainly related with physiological traits of the infection process</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Perennial_hosts -->
+
+    <owl:Class rdf:about="&PPIO;Perennial_hosts">
+        <rdfs:subClassOf rdf:resource="&PPIO;Organism_mediated_survival"/>
     </owl:Class>
     
 
@@ -932,7 +956,7 @@
     <owl:Class rdf:about="&PPIO;Phenotypic_process">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;affects"/>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
                 <owl:someValuesFrom rdf:resource="&obo;TO_0000322"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -956,9 +980,28 @@
     
 
 
+    <!-- http://purl.oclc.org/PPIO#Plant_debris -->
+
+    <owl:Class rdf:about="&PPIO;Plant_debris">
+        <rdfs:subClassOf rdf:resource="&PPIO;Soil_surface"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#Plant_pathogen -->
 
     <owl:Class rdf:about="&PPIO;Plant_pathogen">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;Organism"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;pathogen_of"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Plant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;causes"/>
@@ -974,17 +1017,6 @@
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;Organism"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;pathogen_of"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Plant"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1049,6 +1081,17 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;Plant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Resistance_phenotype"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;Plant"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
@@ -1057,17 +1100,6 @@
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;Plant"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Resistance_phenotype"/>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1080,6 +1112,22 @@
 
     <owl:Class rdf:about="&PPIO;Scabs">
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Seeds -->
+
+    <owl:Class rdf:about="&PPIO;Seeds">
+        <rdfs:subClassOf rdf:resource="&PPIO;Soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Soil -->
+
+    <owl:Class rdf:about="&PPIO;Soil">
+        <rdfs:subClassOf rdf:resource="&PPIO;Survival"/>
     </owl:Class>
     
 
@@ -1104,6 +1152,14 @@
 
     <owl:Class rdf:about="&PPIO;Soil_related">
         <rdfs:subClassOf rdf:resource="&PPIO;Growth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Soil_surface -->
+
+    <owl:Class rdf:about="&PPIO;Soil_surface">
+        <rdfs:subClassOf rdf:resource="&PPIO;Soil"/>
     </owl:Class>
     
 
@@ -1140,6 +1196,14 @@
     
 
 
+    <!-- http://purl.oclc.org/PPIO#Survival -->
+
+    <owl:Class rdf:about="&PPIO;Survival">
+        <rdfs:subClassOf rdf:resource="&PPIO;Ecology"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#Susceptibility_phenotype -->
 
     <owl:Class rdf:about="&PPIO;Susceptibility_phenotype">
@@ -1166,6 +1230,30 @@
 
     <owl:Class rdf:about="&PPIO;Trait">
         <rdfs:comment>Retrieved from Plant Trait Ontology or newly created terms, referred only to plants.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Vectors -->
+
+    <owl:Class rdf:about="&PPIO;Vectors">
+        <rdfs:subClassOf rdf:resource="&PPIO;Organism_mediated_survival"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Water -->
+
+    <owl:Class rdf:about="&PPIO;Water">
+        <rdfs:subClassOf rdf:resource="&PPIO;Survival"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Water_mediated_dispersion -->
+
+    <owl:Class rdf:about="&PPIO;Water_mediated_dispersion">
+        <rdfs:subClassOf rdf:resource="&PPIO;Dispersion_mechanism"/>
     </owl:Class>
     
 
