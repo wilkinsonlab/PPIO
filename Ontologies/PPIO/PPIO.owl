@@ -452,10 +452,26 @@
     
 
 
+    <!-- http://purl.oclc.org/PPIO#Dickeya_dadantii_3937 -->
+
+    <owl:Class rdf:about="&PPIO;Dickeya_dadantii_3937">
+        <rdfs:subClassOf rdf:resource="&PPIO;Dickeya_genus"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#Dickeya_genus -->
 
     <owl:Class rdf:about="&PPIO;Dickeya_genus">
         <rdfs:subClassOf rdf:resource="&PPIO;Plant_pathogen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Dickeya_zeae -->
+
+    <owl:Class rdf:about="&PPIO;Dickeya_zeae">
+        <rdfs:subClassOf rdf:resource="&PPIO;Dickeya_genus"/>
     </owl:Class>
     
 
