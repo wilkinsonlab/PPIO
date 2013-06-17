@@ -15,4 +15,8 @@ if [ $update = "y" ]; then
 fi
 
 # Execute the converter
-java -jar ncbi2owl.jar names.dmp nodes.dmp PPIO.owl PPIO.owl ncbi_taxa_ids
+
+# Get original ontology
+cp ../Ontologies/PPIO/PPIO.owl .
+java -jar ncbi2owl.jar names.dmp nodes.dmp ../Ontologies/PPIO/PPIO.owl PPIO.owl ncbi_taxa_ids
+

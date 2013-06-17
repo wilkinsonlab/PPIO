@@ -8,23 +8,21 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY po "http://purl.obolibrary.org/obo/po#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY ppio "http://cbgp.upm.es/wilkinsonlab/ppio.owl#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY Ontology1349167470488 "http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#" >
+    <!ENTITY plant_trait_ontology "http://purl.obolibrary.org/obo/plant_trait_ontology.obo#" >
 ]>
 
 
-<rdf:RDF xmlns="http://cbgp.upm.es/wilkinsonlab/ppio.owl#"
-     xml:base="http://cbgp.upm.es/wilkinsonlab/ppio.owl"
+<rdf:RDF xmlns="http://purl.oclc.org/PPIO#"
+     xml:base="http://purl.oclc.org/PPIO"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:PPIO="http://purl.oclc.org/PPIO#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:ppio="http://cbgp.upm.es/wilkinsonlab/ppio.owl#"
      xmlns:po="&obo;po#"
-     xmlns:Ontology1349167470488="http://www.semanticweb.org/ontologies/2012/9/Ontology1349167470488.owl#">
+     xmlns:plant_trait_ontology="&obo;plant_trait_ontology.obo#">
     <owl:Ontology rdf:about="http://purl.oclc.org/PPIO">
         <owl:imports rdf:resource="&obo;plant_trait_ontology.obo"/>
     </owl:Ontology>
@@ -72,6 +70,12 @@
     <owl:ObjectProperty rdf:about="&obo;BFO_0000050">
         <rdfs:label xml:lang="en">part of</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/plant_trait_ontology.obo#part_of -->
+
+    <owl:ObjectProperty rdf:about="&obo;plant_trait_ontology.obo#part_of"/>
     
 
 
@@ -210,17 +214,59 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/TO_0000133 -->
+
+    <owl:Class rdf:about="&obo;TO_0000133"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TO_0000316 -->
+
+    <owl:Class rdf:about="&obo;TO_0000316"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TO_0000322 -->
+
+    <owl:Class rdf:about="&obo;TO_0000322"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TO_0000326 -->
+
+    <owl:Class rdf:about="&obo;TO_0000326"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TO_0000361 -->
+
+    <owl:Class rdf:about="&obo;TO_0000361"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/TO_0000387 -->
 
-    <rdf:Description rdf:about="&obo;TO_0000387">
+    <owl:Class rdf:about="&obo;TO_0000387">
         <rdfs:subClassOf rdf:resource="&PPIO;Trait"/>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TO_0000495 -->
+
+    <owl:Class rdf:about="&obo;TO_0000495"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TO_0000652 -->
+
+    <owl:Class rdf:about="&obo;TO_0000652"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/TO_0000701 -->
 
-    <rdf:Description rdf:about="&obo;TO_0000701">
+    <owl:Class rdf:about="&obo;TO_0000701">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -235,13 +281,37 @@
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TO_0000748 -->
+
+    <owl:Class rdf:about="&obo;TO_0000748"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TO_0002629 -->
+
+    <owl:Class rdf:about="&obo;TO_0002629"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TO_0002683 -->
+
+    <owl:Class rdf:about="&obo;TO_0002683"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TO_0002686 -->
+
+    <owl:Class rdf:about="&obo;TO_0002686"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/TO_0002715 -->
 
-    <rdf:Description rdf:about="&obo;TO_0002715">
+    <owl:Class rdf:about="&obo;TO_0002715">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -256,7 +326,7 @@
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -315,14 +385,14 @@
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;plant_trait_ontology.obo#part_of"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;Tissue_disintegration_phenotype"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Color_variation_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;Color_variation_phenotype"/>
+                <owl:onProperty rdf:resource="&obo;plant_trait_ontology.obo#part_of"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Tissue_disintegration_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -385,13 +455,13 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000316"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000316"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
@@ -595,8 +665,8 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;Plant"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;susceptible_to"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Plant_pathogen"/>
+                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Susceptibility_phenotype"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -606,8 +676,8 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;Plant"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Susceptibility_phenotype"/>
+                        <owl:onProperty rdf:resource="&PPIO;susceptible_to"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Plant_pathogen"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -709,6 +779,15 @@
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBI_1573 -->
+
+    <owl:Class rdf:about="&PPIO;NCBI_1573">
+        <rdfs:label xml:lang="la">Clavibacter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&PPIO;NCBI_85023"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBI_163735 -->
 
     <owl:Class rdf:about="&PPIO;NCBI_163735">
@@ -718,11 +797,38 @@
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBI_1760 -->
+
+    <owl:Class rdf:about="&PPIO;NCBI_1760">
+        <rdfs:label xml:lang="la">Actinobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&PPIO;NCBI_201174"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBI_2 -->
 
     <owl:Class rdf:about="&PPIO;NCBI_2">
         <rdfs:label xml:lang="la">Bacteria</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;NCBI_131567"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBI_201174 -->
+
+    <owl:Class rdf:about="&PPIO;NCBI_201174">
+        <rdfs:label xml:lang="la">Actinobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&PPIO;NCBI_2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBI_2037 -->
+
+    <owl:Class rdf:about="&PPIO;NCBI_2037">
+        <rdfs:label xml:lang="la">Actinomycetales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&PPIO;NCBI_85003"/>
     </owl:Class>
     
 
@@ -759,6 +865,15 @@
     <owl:Class rdf:about="&PPIO;NCBI_2759">
         <rdfs:label xml:lang="la">Eukaryota</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;NCBI_131567"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBI_28447 -->
+
+    <owl:Class rdf:about="&PPIO;NCBI_28447">
+        <rdfs:label xml:lang="la">Clavibacter michiganensis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&PPIO;NCBI_1573"/>
     </owl:Class>
     
 
@@ -804,6 +919,15 @@
     <owl:Class rdf:about="&PPIO;NCBI_323">
         <rdfs:label xml:lang="la">Pseudomonas syringae pv. tomato</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;NCBI_251701"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBI_33013 -->
+
+    <owl:Class rdf:about="&PPIO;NCBI_33013">
+        <rdfs:label xml:lang="la">Clavibacter michiganensis subsp. michiganensis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&PPIO;NCBI_28447"/>
     </owl:Class>
     
 
@@ -988,6 +1112,15 @@
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBI_443906 -->
+
+    <owl:Class rdf:about="&PPIO;NCBI_443906">
+        <rdfs:label xml:lang="la">Clavibacter michiganensis subsp. michiganensis NCPPB 382</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&PPIO;NCBI_33013"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBI_49274 -->
 
     <owl:Class rdf:about="&PPIO;NCBI_49274">
@@ -1069,6 +1202,33 @@
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBI_85003 -->
+
+    <owl:Class rdf:about="&PPIO;NCBI_85003">
+        <rdfs:label xml:lang="la">Actinobacteridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&PPIO;NCBI_1760"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBI_85006 -->
+
+    <owl:Class rdf:about="&PPIO;NCBI_85006">
+        <rdfs:label xml:lang="la">Micrococcineae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&PPIO;NCBI_2037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBI_85023 -->
+
+    <owl:Class rdf:about="&PPIO;NCBI_85023">
+        <rdfs:label xml:lang="la">Microbacteriaceae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&PPIO;NCBI_85006"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBI_91827 -->
 
     <owl:Class rdf:about="&PPIO;NCBI_91827">
@@ -1128,14 +1288,14 @@
     <owl:Class rdf:about="&PPIO;Necrosis">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;results_in"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000652"/>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0002686"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0002686"/>
+                <owl:onProperty rdf:resource="&PPIO;results_in"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000652"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
@@ -1169,6 +1329,14 @@
         <rdfs:subClassOf rdf:resource="&PPIO;Survival"/>
         <rdfs:comment>The survival of the pathogen is essential and requires the infection of the host plant. Sometimes this process is not possible due to the ecology of the host species, so the pathogen infects an alternate host.
 In other cases, the infection process to another plant requires the participation of an unrelated species known as vector.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Pantoea_genus -->
+
+    <owl:Class rdf:about="&PPIO;Pantoea_genus">
+        <rdfs:subClassOf rdf:resource="&PPIO;Plant_pathogen"/>
     </owl:Class>
     
 
@@ -1314,6 +1482,14 @@ In other cases, the infection process to another plant requires the participatio
     
 
 
+    <!-- http://purl.oclc.org/PPIO#Pseudomonas_savastanoi -->
+
+    <owl:Class rdf:about="&PPIO;Pseudomonas_savastanoi">
+        <rdfs:subClassOf rdf:resource="&PPIO;Pseudomonas_genus"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#Pseudomonas_syringae -->
 
     <owl:Class rdf:about="&PPIO;Pseudomonas_syringae">
@@ -1391,6 +1567,17 @@ In other cases, the infection process to another plant requires the participatio
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;Plant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Resistance_phenotype"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;Plant"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
@@ -1399,17 +1586,6 @@ In other cases, the infection process to another plant requires the participatio
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;Plant"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Resistance_phenotype"/>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1450,6 +1626,22 @@ In other cases, the infection process to another plant requires the participatio
 
     <owl:Class rdf:about="&PPIO;Seeds">
         <rdfs:subClassOf rdf:resource="&PPIO;Soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Serratia_genus -->
+
+    <owl:Class rdf:about="&PPIO;Serratia_genus">
+        <rdfs:subClassOf rdf:resource="&PPIO;Plant_pathogen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Serratia_marcescens -->
+
+    <owl:Class rdf:about="&PPIO;Serratia_marcescens">
+        <rdfs:subClassOf rdf:resource="&PPIO;Serratia_genus"/>
     </owl:Class>
     
 
@@ -1524,7 +1716,7 @@ In other cases, the infection process to another plant requires the participatio
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0002629"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000361"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
@@ -1536,7 +1728,7 @@ In other cases, the infection process to another plant requires the participatio
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000361"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0002629"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
@@ -1723,11 +1915,20 @@ In other cases, the infection process to another plant requires the participatio
     
 
 
+    <!-- http://purl.oclc.org/PPIO#Clavibacter_michiganense_subsp.michiganense -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;Clavibacter_michiganense_subsp.michiganense">
+        <rdf:type rdf:resource="&PPIO;NCBI_443906"/>
+        <rdf:type rdf:resource="&PPIO;Plant_pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#DCATCH -->
 
     <owl:NamedIndividual rdf:about="&PPIO;DCATCH">
-        <PPIO:manifests_in_species rdf:resource="&PPIO;Arabidopsis_thaliana"/>
-        <PPIO:has_symptom rdf:resource="&PPIO;Chlorotic_halo"/>
+        <manifests_in_species rdf:resource="&PPIO;Arabidopsis_thaliana"/>
+        <has_symptom rdf:resource="&PPIO;Chlorotic_halo"/>
     </owl:NamedIndividual>
     
 
@@ -1735,8 +1936,8 @@ In other cases, the infection process to another plant requires the participatio
     <!-- http://purl.oclc.org/PPIO#DCATNC -->
 
     <owl:NamedIndividual rdf:about="&PPIO;DCATNC">
-        <PPIO:manifests_in_species rdf:resource="&PPIO;Arabidopsis_thaliana"/>
-        <PPIO:has_symptom rdf:resource="&PPIO;Necrotic_lessions"/>
+        <manifests_in_species rdf:resource="&PPIO;Arabidopsis_thaliana"/>
+        <has_symptom rdf:resource="&PPIO;Necrotic_lessions"/>
     </owl:NamedIndividual>
     
 
@@ -1744,8 +1945,8 @@ In other cases, the infection process to another plant requires the participatio
     <!-- http://purl.oclc.org/PPIO#DCSLCH -->
 
     <owl:NamedIndividual rdf:about="&PPIO;DCSLCH">
-        <PPIO:has_symptom rdf:resource="&PPIO;Chlorotic_halo"/>
-        <PPIO:manifests_in_species rdf:resource="&PPIO;Solanum_lycopersicum"/>
+        <has_symptom rdf:resource="&PPIO;Chlorotic_halo"/>
+        <manifests_in_species rdf:resource="&PPIO;Solanum_lycopersicum"/>
     </owl:NamedIndividual>
     
 
@@ -1753,8 +1954,8 @@ In other cases, the infection process to another plant requires the participatio
     <!-- http://purl.oclc.org/PPIO#DCSLNC -->
 
     <owl:NamedIndividual rdf:about="&PPIO;DCSLNC">
-        <PPIO:has_symptom rdf:resource="&PPIO;Necrotic_lessions"/>
-        <PPIO:manifests_in_species rdf:resource="&PPIO;Solanum_lycopersicum"/>
+        <has_symptom rdf:resource="&PPIO;Necrotic_lessions"/>
+        <manifests_in_species rdf:resource="&PPIO;Solanum_lycopersicum"/>
     </owl:NamedIndividual>
     
 
@@ -1763,8 +1964,8 @@ In other cases, the infection process to another plant requires the participatio
 
     <owl:NamedIndividual rdf:about="&PPIO;Endophytic_growth">
         <rdf:type rdf:resource="&PPIO;Plant_related"/>
-        <PPIO:trait_of rdf:resource="&PPIO;Pseudomonas_syringae_pv.phaseolicola"/>
-        <PPIO:trait_of rdf:resource="&PPIO;Pseudomonas_syringae_pv.tomato_DC3000"/>
+        <trait_of rdf:resource="&PPIO;Pseudomonas_syringae_pv.phaseolicola"/>
+        <trait_of rdf:resource="&PPIO;Pseudomonas_syringae_pv.tomato_DC3000"/>
     </owl:NamedIndividual>
     
 
@@ -1773,8 +1974,8 @@ In other cases, the infection process to another plant requires the participatio
 
     <owl:NamedIndividual rdf:about="&PPIO;Epiphytic_growth">
         <rdf:type rdf:resource="&PPIO;Plant_related"/>
-        <PPIO:trait_of rdf:resource="&PPIO;Pseudomonas_syringae_pv.phaseolicola"/>
-        <PPIO:trait_of rdf:resource="&PPIO;Pseudomonas_syringae_pv.tomato_DC3000"/>
+        <trait_of rdf:resource="&PPIO;Pseudomonas_syringae_pv.phaseolicola"/>
+        <trait_of rdf:resource="&PPIO;Pseudomonas_syringae_pv.tomato_DC3000"/>
     </owl:NamedIndividual>
     
 
@@ -1796,8 +1997,8 @@ In other cases, the infection process to another plant requires the participatio
     <!-- http://purl.oclc.org/PPIO#PHPVCH -->
 
     <owl:NamedIndividual rdf:about="&PPIO;PHPVCH">
-        <PPIO:has_symptom rdf:resource="&PPIO;Chlorotic_halo"/>
-        <PPIO:manifests_in_species rdf:resource="&PPIO;Phaseolus_vulgaris"/>
+        <has_symptom rdf:resource="&PPIO;Chlorotic_halo"/>
+        <manifests_in_species rdf:resource="&PPIO;Phaseolus_vulgaris"/>
     </owl:NamedIndividual>
     
 
@@ -1805,8 +2006,8 @@ In other cases, the infection process to another plant requires the participatio
     <!-- http://purl.oclc.org/PPIO#PHPVNC -->
 
     <owl:NamedIndividual rdf:about="&PPIO;PHPVNC">
-        <PPIO:has_symptom rdf:resource="&PPIO;Necrotic_lessions"/>
-        <PPIO:manifests_in_species rdf:resource="&PPIO;Phaseolus_vulgaris"/>
+        <has_symptom rdf:resource="&PPIO;Necrotic_lessions"/>
+        <manifests_in_species rdf:resource="&PPIO;Phaseolus_vulgaris"/>
     </owl:NamedIndividual>
     
 
@@ -1814,8 +2015,8 @@ In other cases, the infection process to another plant requires the participatio
     <!-- http://purl.oclc.org/PPIO#PHPVWS -->
 
     <owl:NamedIndividual rdf:about="&PPIO;PHPVWS">
-        <PPIO:manifests_in_species rdf:resource="&PPIO;Phaseolus_vulgaris"/>
-        <PPIO:has_symptom rdf:resource="&PPIO;Water_soaked_lesions"/>
+        <manifests_in_species rdf:resource="&PPIO;Phaseolus_vulgaris"/>
+        <has_symptom rdf:resource="&PPIO;Water_soaked_lesions"/>
     </owl:NamedIndividual>
     
 
@@ -1839,9 +2040,9 @@ In other cases, the infection process to another plant requires the participatio
     <owl:NamedIndividual rdf:about="&PPIO;Pseudomonas_syringae_pv.phaseolicola">
         <rdf:type rdf:resource="&PPIO;NCBI_319"/>
         <rdf:type rdf:resource="&PPIO;Plant_pathogen"/>
-        <PPIO:causes rdf:resource="&PPIO;PHPVCH"/>
-        <PPIO:causes rdf:resource="&PPIO;PHPVNC"/>
-        <PPIO:causes rdf:resource="&PPIO;PHPVWS"/>
+        <causes rdf:resource="&PPIO;PHPVCH"/>
+        <causes rdf:resource="&PPIO;PHPVNC"/>
+        <causes rdf:resource="&PPIO;PHPVWS"/>
     </owl:NamedIndividual>
     
 
@@ -1851,10 +2052,10 @@ In other cases, the infection process to another plant requires the participatio
     <owl:NamedIndividual rdf:about="&PPIO;Pseudomonas_syringae_pv.tomato_DC3000">
         <rdf:type rdf:resource="&PPIO;NCBI_223283"/>
         <rdf:type rdf:resource="&PPIO;Plant_pathogen"/>
-        <PPIO:causes rdf:resource="&PPIO;DCATCH"/>
-        <PPIO:causes rdf:resource="&PPIO;DCATNC"/>
-        <PPIO:causes rdf:resource="&PPIO;DCSLCH"/>
-        <PPIO:causes rdf:resource="&PPIO;DCSLNC"/>
+        <causes rdf:resource="&PPIO;DCATCH"/>
+        <causes rdf:resource="&PPIO;DCATNC"/>
+        <causes rdf:resource="&PPIO;DCSLCH"/>
+        <causes rdf:resource="&PPIO;DCSLNC"/>
     </owl:NamedIndividual>
     
 
@@ -1879,7 +2080,7 @@ In other cases, the infection process to another plant requires the participatio
 
     <owl:NamedIndividual rdf:about="&PPIO;Solanum_lycopersicum">
         <rdf:type rdf:resource="&PPIO;NCBI_95449"/>
-        <PPIO:susceptible_to rdf:resource="&PPIO;Pseudomonas_syringae_pv.tomato_DC3000"/>
+        <susceptible_to rdf:resource="&PPIO;Pseudomonas_syringae_pv.tomato_DC3000"/>
     </owl:NamedIndividual>
     
 
@@ -1909,8 +2110,8 @@ In other cases, the infection process to another plant requires the participatio
     <!-- http://purl.oclc.org/PPIO#entry_through_leaf_stomata -->
 
     <owl:NamedIndividual rdf:about="&PPIO;entry_through_leaf_stomata">
-        <PPIO:trait_of rdf:resource="&PPIO;Pseudomonas_syringae_pv.phaseolicola"/>
-        <PPIO:trait_of rdf:resource="&PPIO;Pseudomonas_syringae_pv.tomato_DC3000"/>
+        <trait_of rdf:resource="&PPIO;Pseudomonas_syringae_pv.phaseolicola"/>
+        <trait_of rdf:resource="&PPIO;Pseudomonas_syringae_pv.tomato_DC3000"/>
     </owl:NamedIndividual>
     
 
