@@ -353,14 +353,14 @@
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;plant_trait_ontology.obo#part_of"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;Tissue_disintegration_phenotype"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Color_variation_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;Color_variation_phenotype"/>
+                <owl:onProperty rdf:resource="&obo;plant_trait_ontology.obo#part_of"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Tissue_disintegration_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -382,13 +382,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;Tissue_disintegration_phenotype"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Vascular_system_damage_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;Vascular_system_damage_phenotype"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Tissue_disintegration_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -429,13 +429,13 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
@@ -1382,6 +1382,17 @@ In other cases, the infection process to another plant requires the participatio
 
     <owl:Class rdf:about="&PPIO;Plant_pathogen">
         <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;Organism"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;pathogen_of"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Plant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;causes"/>
                 <owl:someValuesFrom>
@@ -1396,17 +1407,6 @@ In other cases, the infection process to another plant requires the participatio
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;Organism"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;pathogen_of"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Plant"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
         </owl:equivalentClass>
     </owl:Class>
     
@@ -1497,17 +1497,6 @@ In other cases, the infection process to another plant requires the participatio
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;Plant"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Resistance_phenotype"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;Plant"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
@@ -1516,6 +1505,17 @@ In other cases, the infection process to another plant requires the participatio
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;Plant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Resistance_phenotype"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1612,12 +1612,6 @@ In other cases, the infection process to another plant requires the participatio
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0002629"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;modifies"/>
                 <owl:someValuesFrom rdf:resource="&obo;TO_0000361"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -1625,6 +1619,12 @@ In other cases, the infection process to another plant requires the participatio
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
                 <owl:someValuesFrom rdf:resource="&obo;TO_0000748"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0002629"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
@@ -1801,6 +1801,7 @@ In other cases, the infection process to another plant requires the participatio
 
     <owl:NamedIndividual rdf:about="&PPIO;Arabidopsis_thaliana">
         <rdf:type rdf:resource="&PPIO;NCBI_3702"/>
+        <rdf:type rdf:resource="&PPIO;Plant"/>
     </owl:NamedIndividual>
     
 
@@ -1852,6 +1853,46 @@ In other cases, the infection process to another plant requires the participatio
     <owl:NamedIndividual rdf:about="&PPIO;DCSLNC">
         <has_symptom rdf:resource="&PPIO;Necrotic_lessions"/>
         <manifests_in_species rdf:resource="&PPIO;Solanum_lycopersicum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Dickeya_dadantii -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;Dickeya_dadantii">
+        <rdf:type rdf:resource="&PPIO;Plant_pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Dickeya_dadantii_subsp.dieffenbachiae -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;Dickeya_dadantii_subsp.dieffenbachiae">
+        <rdf:type rdf:resource="&PPIO;Plant_pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Dickeya_dianthicola -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;Dickeya_dianthicola">
+        <rdf:type rdf:resource="&PPIO;Plant_pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Dickeya_paradisiaca -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;Dickeya_paradisiaca">
+        <rdf:type rdf:resource="&PPIO;Plant_pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Dickeya_zeae -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;Dickeya_zeae">
+        <rdf:type rdf:resource="&PPIO;Plant_pathogen"/>
     </owl:NamedIndividual>
     
 
@@ -1949,6 +1990,7 @@ In other cases, the infection process to another plant requires the participatio
 
     <owl:NamedIndividual rdf:about="&PPIO;Nicotiana_benthamiana">
         <rdf:type rdf:resource="&PPIO;NCBI_4100"/>
+        <rdf:type rdf:resource="&PPIO;Plant"/>
     </owl:NamedIndividual>
     
 
@@ -2027,6 +2069,14 @@ In other cases, the infection process to another plant requires the participatio
     
 
 
+    <!-- http://purl.oclc.org/PPIO#Serratia_marcescens -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;Serratia_marcescens">
+        <rdf:type rdf:resource="&PPIO;Plant_pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#Soil_colonizer -->
 
     <owl:NamedIndividual rdf:about="&PPIO;Soil_colonizer">
@@ -2039,6 +2089,7 @@ In other cases, the infection process to another plant requires the participatio
 
     <owl:NamedIndividual rdf:about="&PPIO;Solanum_lycopersicum">
         <rdf:type rdf:resource="&PPIO;NCBI_95449"/>
+        <rdf:type rdf:resource="&PPIO;Plant"/>
         <susceptible_to rdf:resource="&PPIO;Pseudomonas_syringae_pv.tomato_DC3000"/>
     </owl:NamedIndividual>
     
@@ -2055,7 +2106,7 @@ In other cases, the infection process to another plant requires the participatio
     <!-- http://purl.oclc.org/PPIO#Zea_mays -->
 
     <owl:NamedIndividual rdf:about="&PPIO;Zea_mays">
-        <rdf:type rdf:resource="&PPIO;Resistant_plant"/>
+        <rdf:type rdf:resource="&PPIO;Plant"/>
     </owl:NamedIndividual>
     
 
