@@ -1,8 +1,0 @@
-Procedure for introducing the NCBI taxa to PPIO:
-0) First, introducing the changes in PPIO as usual.
-1) Open the NBCI_taxa_ids file and eliminate the former IDs
-2) Introduce the new IDs.
-3) Execute the NCBI_taxonomy2OWL.sh. Update dumps? yes
-4) Once the NCBI taxa have been added to the ontology, the selected organism is modelled so that it belongs to: its class and the NCBI_taxa subclass.
-5) After this step, PPIO from /Programs is copied to /PPIO.
-6) Commit and push.
