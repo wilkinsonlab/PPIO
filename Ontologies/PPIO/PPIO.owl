@@ -24,7 +24,7 @@
      xmlns:po="&obo;po#"
      xmlns:plant_trait_ontology="&obo;plant_trait_ontology.obo#">
     <owl:Ontology rdf:about="http://purl.oclc.org/PPIO">
-        <owl:imports rdf:resource="&obo;plant_trait_ontology.obo"/>
+        <owl:imports rdf:resource="&obo;to.owl"/>
     </owl:Ontology>
     
 
@@ -353,14 +353,14 @@
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;Color_variation_phenotype"/>
+                <owl:onProperty rdf:resource="&obo;plant_trait_ontology.obo#part_of"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Tissue_disintegration_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;plant_trait_ontology.obo#part_of"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;Tissue_disintegration_phenotype"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Color_variation_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -423,13 +423,13 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000316"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000316"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
@@ -2018,6 +2018,14 @@ In other cases, the infection process to another plant requires the participatio
     <owl:NamedIndividual rdf:about="&PPIO;PHPVWS">
         <manifests_in_species rdf:resource="&PPIO;Phaseolus_vulgaris"/>
         <has_symptom rdf:resource="&PPIO;Water_soaked_lesions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Pectobacterium_atrosepticum -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;Pectobacterium_atrosepticum">
+        <rdf:type rdf:resource="&PPIO;Plant_pathogen"/>
     </owl:NamedIndividual>
     
 
