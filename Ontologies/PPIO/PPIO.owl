@@ -330,6 +330,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_00001998#Calcium_availability -->
+
+    <owl:Class rdf:about="&obo;ENVO_00001998#Calcium_availability">
+        <rdfs:subClassOf rdf:resource="&obo;ENVO_00001998#Macronutrient_availability_parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00001998#Copper_availability -->
+
+    <owl:Class rdf:about="&obo;ENVO_00001998#Copper_availability">
+        <rdfs:subClassOf rdf:resource="&obo;ENVO_00001998#Micronutrient_availability_parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00001998#Dew -->
+
+    <owl:Class rdf:about="&obo;ENVO_00001998#Dew">
+        <rdfs:subClassOf rdf:resource="&obo;ENVO_00001998#Moisture_parameter"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_00001998#High_temperature_range -->
 
     <owl:Class rdf:about="&obo;ENVO_00001998#High_temperature_range">
@@ -346,10 +370,63 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_00001998#Moisture -->
+    <!-- http://purl.obolibrary.org/obo/ENVO_00001998#Macronutrient_availability_parameter -->
 
-    <owl:Class rdf:about="&obo;ENVO_00001998#Moisture">
+    <owl:Class rdf:about="&obo;ENVO_00001998#Macronutrient_availability_parameter">
+        <rdfs:subClassOf rdf:resource="&obo;ENVO_00001998#Nutrient_availability_parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00001998#Manganese_availability -->
+
+    <owl:Class rdf:about="&obo;ENVO_00001998#Manganese_availability">
+        <rdfs:subClassOf rdf:resource="&obo;ENVO_00001998#Micronutrient_availability_parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00001998#Micronutrient_availability_parameter -->
+
+    <owl:Class rdf:about="&obo;ENVO_00001998#Micronutrient_availability_parameter">
+        <rdfs:subClassOf rdf:resource="&obo;ENVO_00001998#Nutrient_availability_parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00001998#Moisture_parameter -->
+
+    <owl:Class rdf:about="&obo;ENVO_00001998#Moisture_parameter">
         <rdfs:subClassOf rdf:resource="&PPIO;Environmental_parameter"/>
+        <rdfs:comment>Moisture is one of the most important environmental parameters in plant pathology. It can exist as rain or irrigation water in the plant surface, as relative humidity or as dew.
+It is indispensable for the activation and spread of the bacterial pathogens.
+
+(Extracted from &apos;Plant Pathology&apos;. George N.Agrios. Fifth edition)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00001998#Nitrogen_availability -->
+
+    <owl:Class rdf:about="&obo;ENVO_00001998#Nitrogen_availability">
+        <rdfs:subClassOf rdf:resource="&obo;ENVO_00001998#Macronutrient_availability_parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00001998#Nutrient_availability_parameter -->
+
+    <owl:Class rdf:about="&obo;ENVO_00001998#Nutrient_availability_parameter">
+        <rdfs:subClassOf rdf:resource="&PPIO;Environmental_parameter"/>
+        <rdfs:comment>The presence of certain nutrients in the soil can enhance the susceptibility of the host to the attack of certain pathogens. On the other hand, it can also benefit the plant by increasing the defense mechanisms against the pathogenic bacteria. The balance bewteen this two responses depends on the plant itself, the bacteria and the availability/type of the nutrient.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00001998#Phosphorus_availability -->
+
+    <owl:Class rdf:about="&obo;ENVO_00001998#Phosphorus_availability">
+        <rdfs:subClassOf rdf:resource="&obo;ENVO_00001998#Macronutrient_availability_parameter"/>
     </owl:Class>
     
 
@@ -371,17 +448,27 @@
     
 
 
-    <!-- http://purl.oclc.org/PPIO#Air_mediated_dispersion -->
-
-    <owl:Class rdf:about="&PPIO;Air_mediated_dispersion">
-        <rdfs:subClassOf rdf:resource="&PPIO;Dispersion_mechanism"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.oclc.org/PPIO#Blight -->
 
     <owl:Class rdf:about="&PPIO;Blight">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000748"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;results_in"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Wilting"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -395,6 +482,8 @@
                 <owl:someValuesFrom rdf:resource="&PPIO;Color_variation_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Water-soaked to yellowish stripes on leaf blades or starting at leaf tips; then later increase in length and width with a wavy margin. Lesions turn yellow to white as the disease advances. Leaves wilt and roll up and become grayish green to yellow.
+</rdfs:comment>
     </owl:Class>
     
 
@@ -410,19 +499,56 @@
     <!-- http://purl.oclc.org/PPIO#Canker -->
 
     <owl:Class rdf:about="&PPIO;Canker">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                                <owl:someValuesFrom rdf:resource="&obo;TO_0000361"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                                <owl:someValuesFrom rdf:resource="&obo;TO_0000740"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;contains"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Necrotic_lesion"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;contains"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Spot"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                        <owl:someValuesFrom rdf:resource="&obo;TO_0000909"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;Tissue_disintegration_phenotype"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="&PPIO;Vascular_system_damage_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Tissue_disintegration_phenotype"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Deep necrotic lesion produced in  stem or branches. As the disease progresses, small spots appear in the young fruits. Bacterial cankers are often sunken and soft, as in the fungal cankers, but they may also appear as splits in the stem, as necrotic areas within the woody cylinder, or as scabby excrescences on the surface of the tissue.</rdfs:comment>
     </owl:Class>
     
 
@@ -461,13 +587,13 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000316"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000316"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
@@ -477,6 +603,7 @@
                 <owl:someValuesFrom rdf:resource="&PPIO;Color_variation_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Chlorophyll content diminishes/lack of chlorophyll.</rdfs:comment>
     </owl:Class>
     
 
@@ -510,6 +637,12 @@
 
     <owl:Class rdf:about="&PPIO;Ecological_feature">
         <rdfs:subClassOf rdf:resource="&PPIO;Pathogen_physiology_trait"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;is_modified_by"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Environmental_parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>The term ecology refers to the lifestyle of the plant pathogenic bacteria in the close environment</rdfs:comment>
     </owl:Class>
     
@@ -609,8 +742,8 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;Plant"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Susceptibility_phenotype"/>
+                        <owl:onProperty rdf:resource="&PPIO;susceptible_to"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Plant_pathogen"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -620,8 +753,8 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;Plant"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;susceptible_to"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Plant_pathogen"/>
+                        <owl:onProperty rdf:resource="&PPIO;expresses_phenotype"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Susceptibility_phenotype"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -633,7 +766,7 @@
     <!-- http://purl.oclc.org/PPIO#Humidity -->
 
     <owl:Class rdf:about="&PPIO;Humidity">
-        <rdfs:subClassOf rdf:resource="&PPIO;Environmental_parameter"/>
+        <rdfs:subClassOf rdf:resource="&obo;ENVO_00001998#Moisture_parameter"/>
     </owl:Class>
     
 
@@ -645,7 +778,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;caused_by"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;Necrosis"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Necrotic_lesion"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>The hypersensitive response (HR) is a resistance mechanism characterized by the cell death of the affected tissue in order to avoid the expansion of the pathogen to the surrounding cells</rdfs:comment>
@@ -1309,9 +1442,9 @@
     
 
 
-    <!-- http://purl.oclc.org/PPIO#Necrosis -->
+    <!-- http://purl.oclc.org/PPIO#Necrotic_lesion -->
 
-    <owl:Class rdf:about="&PPIO;Necrosis">
+    <owl:Class rdf:about="&PPIO;Necrotic_lesion">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;results_in"/>
@@ -1331,6 +1464,8 @@
                 <owl:someValuesFrom rdf:resource="&PPIO;Tissue_disintegration_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Pathogenic cell death of the affected tissue/organ.
+</rdfs:comment>
     </owl:Class>
     
 
@@ -1396,6 +1531,12 @@ In other cases, the infection process to another plant requires the participatio
                 <owl:someValuesFrom rdf:resource="&obo;TO_0000322"/>
             </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;plant_trait_ontology.obo#part_of"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Host_plant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>The alterations at the cellular level the pathogen exerts in the host plant is reflected in symptoms that can be phenotypicallly observed in the affected plant.</rdfs:comment>
     </owl:Class>
     
@@ -1414,17 +1555,6 @@ In other cases, the infection process to another plant requires the participatio
 
     <owl:Class rdf:about="&PPIO;Plant_pathogen">
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;Organism"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;pathogen_of"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Plant"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;causes"/>
                 <owl:someValuesFrom>
@@ -1439,6 +1569,17 @@ In other cases, the infection process to another plant requires the participatio
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;Organism"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;pathogen_of"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Plant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
     </owl:Class>
     
@@ -1487,7 +1628,7 @@ In other cases, the infection process to another plant requires the participatio
     <!-- http://purl.oclc.org/PPIO#Rainfall -->
 
     <owl:Class rdf:about="&PPIO;Rainfall">
-        <rdfs:subClassOf rdf:resource="&PPIO;Environmental_parameter"/>
+        <rdfs:subClassOf rdf:resource="&obo;ENVO_00001998#Moisture_parameter"/>
     </owl:Class>
     
 
@@ -1592,17 +1733,9 @@ In other cases, the infection process to another plant requires the participatio
     
 
 
-    <!-- http://purl.oclc.org/PPIO#Soil_nutrition -->
+    <!-- http://purl.oclc.org/PPIO#Soil_pH_type -->
 
-    <owl:Class rdf:about="&PPIO;Soil_nutrition">
-        <rdfs:subClassOf rdf:resource="&PPIO;Soil_trait"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.oclc.org/PPIO#Soil_pH -->
-
-    <owl:Class rdf:about="&PPIO;Soil_pH">
+    <owl:Class rdf:about="&PPIO;Soil_pH_type">
         <rdfs:subClassOf rdf:resource="&PPIO;Soil_trait"/>
     </owl:Class>
     
@@ -1644,6 +1777,12 @@ In other cases, the infection process to another plant requires the participatio
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000361"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
                 <owl:someValuesFrom rdf:resource="&obo;TO_0000748"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -1653,12 +1792,6 @@ In other cases, the infection process to another plant requires the participatio
                 <owl:someValuesFrom rdf:resource="&obo;TO_0002629"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000361"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1666,6 +1799,7 @@ In other cases, the infection process to another plant requires the participatio
                 <owl:someValuesFrom rdf:resource="&PPIO;Tissue_disintegration_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Necrotic spotty circular/irregular decolorations on the affected tissue (leaf) often surrounded by a chlorotic halo. Can also occur in the fruit.</rdfs:comment>
     </owl:Class>
     
 
@@ -1803,6 +1937,18 @@ In other cases, the infection process to another plant requires the participatio
     <owl:Class rdf:about="&PPIO;Wilting">
         <owl:equivalentClass>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;results_in"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000085"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000492"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
                 <owl:someValuesFrom rdf:resource="&obo;TO_0000133"/>
             </owl:Restriction>
@@ -1814,6 +1960,15 @@ In other cases, the infection process to another plant requires the participatio
                 <owl:someValuesFrom rdf:resource="&PPIO;Vascular_system_damage_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Loss of turgency in the cells (loss of water in the cells). Plant organs soften and bend.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#Wind_mediated_dispersion -->
+
+    <owl:Class rdf:about="&PPIO;Wind_mediated_dispersion">
+        <rdfs:subClassOf rdf:resource="&PPIO;Dispersion_mechanism"/>
     </owl:Class>
     
 
