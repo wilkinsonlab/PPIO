@@ -1,0 +1,32 @@
+ABOUT
+=====
+
+It generates incremental alphanumeric URIs for new OWL entities in a given OWL ontology.
+
+Execute SH to use it. Best way is to start with an empty ontology.
+
+
+TODO
+====
+
+- Ignore imports.
+- Ignore no compliant ids.
+- Process URIs with slash before fragment.
+- Configure alpha/number separator.
+- Add more JUnit tests.
+- SADI service.
+- Sync with ontology in order to avoid loading the whole ontology (e.g. Protege 4 plugin).
+
+
+CONTACT
+=======
+
+Please send any request or comment to mikel.egana.aranguren@gmail.com.
+
+
+
+ACKNOWLEDGEMENTS
+================
+
+This work is funded by the Marie Curie Cofund program of the EU, FP7.
+
