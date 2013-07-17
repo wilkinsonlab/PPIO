@@ -1,0 +1,7 @@
+?x:CLASS,
+?y:INDIVIDUAL = create(?x.RENDERING)
+SELECT ?x SubClassOf NCBI_1
+WHERE ?x != Nothing, ?x != Thing
+BEGIN
+ADD ?y Type ?x
+END;
