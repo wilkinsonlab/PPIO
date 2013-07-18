@@ -1,0 +1,6 @@
+
+Te vas al servidor Galaxy http://biordf.org:8090/ y ahi te logeas con el usuario que hiciste el otro dia.
+
+En la columna de la iziquierda, en "Get Data", "Upload file from you computer", subes punning.oppl y PPIO.owl. Deberian aparecer en la columna de la derecha, en tu historial.
+
+Luego en la columna izquierda, en "Ontology Pre Processor Language", "Execute an OPPL file against and ontology" y en la columna del centro pones en los parametros la ontologia y el script OPPL y ejecutas. Te deberia aparecer un archivo nuevo en la columna de la derecha, te lo bajas y deberia ser una ontologia en la que cada taxon (NCBI_1, ....) tiene un individuo como miembro con la misma URI. 
