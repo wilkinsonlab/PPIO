@@ -453,7 +453,21 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <owl:Class rdf:about="&PPIO;Blight">
         <owl:equivalentClass>
             <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                        <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;results_in"/>
+                        <owl:someValuesFrom rdf:resource="&obo;TO_0006060"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&PPIO;modifies"/>
                         <owl:someValuesFrom rdf:resource="&obo;TO_0000085"/>
@@ -462,34 +476,20 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                         <owl:onProperty rdf:resource="&PPIO;results_in"/>
                         <owl:someValuesFrom rdf:resource="&PPIO;Wilting"/>
                     </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                        <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;results_in"/>
-                        <owl:someValuesFrom rdf:resource="&obo;TO_0000652"/>
-                    </owl:Restriction>
-                </owl:unionOf>
+                </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;plant_trait_ontology.obo#part_of"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;Tissue_disintegration_phenotype"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Color_variation_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;Color_variation_phenotype"/>
+                <owl:onProperty rdf:resource="&obo;plant_trait_ontology.obo#part_of"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;Tissue_disintegration_phenotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Water-soaked to yellowish stripes on leaf blades or starting at leaf tips; then later increase in length and width with a wavy margin. Lesions turn yellow to white as the disease advances. Leaves wilt and roll up and become grayish green to yellow.
@@ -512,6 +512,20 @@ It is indispensable for the activation and spread of the bacterial pathogens.
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;contains"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Spot"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                        <owl:someValuesFrom rdf:resource="&obo;TO_0000909"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <owl:Restriction>
@@ -527,20 +541,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&PPIO;contains"/>
                         <owl:someValuesFrom rdf:resource="&PPIO;Necrotic_lesion"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;contains"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Spot"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                        <owl:someValuesFrom rdf:resource="&obo;TO_0000909"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -591,6 +591,12 @@ It is indispensable for the activation and spread of the bacterial pathogens.
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
                 <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -598,12 +604,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
                 <owl:someValuesFrom rdf:resource="&obo;TO_0000316"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
@@ -1457,14 +1457,14 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <owl:Class rdf:about="&PPIO;Necrotic_lesion">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0002686"/>
+                <owl:onProperty rdf:resource="&PPIO;results_in"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000652"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;results_in"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000652"/>
+                <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0002686"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
@@ -1565,17 +1565,6 @@ In other cases, the infection process to another plant requires the participatio
 
     <owl:Class rdf:about="&PPIO;Plant_pathogen">
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;Organism"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;pathogen_of"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;Plant"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;causes"/>
                 <owl:someValuesFrom>
@@ -1590,6 +1579,17 @@ In other cases, the infection process to another plant requires the participatio
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;Organism"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;pathogen_of"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;Plant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
     </owl:Class>
     
@@ -1966,21 +1966,23 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
 
     <owl:Class rdf:about="&PPIO;Wilting">
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;results_in"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000085"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;modifies"/>
+                        <owl:someValuesFrom rdf:resource="&obo;TO_0000492"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;results_in"/>
+                        <owl:someValuesFrom rdf:resource="&obo;TO_0000085"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;modifies"/>
                 <owl:someValuesFrom rdf:resource="&obo;TO_0000133"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;modifies"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000492"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;Phenotypic_process"/>
@@ -2023,53 +2025,11 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
-    <!-- http://purl.oclc.org/PPIO#Chlorotic_halo -->
-
-    <owl:NamedIndividual rdf:about="&PPIO;Chlorotic_halo"/>
-    
-
-
     <!-- http://purl.oclc.org/PPIO#Clavibacter_michiganense_subsp.michiganense -->
 
     <owl:NamedIndividual rdf:about="&PPIO;Clavibacter_michiganense_subsp.michiganense">
         <rdf:type rdf:resource="&PPIO;NCBI_443906"/>
         <rdf:type rdf:resource="&PPIO;Plant_pathogen"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.oclc.org/PPIO#DCATCH -->
-
-    <owl:NamedIndividual rdf:about="&PPIO;DCATCH">
-        <manifests_in_species rdf:resource="&PPIO;Arabidopsis_thaliana"/>
-        <has_symptom rdf:resource="&PPIO;Chlorotic_halo"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.oclc.org/PPIO#DCATNC -->
-
-    <owl:NamedIndividual rdf:about="&PPIO;DCATNC">
-        <manifests_in_species rdf:resource="&PPIO;Arabidopsis_thaliana"/>
-        <has_symptom rdf:resource="&PPIO;Necrotic_lessions"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.oclc.org/PPIO#DCSLCH -->
-
-    <owl:NamedIndividual rdf:about="&PPIO;DCSLCH">
-        <has_symptom rdf:resource="&PPIO;Chlorotic_halo"/>
-        <manifests_in_species rdf:resource="&PPIO;Solanum_lycopersicum"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.oclc.org/PPIO#DCSLNC -->
-
-    <owl:NamedIndividual rdf:about="&PPIO;DCSLNC">
-        <has_symptom rdf:resource="&PPIO;Necrotic_lessions"/>
-        <manifests_in_species rdf:resource="&PPIO;Solanum_lycopersicum"/>
     </owl:NamedIndividual>
     
 
@@ -2197,44 +2157,11 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
-    <!-- http://purl.oclc.org/PPIO#Necrotic_lessions -->
-
-    <owl:NamedIndividual rdf:about="&PPIO;Necrotic_lessions"/>
-    
-
-
     <!-- http://purl.oclc.org/PPIO#Nicotiana_benthamiana -->
 
     <owl:NamedIndividual rdf:about="&PPIO;Nicotiana_benthamiana">
         <rdf:type rdf:resource="&PPIO;NCBI_4100"/>
         <rdf:type rdf:resource="&PPIO;Plant"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.oclc.org/PPIO#PHPVCH -->
-
-    <owl:NamedIndividual rdf:about="&PPIO;PHPVCH">
-        <has_symptom rdf:resource="&PPIO;Chlorotic_halo"/>
-        <manifests_in_species rdf:resource="&PPIO;Phaseolus_vulgaris"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.oclc.org/PPIO#PHPVNC -->
-
-    <owl:NamedIndividual rdf:about="&PPIO;PHPVNC">
-        <has_symptom rdf:resource="&PPIO;Necrotic_lessions"/>
-        <manifests_in_species rdf:resource="&PPIO;Phaseolus_vulgaris"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.oclc.org/PPIO#PHPVWS -->
-
-    <owl:NamedIndividual rdf:about="&PPIO;PHPVWS">
-        <manifests_in_species rdf:resource="&PPIO;Phaseolus_vulgaris"/>
-        <has_symptom rdf:resource="&PPIO;Water_soaked_lesions"/>
     </owl:NamedIndividual>
     
 
@@ -2266,9 +2193,6 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;Pseudomonas_syringae_pv.phaseolicola">
         <rdf:type rdf:resource="&PPIO;NCBI_319"/>
         <rdf:type rdf:resource="&PPIO;Plant_pathogen"/>
-        <causes rdf:resource="&PPIO;PHPVCH"/>
-        <causes rdf:resource="&PPIO;PHPVNC"/>
-        <causes rdf:resource="&PPIO;PHPVWS"/>
     </owl:NamedIndividual>
     
 
@@ -2278,10 +2202,6 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;Pseudomonas_syringae_pv.tomato_DC3000">
         <rdf:type rdf:resource="&PPIO;NCBI_223283"/>
         <rdf:type rdf:resource="&PPIO;Plant_pathogen"/>
-        <causes rdf:resource="&PPIO;DCATCH"/>
-        <causes rdf:resource="&PPIO;DCATNC"/>
-        <causes rdf:resource="&PPIO;DCSLCH"/>
-        <causes rdf:resource="&PPIO;DCSLNC"/>
     </owl:NamedIndividual>
     
 
@@ -2320,40 +2240,11 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
-    <!-- http://purl.oclc.org/PPIO#Water_soaked_lesions -->
-
-    <owl:NamedIndividual rdf:about="&PPIO;Water_soaked_lesions">
-        <rdfs:comment>Leaf symptoms first appear as small, water-soaked lesions on the lower leaf surface. These lesions become necrotic rapidly. A chlorotic halo develops around the necrotic spots. In cases of severe infection, a generalized systemic chlorosis can occur.  </rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.oclc.org/PPIO#Zea_mays -->
 
     <owl:NamedIndividual rdf:about="&PPIO;Zea_mays">
         <rdf:type rdf:resource="&PPIO;Plant"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.oclc.org/PPIO#entry_through_hydatodes -->
-
-    <owl:NamedIndividual rdf:about="&PPIO;entry_through_hydatodes"/>
-    
-
-
-    <!-- http://purl.oclc.org/PPIO#entry_through_leaf_stomata -->
-
-    <owl:NamedIndividual rdf:about="&PPIO;entry_through_leaf_stomata">
-        <trait_of rdf:resource="&PPIO;Pseudomonas_syringae_pv.phaseolicola"/>
-        <trait_of rdf:resource="&PPIO;Pseudomonas_syringae_pv.tomato_DC3000"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.oclc.org/PPIO#entry_through_specialized_structures -->
-
-    <owl:NamedIndividual rdf:about="&PPIO;entry_through_specialized_structures"/>
     
 
 
