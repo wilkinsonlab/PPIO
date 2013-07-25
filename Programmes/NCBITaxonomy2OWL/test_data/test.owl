@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#"
+     xml:base="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_131567 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_131567">
+        <rdfs:label xml:lang="en">cellular organisms</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1573 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1573">
+        <rdfs:label xml:lang="en">Clavibacter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1760 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_1760">
+        <rdfs:label xml:lang="en">Actinobacteria (class)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_201174"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2">
+        <rdfs:label xml:lang="en">Bacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_131567"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_201174 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_201174">
+        <rdfs:label xml:lang="en">Actinobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2037 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2037">
+        <rdfs:label xml:lang="en">Actinomycetales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_28447 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_28447">
+        <rdfs:label xml:lang="en">Clavibacter michiganensis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1573"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33013 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_33013">
+        <rdfs:label xml:lang="en">Clavibacter michiganensis subsp. michiganensis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28447"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_443906 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_443906">
+        <rdfs:label xml:lang="en">AddedByNCBI2OWL</rdfs:label>
+        <rdfs:label xml:lang="en">Clavibacter michiganensis subsp. michiganensis NCPPB 382</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_33013"/>
+        <rdfs:comment xml:lang="en">AddedByNCBI2OWL</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_85003 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_85003">
+        <rdfs:label xml:lang="en">Actinobacteridae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1760"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_85006 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_85006">
+        <rdfs:label xml:lang="en">Micrococcineae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_2037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_85023 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_85023">
+        <rdfs:label xml:lang="en">Microbacteriaceae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_85006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#pathogen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#pathogen"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Actinobacteria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Actinobacteria">
+        <rdf:type rdf:resource="&obo;NCBITaxon_201174"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Actinobacteria_class_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Actinobacteria_class_">
+        <rdf:type rdf:resource="&obo;NCBITaxon_1760"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Actinobacteridae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Actinobacteridae">
+        <rdf:type rdf:resource="&obo;NCBITaxon_85003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Actinomycetales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Actinomycetales">
+        <rdf:type rdf:resource="&obo;NCBITaxon_2037"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Bacteria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Bacteria">
+        <rdf:type rdf:resource="&obo;NCBITaxon_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Clavibacter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Clavibacter">
+        <rdf:type rdf:resource="&obo;NCBITaxon_1573"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Clavibacter_michiganensis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Clavibacter_michiganensis">
+        <rdf:type rdf:resource="&obo;NCBITaxon_28447"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Clavibacter_michiganensis_subsp_michiganensis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Clavibacter_michiganensis_subsp_michiganensis">
+        <rdf:type rdf:resource="&obo;NCBITaxon_33013"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Clavibacter_michiganensis_subsp_michiganensis_NCPPB_382 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Clavibacter_michiganensis_subsp_michiganensis_NCPPB_382">
+        <rdf:type rdf:resource="&obo;NCBITaxon_443906"/>
+        <rdfs:comment xml:lang="en">AddedByNCBI2OWL</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Microbacteriaceae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Microbacteriaceae">
+        <rdf:type rdf:resource="&obo;NCBITaxon_85023"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Micrococcineae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#Micrococcineae">
+        <rdf:type rdf:resource="&obo;NCBITaxon_85006"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#NCBITaxon_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#NCBITaxon_1">
+        <rdf:type rdf:resource="&obo;NCBITaxon_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#cellular_organisms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mikel/ontologies/2013/6/untitled-ontology-235#cellular_organisms">
+        <rdf:type rdf:resource="&obo;NCBITaxon_131567"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
