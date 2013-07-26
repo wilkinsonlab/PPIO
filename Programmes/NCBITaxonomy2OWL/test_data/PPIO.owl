@@ -1,0 +1,1334 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.oclc.org/PPIO#"
+     xml:base="http://purl.oclc.org/PPIO"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:PPIO="http://purl.oclc.org/PPIO#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.oclc.org/PPIO"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000082 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000082">
+        <rdfs:label>caused_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000083 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000083">
+        <rdfs:label>causes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000084 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000084">
+        <rdfs:label>contains</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000085 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000085">
+        <rdfs:label>expresses_phenotype</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000086 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000086">
+        <rdfs:label>has_potential_to_infect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000087">
+        <rdfs:label>has_symptom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000088 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000088">
+        <rdfs:label>is_modified_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000089 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000089">
+        <rdfs:label>manifests_in_species</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000090 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000090">
+        <rdfs:label>modifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000091 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000091">
+        <rdfs:label>part_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000092 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000092">
+        <rdfs:label>pathogen_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000093 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000093">
+        <rdfs:label>results_in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000094 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000094">
+        <rdfs:label>susceptible_to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000095 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000095">
+        <rdfs:label>trait_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000096 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000096">
+        <rdfs:label>value_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_122277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_122277">
+        <rdfs:label xml:lang="en">Pectobacterium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_543"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1224">
+        <rdfs:label xml:lang="en">Proteobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1236">
+        <rdfs:label xml:lang="en">Gammaproteobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1224"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_131567 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_131567">
+        <rdfs:label xml:lang="en">cellular organisms</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2">
+        <rdfs:label xml:lang="en">Bacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_204037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_204037">
+        <rdfs:label xml:lang="en">Dickeya</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_543"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_204038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_204038">
+        <rdfs:label xml:lang="en">Dickeya dadantii</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_204037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_204039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_204039">
+        <rdfs:label xml:lang="en">Dickeya dianthicola</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_204037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_204040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_204040">
+        <rdfs:label xml:lang="en">Dickeya dieffenbachiae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_204037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_204042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_204042">
+        <rdfs:label xml:lang="en">Dickeya zeae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_204037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_206499 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_206499">
+        <rdfs:label xml:lang="en">Erwinia papayae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_551"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_29471 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_29471">
+        <rdfs:label xml:lang="en">Pectobacterium atrosepticum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_122277"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_543 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_543">
+        <rdfs:label xml:lang="en">Enterobacteriaceae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_91347"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_551 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_551">
+        <rdfs:label xml:lang="en">Erwinia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_543"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_552 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_552">
+        <rdfs:label xml:lang="en">Erwinia amylovora</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_551"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_55211 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_55211">
+        <rdfs:label xml:lang="en">Erwinia persicina</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_551"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_554">
+        <rdfs:label xml:lang="en">Pectobacterium carotovorum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_122277"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_555">
+        <rdfs:label xml:lang="en">Pectobacterium carotovorum subsp. carotovorum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_554"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_65700 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_65700">
+        <rdfs:label xml:lang="en">Erwinia tracheiphila</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_551"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_69222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_69222">
+        <rdfs:label xml:lang="en">Erwinia mallotivora</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_551"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_69223 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_69223">
+        <rdfs:label xml:lang="en">Dickeya paradisiaca</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_204037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_69224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_69224">
+        <rdfs:label xml:lang="en">Erwinia psidii</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_551"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_79967 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_79967">
+        <rdfs:label xml:lang="en">Erwinia pyrifoliae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_551"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_91347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_91347">
+        <rdfs:label xml:lang="en">Enterobacteriales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1236"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000001">
+        <rdfs:label>Environmental_parameter</rdfs:label>
+        <rdfs:comment>The environment is one of the three components that form the Disease triangle: the existence of a disease caused by a biotic agent requires the interaction of a susceptible host plant, a virulent pathogen, and an environment favorable for disease development. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000002">
+        <rdfs:label>Moisture_parameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000001"/>
+        <rdfs:comment>Moisture is one of the most important environmental parameters in plant pathology. It can exist as rain or irrigation water in the plant surface, as relative humidity or as dew.
+It is indispensable for the activation and spread of the bacterial pathogens.
+
+(Extracted from &#39;Plant Pathology&#39;. George N.Agrios. Fifth edition)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000003">
+        <rdfs:label>Dew</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000004">
+        <rdfs:label>Humidity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000005">
+        <rdfs:label>Rainfall</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000006">
+        <rdfs:label>Nutrient_availability_parameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000001"/>
+        <rdfs:comment>The presence of certain nutrients in the soil can enhance the susceptibility of the host to the attack of certain pathogens. On the other hand, it can also benefit the plant by increasing the defense mechanisms against the pathogenic bacteria. The balance bewteen this two responses depends on the plant itself, the bacteria and the availability/type of the nutrient.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000007">
+        <rdfs:label>Macronutrient_availability_parameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000008">
+        <rdfs:label>Calcium_availability</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000009">
+        <rdfs:label>Nitrogen_availability</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000010">
+        <rdfs:label>Phosphorus_availability</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000011">
+        <rdfs:label>Micronutrient_availability_parameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000012">
+        <rdfs:label>Copper_availability</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000013">
+        <rdfs:label>Manganese_availability</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000014">
+        <rdfs:label>Soil_trait</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000015">
+        <rdfs:label>Soil_pH_type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000014"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000016">
+        <rdfs:label>Soil_temperature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000014"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000017">
+        <rdfs:label>Temperature_range</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000018">
+        <rdfs:label>High_temperature_range</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000017"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000019">
+        <rdfs:label>Low_temperature_range</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000017"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000020">
+        <rdfs:label>Temperate_temperature_range</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000017"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000021">
+        <rdfs:label>Organism</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000094"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000001"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000022 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000022">
+        <rdfs:label>Plant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000021"/>
+        <owl:disjointWith rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000023">
+        <rdfs:label>Host_plant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.oclc.org/PPIO#PPIO_0000022"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000094"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000025"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.oclc.org/PPIO#PPIO_0000022"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000085"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000064"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000024">
+        <rdfs:label>Resistant_plant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.oclc.org/PPIO#PPIO_0000022"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000094"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000025"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.oclc.org/PPIO#PPIO_0000022"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000085"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000051"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000022"/>
+        <rdfs:comment>A resistant plant develops a resistant response and the pathogen does not succeed during the infection.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000025">
+        <rdfs:label>Plant_pathogen</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000083"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.oclc.org/PPIO#PPIO_0000064"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000089"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000023"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.oclc.org/PPIO#PPIO_0000021"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000092"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000022"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000021"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000026">
+        <rdfs:label>Pathogen_physiology_trait</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000095"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000025"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>These biological traits refer to different aspects of the plant pathogenic bacteria, mainly related with physiological traits of the infection process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000027">
+        <rdfs:label>Ecological_feature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000088"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The term ecology refers to the lifestyle of the plant pathogenic bacteria in the close environment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000028">
+        <rdfs:label>Dispersion_mechanism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000027"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000029">
+        <rdfs:label>Water_mediated_dispersion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000028"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000030">
+        <rdfs:label>Wind_mediated_dispersion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000028"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000031">
+        <rdfs:label>Growth_type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000027"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000032">
+        <rdfs:label>Plant_related_growth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000033">
+        <rdfs:label>Soil_related_growth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000034">
+        <rdfs:label>Survival_mechanism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000027"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000035">
+        <rdfs:label>Organism_mediated_survival_strategy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000036 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000036">
+        <rdfs:label>Survival_in_perennial_host</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000035"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000037 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000037">
+        <rdfs:label>Survival_in_vectors_strategy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000035"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000038">
+        <rdfs:label>Survival_in_insects</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000039 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000039">
+        <rdfs:label>Soil_mediated_survival_strategy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000040">
+        <rdfs:label>Survival_in_seeds</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000041 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000041">
+        <rdfs:label>Survival_in_soil_surface_strategy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000042 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000042">
+        <rdfs:label>Survival_in_plant_debris</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000041"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000043 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000043">
+        <rdfs:label>Water_mediated_mechanism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000044 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000044">
+        <rdfs:label>Entry_in_the_host_procedure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000026"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000045 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000045">
+        <rdfs:label>Entry_through_natural_openings_procedure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000044"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000046 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000046">
+        <rdfs:label>Entry_through_hydatodes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000045"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000047">
+        <rdfs:label>Entry_through_lenticels</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000045"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000048 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000048">
+        <rdfs:label>Entry_thorugh_stomata</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000045"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000049 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000049">
+        <rdfs:label>Entry_through_wounds</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000044"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000050 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000050">
+        <rdfs:label>Phenotype</rdfs:label>
+        <rdfs:comment>This class is refered to the value of the trait that corresponds. The phenotypic response is the outcome of the resistance response developed by the plant, but also can represent the susceptibility of the host to the attack of the bacteria. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000051">
+        <rdfs:label>Resistance_phenotype</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000095"/>
+                <owl:allValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000024"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000050"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000052 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000052">
+        <rdfs:label>Resistance_response_phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000053 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000053">
+        <rdfs:label>Cell_wall_reinforcement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000054 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000054">
+        <rdfs:label>Hypersensitive_response</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000052"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000082"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The hypersensitive response (HR) is a resistance mechanism characterized by the cell death of the affected tissue in order to avoid the expansion of the pathogen to the surrounding cells.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000055">
+        <rdfs:label>Production_of_antimicrobial_compounds</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000056 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000056">
+        <rdfs:label>Production_of_antimicrobial_chemicals</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000055"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000057 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000057">
+        <rdfs:label>Production_of_phytoalexins</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000056"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000058 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000058">
+        <rdfs:label>Camalexin_production</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000057"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000059 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000059">
+        <rdfs:label>Genistein_production</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000057"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000060 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000060">
+        <rdfs:label>Reactive_Oxygen_Species_production</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000056"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000061 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000061">
+        <rdfs:label>Production_of_antimicrobial_proteins</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000055"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000062 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000062">
+        <rdfs:label>Defensins_production</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000061"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000063 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000063">
+        <rdfs:label>Thionins_production</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000061"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000064 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000064">
+        <rdfs:label>Susceptibility_phenotype</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000095"/>
+                <owl:allValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000023"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000050"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000065 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000065">
+        <rdfs:label>Abnormal_growth_development_phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000064"/>
+        <rdfs:comment>Alterations of the growth regulatory substances of the plant.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000066 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000066">
+        <rdfs:label>Color_variation_phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000064"/>
+        <rdfs:comment>Alterations present in the choloroplasts or related organells.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000067 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000067">
+        <rdfs:label>Tissue_disintegration_phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000064"/>
+        <rdfs:comment>Manifestation of the enzimatic/toxic action produced by the bacteria on the host cell.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000068 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000068">
+        <rdfs:label>Vascular_system_damage_phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000064"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000069 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000069">
+        <rdfs:label>Phenotypic_process</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000091"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The alterations at the cellular level the pathogen exerts in the host plant is reflected in symptoms that can be phenotypicallly observed in the affected plant.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000070 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000070">
+        <rdfs:label>Blight</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000069"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000091"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000091"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Water-soaked to yellowish stripes on leaf blades or starting at leaf tips; then later increase in length and width with a wavy margin. Lesions turn yellow to white as the disease advances. Leaves wilt and roll up and become grayish green to yellow.
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000071 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000071">
+        <rdfs:label>Canker</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000069"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000091"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000091"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Deep necrotic lesion produced in stem or branches. As the disease progresses, small spots appear in the young fruits. Bacterial cankers are often sunken and soft, as in the fungal cankers, but they may also appear as splits in the stem, as necrotic areas within the woody cylinder, or as scabby excrescences on the surface of the tissue.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000072 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000072">
+        <rdfs:label>Chlorotic_lesion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000069"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000091"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Chlorophyll content diminishes/lack of chlorophyll.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000073 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000073">
+        <rdfs:label>Chlorotic_halo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000072"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000074 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000074">
+        <rdfs:label>Gall</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000069"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000091"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000075 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000075">
+        <rdfs:label>Necrotic_lesion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000069"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000091"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Pathogenic cell death of the affected tissue/organ.
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000076 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000076">
+        <rdfs:label>Rotting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000069"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000091"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The disease starts on leaves, stems, and underground parts as small, water soaked, translucent spots. These rapidly enlarge in both 
+diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, gray, brown, or black frequently gives off a characteristically putrid odor.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000077 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000077">
+        <rdfs:label>Scab</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000069"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000091"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000078 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000078">
+        <rdfs:label>Spot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000069"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000091"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Necrotic spotty circular/irregular decolorations on the affected tissue (leaf) often surrounded by a chlorotic halo. Can also occur in the fruit.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000079 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000079">
+        <rdfs:label>Wilting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000069"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000091"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Loss of turgency in the cells (loss of water in the cells). Plant organs soften and bend.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000080 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000080">
+        <rdfs:label>Soil_type_parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000081 -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/PPIO#PPIO_0000081">
+        <rdfs:label>Trait</rdfs:label>
+        <rdfs:comment>Retrieved from Plant Trait Ontology or newly created terms, referred only to plants.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1806) http://owlapi.sourceforge.net -->
+
