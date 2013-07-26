@@ -130,6 +130,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.oclc.org/PPIO#PPIO_0000094">
         <rdfs:label>susceptible_to</rdfs:label>
+        <owl:inverseOf rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000092"/>
     </owl:ObjectProperty>
     
 
@@ -379,8 +380,8 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.oclc.org/PPIO#PPIO_0000022"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000085"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000064"/>
+                        <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000094"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000025"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -390,8 +391,8 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.oclc.org/PPIO#PPIO_0000022"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000094"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000025"/>
+                        <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000085"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000064"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -941,13 +942,13 @@ It is indispensable for the activation and spread of the bacterial pathogens.
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000091"/>
-                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000068"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000067"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000091"/>
-                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000067"/>
+                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/PPIO#PPIO_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Deep necrotic lesion produced in stem or branches. As the disease progresses, small spots appear in the young fruits. Bacterial cankers are often sunken and soft, as in the fungal cankers, but they may also appear as splits in the stem, as necrotic areas within the woody cylinder, or as scabby excrescences on the surface of the tissue.</rdfs:comment>
