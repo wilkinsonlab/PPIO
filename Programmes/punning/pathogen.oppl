@@ -1,0 +1,5 @@
+?x:INDIVIDUAL, 
+?y: CONSTANT = MATCH(".*AddedByNCBI2OWL.*") 
+SELECT ?x.IRI comment ?y 
+BEGIN ADD ?x types PPIO_0000025
+END;

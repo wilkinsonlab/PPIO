@@ -1,0 +1,40 @@
+<tool id="NCBITaxonomy2OWL" name="Add taxa to an OWL ontology" version="0.0.1">
+	<description>It adds NCBI taxa to an already existing OWL ontology, including the taxonomic hierarchy. The URIs can be resolved against ontobee</description>
+
+	<command>
+	  java -Xmx3000M -Xms250M -DentityExpansionLimit=1000000000 -jar ${__tool_data_path__}/shared/jars/NCBITaxonomy2OWL.jar $input_ids $api_key $input_ont > $output 
+	</command>
+		
+	<inputs>
+		<param name="input_ids" type="data" label="ids file"/>
+		<param name="api_key" type="text" size="100" label="NCBO BioPortal API key" value="dee28610-9c47-49e5-9c3e-6e0992e1789c"/>
+		<param name="input_ont" type="data" label="OWL ontology"/>
+	</inputs>
+	<outputs>
+		<data format="text" name="output" />
+	</outputs>
+
+	<help>
+
+
+**Usage**
+
+  Upload a file with the NCBI ids, an id on each line eg:
+
+  ::
+
+     552 
+     79967 
+     65700
+
+
+**Contact**
+
+  Please send any request or comment to mikel.egana.aranguren@gmail.com.
+
+
+  
+
+	</help>
+
+</tool>
