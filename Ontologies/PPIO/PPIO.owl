@@ -172,6 +172,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_122277 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_122277">
+        <rdfs:label xml:lang="en">Pectobacterium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_543"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1224 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_1224">
@@ -190,11 +199,110 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_129138 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_129138">
+        <rdfs:label xml:lang="en">Pseudomonas syringae pv. morsprunorum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_47877"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_12916 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_12916">
+        <rdfs:label xml:lang="en">Acidovorax</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_80864"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_131567 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_131567">
         <rdfs:label xml:lang="en">cellular organisms</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_135621 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_135621">
+        <rdfs:label xml:lang="en">Pseudomonadaceae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_72274"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_136841 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_136841">
+        <rdfs:label xml:lang="en">Pseudomonas aeruginosa group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_286"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_136843 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_136843">
+        <rdfs:label xml:lang="en">Pseudomonas fluorescens group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_286"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_136849 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_136849">
+        <rdfs:label xml:lang="en">Pseudomonas syringae group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_286"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_13687 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_13687">
+        <rdfs:label xml:lang="en">Sphingomonas</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_41297"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_152682 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_152682">
+        <rdfs:label xml:lang="en">Sphingomonas melonis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_13687"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_187868 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_187868">
+        <rdfs:label xml:lang="en">Acidovorax valerianellae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_12916"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_192088 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_192088">
+        <rdfs:label xml:lang="en">Pseudomonas syringae pv. delphinii</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_251701"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_199199 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_199199">
+        <rdfs:label xml:lang="en">Pseudomonas syringae pv. dysoxyli</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_317"/>
     </owl:Class>
     
 
@@ -208,11 +316,344 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_204037 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_204037">
+        <rdfs:label xml:lang="en">Dickeya</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_543"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_204038 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_204038">
+        <rdfs:label xml:lang="en">Dickeya dadantii</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_204037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_204039 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_204039">
+        <rdfs:label xml:lang="en">Dickeya dianthicola</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_204037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_204040 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_204040">
+        <rdfs:label xml:lang="en">Dickeya dieffenbachiae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_204037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_204042 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_204042">
+        <rdfs:label xml:lang="en">Dickeya zeae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_204037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_204457 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_204457">
+        <rdfs:label xml:lang="en">Sphingomonadales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28211"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_206499 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_206499">
+        <rdfs:label xml:lang="en">Erwinia papayae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_551"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_251653 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_251653">
+        <rdfs:label xml:lang="en">Pseudomonas syringae pv. garcae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_53409"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_251695 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_251695">
+        <rdfs:label xml:lang="en">Pseudomonas syringae group genomosp. 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_136849"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_251698 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_251698">
+        <rdfs:label xml:lang="en">Pseudomonas syringae group genomosp. 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_136849"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_251701 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_251701">
+        <rdfs:label xml:lang="en">Pseudomonas syringae group genomosp. 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_136849"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_251705 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_251705">
+        <rdfs:label xml:lang="en">Pseudomonas syringae pv. passiflorae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_251701"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_251707 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_251707">
+        <rdfs:label xml:lang="en">Pseudomonas syringae pv. primulae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_251701"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_251721 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_251721">
+        <rdfs:label xml:lang="en">Pseudomonas syringae pv. mellea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_47877"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_281458 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_281458">
+        <rdfs:label xml:lang="en">Pseudomonas marginalis pv. pastinacae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_298"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_28151 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_28151">
+        <rdfs:label xml:lang="en">Serratia proteamaculans</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_613"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_28211 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_28211">
+        <rdfs:label xml:lang="en">Alphaproteobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1224"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_28216 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_28216">
+        <rdfs:label xml:lang="en">Betaproteobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1224"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_286 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_286">
+        <rdfs:label xml:lang="en">Pseudomonas</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_135621"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_287 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_287">
+        <rdfs:label xml:lang="en">Pseudomonas aeruginosa</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_136841"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_29438 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_29438">
+        <rdfs:label xml:lang="en">Pseudomonas savastanoi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_251698"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_29471 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_29471">
+        <rdfs:label xml:lang="en">Pectobacterium atrosepticum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_122277"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_298 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_298">
+        <rdfs:label xml:lang="en">Pseudomonas marginalis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_136843"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_317 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_317">
+        <rdfs:label xml:lang="en">Pseudomonas syringae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_251695"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_318 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_318">
+        <rdfs:label xml:lang="en">Pseudomonas syringae pv. glycinea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_29438"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_32040 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_32040">
+        <rdfs:label xml:lang="en">Acidovorax konjaci</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_12916"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_321 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_321">
+        <rdfs:label xml:lang="en">Pseudomonas syringae pv. syringae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_317"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_322 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_322">
+        <rdfs:label xml:lang="en">Pseudomonas syringae pv. tabaci</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_47877"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33069 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_33069">
+        <rdfs:label xml:lang="en">Pseudomonas viridiflava</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_136849"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_360920 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_360920">
+        <rdfs:label xml:lang="en">Pseudomonas savastanoi pv. savastanoi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_29438"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_36746 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_36746">
+        <rdfs:label xml:lang="en">Pseudomonas cichorii</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_136849"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_41297 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_41297">
+        <rdfs:label xml:lang="en">Sphingomonadaceae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_204457"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_47877 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_47877">
+        <rdfs:label xml:lang="en">Pseudomonas amygdali</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_251698"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_53335 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_53335">
+        <rdfs:label xml:lang="en">Pantoea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_543"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_53409 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_53409">
+        <rdfs:label xml:lang="en">Pseudomonas coronafaciens</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_136849"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_53707 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_53707">
+        <rdfs:label xml:lang="en">Pseudomonas syringae pv. lachrymans</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_47877"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_543 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_543">
         <rdfs:label xml:lang="en">Enterobacteriaceae</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_91347"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_549 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_549">
+        <rdfs:label xml:lang="en">Pantoea agglomerans</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_53335"/>
     </owl:Class>
     
 
@@ -235,6 +676,78 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_55209 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_55209">
+        <rdfs:label xml:lang="en">Pectobacterium cypripedii</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_122277"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_55211 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_55211">
+        <rdfs:label xml:lang="en">Erwinia persicina</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_551"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_55212 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_55212">
+        <rdfs:label xml:lang="en">Erwinia rhapontici</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_551"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_553 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_553">
+        <rdfs:label xml:lang="en">Pantoea ananatis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_53335"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_554 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_554">
+        <rdfs:label xml:lang="en">Pectobacterium carotovorum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_122277"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_555 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_555">
+        <rdfs:label xml:lang="en">Pectobacterium carotovorum subsp. carotovorum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_554"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_59510 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_59510">
+        <rdfs:label xml:lang="en">Pseudomonas syringae pv. pisi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_317"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_59511 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_59511">
+        <rdfs:label xml:lang="en">Pseudomonas syringae pv. maculicola</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_251701"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_613 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_613">
@@ -253,11 +766,83 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_65700 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_65700">
+        <rdfs:label xml:lang="en">Erwinia tracheiphila</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_551"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_66269 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_66269">
+        <rdfs:label xml:lang="en">Pantoea stewartii</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_53335"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_66271 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_66271">
+        <rdfs:label xml:lang="en">Pantoea stewartii subsp. stewartii</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_66269"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_69222 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_69222">
         <rdfs:label xml:lang="en">Erwinia mallotivora</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_551"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_69223 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_69223">
+        <rdfs:label xml:lang="en">Dickeya paradisiaca</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_204037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_69224 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_69224">
+        <rdfs:label xml:lang="en">Erwinia psidii</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_551"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_72274 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_72274">
+        <rdfs:label xml:lang="en">Pseudomonadales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1236"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_78229 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_78229">
+        <rdfs:label xml:lang="en">Acidovorax anthurii</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_12916"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_78398 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_78398">
+        <rdfs:label xml:lang="en">Pectobacterium carotovorum subsp. odoriferum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_554"/>
     </owl:Class>
     
 
@@ -271,11 +856,92 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_80840 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_80840">
+        <rdfs:label xml:lang="en">Burkholderiales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28216"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_80864 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_80864">
+        <rdfs:label xml:lang="en">Comamonadaceae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_80840"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_80867 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_80867">
+        <rdfs:label xml:lang="en">Acidovorax avenae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_12916"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_80868 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_80868">
+        <rdfs:label xml:lang="en">Acidovorax cattleyae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_12916"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_80869 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_80869">
+        <rdfs:label xml:lang="en">Acidovorax citrulli</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_12916"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_80870 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_80870">
+        <rdfs:label xml:lang="en">Acidovorax avenae subsp. avenae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_80867"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_83167 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_83167">
+        <rdfs:label xml:lang="en">Pseudomonas syringae pv. aptata</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_317"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_83964 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_83964">
+        <rdfs:label xml:lang="en">Pseudomonas syringae pv. porri</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_53409"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_91347 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_91347">
         <rdfs:label xml:lang="en">Enterobacteriales</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1236"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_97473 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_97473">
+        <rdfs:label xml:lang="en">Pseudomonas marginalis pv. marginalis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_298"/>
     </owl:Class>
     
 
@@ -498,8 +1164,8 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000085"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000064"/>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000094"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000025"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -509,8 +1175,8 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000094"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000025"/>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000085"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000064"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1231,6 +1897,14 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_122277 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_122277">
+        <rdf:type rdf:resource="&obo;NCBITaxon_122277"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_1224 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_1224">
@@ -1247,10 +1921,103 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_129138 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_129138">
+        <rdf:type rdf:resource="&obo;NCBITaxon_129138"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_12916 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_12916">
+        <rdf:type rdf:resource="&obo;NCBITaxon_12916"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_131567 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_131567">
         <rdf:type rdf:resource="&obo;NCBITaxon_131567"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_135621 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_135621">
+        <rdf:type rdf:resource="&obo;NCBITaxon_135621"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_136841 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_136841">
+        <rdf:type rdf:resource="&obo;NCBITaxon_136841"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_136843 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_136843">
+        <rdf:type rdf:resource="&obo;NCBITaxon_136843"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_136849 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_136849">
+        <rdf:type rdf:resource="&obo;NCBITaxon_136849"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_13687 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_13687">
+        <rdf:type rdf:resource="&obo;NCBITaxon_13687"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_152682 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_152682">
+        <rdf:type rdf:resource="&obo;NCBITaxon_152682"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_187868 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_187868">
+        <rdf:type rdf:resource="&obo;NCBITaxon_187868"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_192088 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_192088">
+        <rdf:type rdf:resource="&obo;NCBITaxon_192088"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_199199 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_199199">
+        <rdf:type rdf:resource="&obo;NCBITaxon_199199"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
     </owl:NamedIndividual>
     
 
@@ -1263,10 +2030,329 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_204037 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_204037">
+        <rdf:type rdf:resource="&obo;NCBITaxon_204037"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_204038 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_204038">
+        <rdf:type rdf:resource="&obo;NCBITaxon_204038"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_204039 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_204039">
+        <rdf:type rdf:resource="&obo;NCBITaxon_204039"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_204040 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_204040">
+        <rdf:type rdf:resource="&obo;NCBITaxon_204040"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_204042 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_204042">
+        <rdf:type rdf:resource="&obo;NCBITaxon_204042"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_204457 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_204457">
+        <rdf:type rdf:resource="&obo;NCBITaxon_204457"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_206499 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_206499">
+        <rdf:type rdf:resource="&obo;NCBITaxon_206499"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_251653 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_251653">
+        <rdf:type rdf:resource="&obo;NCBITaxon_251653"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_251695 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_251695">
+        <rdf:type rdf:resource="&obo;NCBITaxon_251695"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_251698 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_251698">
+        <rdf:type rdf:resource="&obo;NCBITaxon_251698"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_251701 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_251701">
+        <rdf:type rdf:resource="&obo;NCBITaxon_251701"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_251705 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_251705">
+        <rdf:type rdf:resource="&obo;NCBITaxon_251705"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_251707 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_251707">
+        <rdf:type rdf:resource="&obo;NCBITaxon_251707"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_251721 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_251721">
+        <rdf:type rdf:resource="&obo;NCBITaxon_251721"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_281458 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_281458">
+        <rdf:type rdf:resource="&obo;NCBITaxon_281458"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_28151 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_28151">
+        <rdf:type rdf:resource="&obo;NCBITaxon_28151"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_28211 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_28211">
+        <rdf:type rdf:resource="&obo;NCBITaxon_28211"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_28216 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_28216">
+        <rdf:type rdf:resource="&obo;NCBITaxon_28216"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_286 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_286">
+        <rdf:type rdf:resource="&obo;NCBITaxon_286"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_287 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_287">
+        <rdf:type rdf:resource="&obo;NCBITaxon_287"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_29438 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_29438">
+        <rdf:type rdf:resource="&obo;NCBITaxon_29438"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_29471 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_29471">
+        <rdf:type rdf:resource="&obo;NCBITaxon_29471"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_298 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_298">
+        <rdf:type rdf:resource="&obo;NCBITaxon_298"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_317 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_317">
+        <rdf:type rdf:resource="&obo;NCBITaxon_317"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_318 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_318">
+        <rdf:type rdf:resource="&obo;NCBITaxon_318"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_32040 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_32040">
+        <rdf:type rdf:resource="&obo;NCBITaxon_32040"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_321 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_321">
+        <rdf:type rdf:resource="&obo;NCBITaxon_321"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_322 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_322">
+        <rdf:type rdf:resource="&obo;NCBITaxon_322"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_33069 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_33069">
+        <rdf:type rdf:resource="&obo;NCBITaxon_33069"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_360920 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_360920">
+        <rdf:type rdf:resource="&obo;NCBITaxon_360920"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_36746 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_36746">
+        <rdf:type rdf:resource="&obo;NCBITaxon_36746"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_41297 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_41297">
+        <rdf:type rdf:resource="&obo;NCBITaxon_41297"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_47877 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_47877">
+        <rdf:type rdf:resource="&obo;NCBITaxon_47877"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_53335 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_53335">
+        <rdf:type rdf:resource="&obo;NCBITaxon_53335"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_53409 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_53409">
+        <rdf:type rdf:resource="&obo;NCBITaxon_53409"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_53707 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_53707">
+        <rdf:type rdf:resource="&obo;NCBITaxon_53707"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_543 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_543">
         <rdf:type rdf:resource="&obo;NCBITaxon_543"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_549 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_549">
+        <rdf:type rdf:resource="&obo;NCBITaxon_549"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
     </owl:NamedIndividual>
     
 
@@ -1290,6 +2376,77 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_55209 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_55209">
+        <rdf:type rdf:resource="&obo;NCBITaxon_55209"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_55211 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_55211">
+        <rdf:type rdf:resource="&obo;NCBITaxon_55211"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_55212 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_55212">
+        <rdf:type rdf:resource="&obo;NCBITaxon_55212"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_553 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_553">
+        <rdf:type rdf:resource="&obo;NCBITaxon_553"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_554 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_554">
+        <rdf:type rdf:resource="&obo;NCBITaxon_554"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_555 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_555">
+        <rdf:type rdf:resource="&obo;NCBITaxon_555"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_59510 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_59510">
+        <rdf:type rdf:resource="&obo;NCBITaxon_59510"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_59511 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_59511">
+        <rdf:type rdf:resource="&obo;NCBITaxon_59511"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_613 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_613">
@@ -1307,10 +2464,80 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_65700 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_65700">
+        <rdf:type rdf:resource="&obo;NCBITaxon_65700"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_66269 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_66269">
+        <rdf:type rdf:resource="&obo;NCBITaxon_66269"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_66271 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_66271">
+        <rdf:type rdf:resource="&obo;NCBITaxon_66271"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_69222 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_69222">
         <rdf:type rdf:resource="&obo;NCBITaxon_69222"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_69223 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_69223">
+        <rdf:type rdf:resource="&obo;NCBITaxon_69223"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_69224 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_69224">
+        <rdf:type rdf:resource="&obo;NCBITaxon_69224"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_72274 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_72274">
+        <rdf:type rdf:resource="&obo;NCBITaxon_72274"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_78229 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_78229">
+        <rdf:type rdf:resource="&obo;NCBITaxon_78229"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_78398 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_78398">
+        <rdf:type rdf:resource="&obo;NCBITaxon_78398"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
     </owl:NamedIndividual>
     
@@ -1325,10 +2552,88 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_80840 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_80840">
+        <rdf:type rdf:resource="&obo;NCBITaxon_80840"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_80864 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_80864">
+        <rdf:type rdf:resource="&obo;NCBITaxon_80864"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_80867 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_80867">
+        <rdf:type rdf:resource="&obo;NCBITaxon_80867"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_80868 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_80868">
+        <rdf:type rdf:resource="&obo;NCBITaxon_80868"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_80869 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_80869">
+        <rdf:type rdf:resource="&obo;NCBITaxon_80869"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_80870 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_80870">
+        <rdf:type rdf:resource="&obo;NCBITaxon_80870"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_83167 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_83167">
+        <rdf:type rdf:resource="&obo;NCBITaxon_83167"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_83964 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_83964">
+        <rdf:type rdf:resource="&obo;NCBITaxon_83964"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_91347 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_91347">
         <rdf:type rdf:resource="&obo;NCBITaxon_91347"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_97473 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_97473">
+        <rdf:type rdf:resource="&obo;NCBITaxon_97473"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
     </owl:NamedIndividual>
     
 
