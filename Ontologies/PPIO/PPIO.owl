@@ -1194,6 +1194,17 @@ It is indispensable for the activation and spread of the bacterial pathogens.
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000085"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000051"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
@@ -1202,17 +1213,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000085"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000051"/>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1226,17 +1226,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
 
     <owl:Class rdf:about="&PPIO;PPIO_0000025">
         <rdfs:label>Plant_pathogen</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000092"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000022"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000083"/>
@@ -1252,6 +1241,17 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000092"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000022"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000021"/>
     </owl:Class>
@@ -1703,13 +1703,13 @@ It is indispensable for the activation and spread of the bacterial pathogens.
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000091"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000067"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000091"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000067"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Water-soaked to yellowish stripes on leaf blades or starting at leaf tips; then later increase in length and width with a wavy margin. Lesions turn yellow to white as the disease advances. Leaves wilt and roll up and become grayish green to yellow.
@@ -2460,6 +2460,8 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_615">
         <rdf:type rdf:resource="&obo;NCBITaxon_615"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0000083 rdf:resource="&PPIO;PPIO_0000072"/>
+        <PPIO_0000083 rdf:resource="&PPIO;PPIO_0000079"/>
     </owl:NamedIndividual>
     
 
@@ -2469,6 +2471,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_65700">
         <rdf:type rdf:resource="&obo;NCBITaxon_65700"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0000083 rdf:resource="&PPIO;PPIO_0000079"/>
     </owl:NamedIndividual>
     
 
@@ -2495,6 +2498,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_69222">
         <rdf:type rdf:resource="&obo;NCBITaxon_69222"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0000083 rdf:resource="&PPIO;PPIO_0000078"/>
     </owl:NamedIndividual>
     
 
@@ -2548,6 +2552,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_79967">
         <rdf:type rdf:resource="&obo;NCBITaxon_79967"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0000083 rdf:resource="&PPIO;PPIO_0000075"/>
     </owl:NamedIndividual>
     
 
