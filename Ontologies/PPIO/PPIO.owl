@@ -19,7 +19,9 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://purl.oclc.org/PPIO"/>
+    <owl:Ontology rdf:about="http://purl.oclc.org/PPIO">
+        <owl:imports rdf:resource="&obo;to.owl"/>
+    </owl:Ontology>
     
 
 
@@ -946,6 +948,66 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/TO_0000326 -->
+
+    <rdf:Description rdf:about="&obo;TO_0000326">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000088"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000072"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TO_0000387 -->
+
+    <rdf:Description rdf:about="&obo;TO_0000387">
+        <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000081"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TO_0000495 -->
+
+    <rdf:Description rdf:about="&obo;TO_0000495">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000088"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000072"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TO_0000652 -->
+
+    <rdf:Description rdf:about="&obo;TO_0000652">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000091"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000075"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TO_0002686 -->
+
+    <rdf:Description rdf:about="&obo;TO_0002686">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000088"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000075"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#PPIO_0000001 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000001">
@@ -1164,8 +1226,8 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000085"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000064"/>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000094"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000025"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1175,8 +1237,8 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000094"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000025"/>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000085"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000064"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1194,17 +1256,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000085"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000051"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
@@ -1213,6 +1264,17 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000085"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000051"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1226,6 +1288,17 @@ It is indispensable for the activation and spread of the bacterial pathogens.
 
     <owl:Class rdf:about="&PPIO;PPIO_0000025">
         <rdfs:label>Plant_pathogen</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000092"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000022"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000083"/>
@@ -1241,17 +1314,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000092"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000022"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000021"/>
     </owl:Class>
