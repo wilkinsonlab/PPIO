@@ -1870,6 +1870,44 @@ It is indispensable for the activation and spread of the bacterial pathogens.
 
     <owl:Class rdf:about="&PPIO;PPIO_0000076">
         <rdfs:label>Rotting</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                                <owl:someValuesFrom rdf:resource="&obo;TO_0000361"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                                <owl:someValuesFrom rdf:resource="&obo;TO_0000748"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                                <owl:someValuesFrom rdf:resource="&obo;TO_0002629"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000083"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0360925"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0002634"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0006015"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000069"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2003,6 +2041,30 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:Class rdf:about="&PPIO;PPIO_0360923">
         <rdfs:label>Leaf_wilting</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000079"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0360924 -->
+
+    <owl:Class rdf:about="&PPIO;PPIO_0360924">
+        <rdfs:label>Water_soaked_lesion</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0006015"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000069"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0360925 -->
+
+    <owl:Class rdf:about="&PPIO;PPIO_0360925">
+        <rdfs:label>Water_soaked_spot_lesion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0360924"/>
     </owl:Class>
     
 
