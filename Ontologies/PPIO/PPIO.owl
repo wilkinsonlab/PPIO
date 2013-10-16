@@ -948,36 +948,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/TO_0000326 -->
-
-    <rdf:Description rdf:about="&obo;TO_0000326">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;PPIO_0000088"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000072"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/TO_0000387 -->
 
     <rdf:Description rdf:about="&obo;TO_0000387">
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000081"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/TO_0000495 -->
-
-    <rdf:Description rdf:about="&obo;TO_0000495">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;PPIO_0000088"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000072"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -988,20 +962,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000091"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000075"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/TO_0002686 -->
-
-    <rdf:Description rdf:about="&obo;TO_0002686">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;PPIO_0000088"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000075"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0360922"/>
             </owl:Restriction>
         </owl:equivalentClass>
     </rdf:Description>
@@ -1256,6 +1217,17 @@ It is indispensable for the activation and spread of the bacterial pathogens.
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000085"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000051"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
@@ -1264,17 +1236,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000085"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000051"/>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1288,17 +1249,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
 
     <owl:Class rdf:about="&PPIO;PPIO_0000025">
         <rdfs:label>Plant_pathogen</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000092"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000022"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000083"/>
@@ -1314,6 +1264,17 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000092"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000022"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000021"/>
     </owl:Class>
@@ -1761,6 +1722,34 @@ It is indispensable for the activation and spread of the bacterial pathogens.
 
     <owl:Class rdf:about="&PPIO;PPIO_0000070">
         <rdfs:label>Blight</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000083"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0360921"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                        <owl:someValuesFrom rdf:resource="&obo;TO_0000299"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000083"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0360923"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                        <owl:someValuesFrom rdf:resource="&obo;TO_0000085"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000069"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1788,13 +1777,13 @@ It is indispensable for the activation and spread of the bacterial pathogens.
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000091"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000068"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000067"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000091"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000067"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Deep necrotic lesion produced in stem or branches. As the disease progresses, small spots appear in the young fruits. Bacterial cankers are often sunken and soft, as in the fungal cankers, but they may also appear as splits in the stem, as necrotic areas within the woody cylinder, or as scabby excrescences on the surface of the tissue.</rdfs:comment>
@@ -1806,6 +1795,18 @@ It is indispensable for the activation and spread of the bacterial pathogens.
 
     <owl:Class rdf:about="&PPIO;PPIO_0000072">
         <rdfs:label>Chlorotic_lesion</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000069"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1846,6 +1847,12 @@ It is indispensable for the activation and spread of the bacterial pathogens.
 
     <owl:Class rdf:about="&PPIO;PPIO_0000075">
         <rdfs:label>Necrotic_lesion</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0002686"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000069"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1894,8 +1901,15 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <!-- http://purl.oclc.org/PPIO#PPIO_0000078 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000078">
+        <rdfs:label>Necrotic_spot_lesion</rdfs:label>
         <rdfs:label>Spot</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000069"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000083"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000075"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000075"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000091"/>
@@ -1911,6 +1925,18 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
 
     <owl:Class rdf:about="&PPIO;PPIO_0000079">
         <rdfs:label>Wilting</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000701"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000736"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000069"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1936,6 +1962,47 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:Class rdf:about="&PPIO;PPIO_0000081">
         <rdfs:label>Trait</rdfs:label>
         <rdfs:comment>Retrieved from Plant Trait Ontology or newly created terms, referred only to plants.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0360921 -->
+
+    <owl:Class rdf:about="&PPIO;PPIO_0360921">
+        <rdfs:label>Chlorotic_stripe_lesion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000072"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0360922 -->
+
+    <owl:Class rdf:about="&PPIO;PPIO_0360922">
+        <rdfs:label>Leaf_spot</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000083"/>
+                        <owl:someValuesFrom rdf:resource="&obo;TO_0000652"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000084"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000073"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000078"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0360923 -->
+
+    <owl:Class rdf:about="&PPIO;PPIO_0360923">
+        <rdfs:label>Leaf_wilting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000079"/>
     </owl:Class>
     
 
