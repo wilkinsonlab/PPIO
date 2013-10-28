@@ -36,10 +36,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <rdf:Description rdf:about="&obo;BFO_0000050">
+        <owl:equivalentProperty rdf:resource="&PPIO;PPIO_0000091"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#PPIO_0000082 -->
 
     <owl:ObjectProperty rdf:about="&PPIO;PPIO_0000082">
-        <rdfs:label>caused_by</rdfs:label>
+        <rdfs:label>caused by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -48,8 +56,15 @@
 
     <owl:ObjectProperty rdf:about="&PPIO;PPIO_0000083">
         <rdfs:label>causes</rdfs:label>
-        <rdfs:domain rdf:resource="&PPIO;PPIO_0000069"/>
         <rdfs:range rdf:resource="&PPIO;PPIO_0000069"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000025"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
     </owl:ObjectProperty>
     
 
@@ -65,7 +80,7 @@
     <!-- http://purl.oclc.org/PPIO#PPIO_0000085 -->
 
     <owl:ObjectProperty rdf:about="&PPIO;PPIO_0000085">
-        <rdfs:label>expresses_phenotype</rdfs:label>
+        <rdfs:label>expresses phenotype</rdfs:label>
         <rdfs:domain rdf:resource="&PPIO;PPIO_0000022"/>
         <rdfs:range rdf:resource="&PPIO;PPIO_0000050"/>
     </owl:ObjectProperty>
@@ -75,10 +90,10 @@
     <!-- http://purl.oclc.org/PPIO#PPIO_0000089 -->
 
     <owl:ObjectProperty rdf:about="&PPIO;PPIO_0000089">
-        <rdfs:label>manifests_in_species</rdfs:label>
+        <rdfs:label>manifests in Plant</rdfs:label>
         <rdfs:range rdf:resource="&PPIO;PPIO_0000022"/>
         <rdfs:domain rdf:resource="&PPIO;PPIO_0000050"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&PPIO;PPIO_0360930"/>
     </owl:ObjectProperty>
     
 
@@ -108,7 +123,7 @@
     <!-- http://purl.oclc.org/PPIO#PPIO_0000092 -->
 
     <owl:ObjectProperty rdf:about="&PPIO;PPIO_0000092">
-        <rdfs:label>pathogen_of</rdfs:label>
+        <rdfs:label>pathogen of</rdfs:label>
         <rdfs:range rdf:resource="&PPIO;PPIO_0000022"/>
         <rdfs:domain rdf:resource="&PPIO;PPIO_0000025"/>
     </owl:ObjectProperty>
@@ -118,7 +133,7 @@
     <!-- http://purl.oclc.org/PPIO#PPIO_0000094 -->
 
     <owl:ObjectProperty rdf:about="&PPIO;PPIO_0000094">
-        <rdfs:label>susceptible_to</rdfs:label>
+        <rdfs:label>susceptible to</rdfs:label>
         <rdfs:domain rdf:resource="&PPIO;PPIO_0000022"/>
         <rdfs:range rdf:resource="&PPIO;PPIO_0000025"/>
         <owl:inverseOf rdf:resource="&PPIO;PPIO_0000092"/>
@@ -129,7 +144,7 @@
     <!-- http://purl.oclc.org/PPIO#PPIO_0000095 -->
 
     <owl:ObjectProperty rdf:about="&PPIO;PPIO_0000095">
-        <rdfs:label>trait_of</rdfs:label>
+        <rdfs:label>trait of</rdfs:label>
         <rdfs:range rdf:resource="&PPIO;PPIO_0000021"/>
         <rdfs:domain rdf:resource="&PPIO;PPIO_0000026"/>
         <rdfs:domain rdf:resource="&PPIO;PPIO_0000050"/>
@@ -140,7 +155,7 @@
     <!-- http://purl.oclc.org/PPIO#PPIO_0000096 -->
 
     <owl:ObjectProperty rdf:about="&PPIO;PPIO_0000096">
-        <rdfs:label>value_of</rdfs:label>
+        <rdfs:label>value of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -148,10 +163,10 @@
     <!-- http://purl.oclc.org/PPIO#PPIO_0360928 -->
 
     <owl:ObjectProperty rdf:about="&PPIO;PPIO_0360928">
-        <rdfs:label>manifests_as</rdfs:label>
+        <rdfs:label>manifests as</rdfs:label>
         <rdfs:domain rdf:resource="&PPIO;PPIO_0000069"/>
         <rdfs:range rdf:resource="&PPIO;PPIO_0000081"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&PPIO;PPIO_0360930"/>
     </owl:ObjectProperty>
     
 
@@ -159,10 +174,55 @@
     <!-- http://purl.oclc.org/PPIO#PPIO_0360929 -->
 
     <owl:ObjectProperty rdf:about="&PPIO;PPIO_0360929">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label>favours</rdfs:label>
         <rdfs:domain rdf:resource="&PPIO;PPIO_0000001"/>
         <rdfs:range rdf:resource="&PPIO;PPIO_0000021"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0360930 -->
+
+    <owl:ObjectProperty rdf:about="&PPIO;PPIO_0360930">
+        <rdfs:label>manifests</rdfs:label>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000050"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0360931 -->
+
+    <owl:ObjectProperty rdf:about="&PPIO;PPIO_0360931">
+        <rdfs:label>causes_symptom</rdfs:label>
+        <rdfs:domain rdf:resource="&PPIO;PPIO_0000025"/>
+        <rdfs:range rdf:resource="&PPIO;PPIO_0000069"/>
+        <rdfs:subPropertyOf rdf:resource="&PPIO;PPIO_0000083"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0360932 -->
+
+    <owl:ObjectProperty rdf:about="&PPIO;PPIO_0360932">
+        <rdfs:label>causes_phenotype</rdfs:label>
+        <rdfs:range rdf:resource="&PPIO;PPIO_0000069"/>
+        <rdfs:domain rdf:resource="&PPIO;PPIO_0000069"/>
+        <rdfs:subPropertyOf rdf:resource="&PPIO;PPIO_0000083"/>
     </owl:ObjectProperty>
     
 
@@ -180,7 +240,20 @@
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1 -->
 
-    <owl:Class rdf:about="&obo;NCBITaxon_1"/>
+    <owl:Class rdf:about="&obo;NCBITaxon_1">
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000001"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000026"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000050"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000080"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+    </owl:Class>
     
 
 
@@ -982,7 +1055,20 @@
     <!-- http://purl.oclc.org/PPIO#PPIO_0000001 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000001">
-        <rdfs:label>Environmental_parameter</rdfs:label>
+        <rdfs:label>Environmental parameter</rdfs:label>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;NCBITaxon_1"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000026"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000050"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000080"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
         <rdfs:comment>The environment is one of the three components that form the Disease triangle: the existence of a disease caused by a biotic agent requires the interaction of a susceptible host plant, a virulent pathogen, and an environment favorable for disease development. </rdfs:comment>
     </owl:Class>
     
@@ -991,7 +1077,7 @@
     <!-- http://purl.oclc.org/PPIO#PPIO_0000002 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000002">
-        <rdfs:label>Moisture_parameter</rdfs:label>
+        <rdfs:label>Moisture parameter</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000001"/>
         <rdfs:comment>Moisture (water availability) is the most important environmental parameter in plant pathology. It can exist as rain or irrigation water in the plant surface, as relative humidity or as dew.
 It is indispensable for the activation and spread of the bacterial pathogens.
@@ -1013,7 +1099,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000004 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000004">
-        <rdfs:label>Relative_humidity_percentage</rdfs:label>
+        <rdfs:label>Relative humidity percentage</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000002"/>
     </owl:Class>
     
@@ -1024,6 +1110,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <owl:Class rdf:about="&PPIO;PPIO_0000005">
         <rdfs:label>Rainfall</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000002"/>
+        <rdfs:comment>Rainfall duration and intensity.</rdfs:comment>
     </owl:Class>
     
 
@@ -1031,7 +1118,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000006 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000006">
-        <rdfs:label>Nutrient_availability_parameter</rdfs:label>
+        <rdfs:label>Nutrient availability parameter</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000001"/>
         <rdfs:comment>The presence of certain nutrients in the soil can enhance the susceptibility of the host to the attack of certain pathogens. On the other hand, it can also benefit the plant by increasing the defense mechanisms against the pathogenic bacteria. The balance bewteen this two responses depends on the plant itself, the bacteria and the availability/type of the nutrient.</rdfs:comment>
     </owl:Class>
@@ -1041,7 +1128,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000007 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000007">
-        <rdfs:label>Macronutrient_availability_parameter</rdfs:label>
+        <rdfs:label>Macronutrient availability parameter</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000006"/>
     </owl:Class>
     
@@ -1050,7 +1137,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000008 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000008">
-        <rdfs:label>Calcium_availability</rdfs:label>
+        <rdfs:label>Calcium availability</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000007"/>
     </owl:Class>
     
@@ -1059,7 +1146,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000009 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000009">
-        <rdfs:label>Nitrogen_availability</rdfs:label>
+        <rdfs:label>Nitrogen availability</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000007"/>
     </owl:Class>
     
@@ -1068,7 +1155,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000010 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000010">
-        <rdfs:label>Phosphorus_availability</rdfs:label>
+        <rdfs:label>Phosphorus availability</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000007"/>
     </owl:Class>
     
@@ -1077,7 +1164,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000011 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000011">
-        <rdfs:label>Micronutrient_availability_parameter</rdfs:label>
+        <rdfs:label>Micronutrient availability parameter</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000006"/>
     </owl:Class>
     
@@ -1086,7 +1173,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000012 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000012">
-        <rdfs:label>Copper_availability</rdfs:label>
+        <rdfs:label>Copper availability</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000011"/>
     </owl:Class>
     
@@ -1095,7 +1182,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000013 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000013">
-        <rdfs:label>Manganese_availability</rdfs:label>
+        <rdfs:label>Manganese availability</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000011"/>
     </owl:Class>
     
@@ -1104,7 +1191,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000014 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000014">
-        <rdfs:label>Soil_trait</rdfs:label>
+        <rdfs:label>Soil trait</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000001"/>
     </owl:Class>
     
@@ -1113,7 +1200,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000015 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000015">
-        <rdfs:label>Soil_pH</rdfs:label>
+        <rdfs:label>Soil pH</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000014"/>
     </owl:Class>
     
@@ -1122,7 +1209,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000016 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000016">
-        <rdfs:label>Soil_temperature</rdfs:label>
+        <rdfs:label>Soil temperature</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000014"/>
     </owl:Class>
     
@@ -1131,7 +1218,16 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000017 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000017">
-        <rdfs:label>Temperature_range</rdfs:label>
+        <rdfs:label>Temperature range</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000018"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000019"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000020"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000001"/>
     </owl:Class>
     
@@ -1140,7 +1236,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000018 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000018">
-        <rdfs:label>High_temperature_range</rdfs:label>
+        <rdfs:label>High temperature range</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000017"/>
     </owl:Class>
     
@@ -1149,7 +1245,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000019 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000019">
-        <rdfs:label>Low_temperature_range</rdfs:label>
+        <rdfs:label>Low temperature range</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000017"/>
     </owl:Class>
     
@@ -1158,7 +1254,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000020 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000020">
-        <rdfs:label>Temperate_temperature_range</rdfs:label>
+        <rdfs:label>Temperate temperature range</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000017"/>
     </owl:Class>
     
@@ -1168,6 +1264,18 @@ It is indispensable for the activation and spread of the bacterial pathogens.
 
     <owl:Class rdf:about="&PPIO;PPIO_0000021">
         <rdfs:label>Organism</rdfs:label>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000001"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000026"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000050"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000080"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
     </owl:Class>
     
 
@@ -1185,7 +1293,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000023 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000023">
-        <rdfs:label>Host_plant</rdfs:label>
+        <rdfs:label>Host plant</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1216,7 +1324,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000024 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000024">
-        <rdfs:label>Resistant_plant</rdfs:label>
+        <rdfs:label>Resistant plant</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1252,18 +1360,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000025 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000025">
-        <rdfs:label>Plant_pathogen</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000092"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000022"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:label>Plant pathogen</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000083"/>
@@ -1280,6 +1377,17 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000092"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000022"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000021"/>
     </owl:Class>
     
@@ -1288,13 +1396,26 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000026 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000026">
-        <rdfs:label>Pathogen_physiology_trait</rdfs:label>
+        <rdfs:label>Pathogen physiology trait</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000095"/>
                 <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000025"/>
             </owl:Restriction>
         </owl:equivalentClass>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;NCBITaxon_1"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000001"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000050"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000080"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
         <rdfs:comment>These biological traits refer to different aspects of the plant pathogenic bacteria, mainly related with physiological traits of the infection process.</rdfs:comment>
     </owl:Class>
     
@@ -1303,7 +1424,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000027 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000027">
-        <rdfs:label>Ecological_feature</rdfs:label>
+        <rdfs:label>Ecological feature</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000026"/>
         <rdfs:comment>The term ecology refers to the lifestyle of the plant pathogenic bacteria in the close environment.</rdfs:comment>
     </owl:Class>
@@ -1313,7 +1434,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000028 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000028">
-        <rdfs:label>Dispersion_mechanism</rdfs:label>
+        <rdfs:label>Dispersion mechanism</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000027"/>
     </owl:Class>
     
@@ -1322,7 +1443,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000029 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000029">
-        <rdfs:label>Water_mediated_dispersion</rdfs:label>
+        <rdfs:label>Water mediated dispersion</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000028"/>
     </owl:Class>
     
@@ -1331,7 +1452,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000030 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000030">
-        <rdfs:label>Wind_mediated_dispersion</rdfs:label>
+        <rdfs:label>Wind mediated dispersion</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000028"/>
     </owl:Class>
     
@@ -1340,7 +1461,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000031 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000031">
-        <rdfs:label>Growth_type</rdfs:label>
+        <rdfs:label>Growth type</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000027"/>
     </owl:Class>
     
@@ -1349,7 +1470,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000032 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000032">
-        <rdfs:label>Plant_related_growth</rdfs:label>
+        <rdfs:label>Plant related growth</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000031"/>
     </owl:Class>
     
@@ -1358,7 +1479,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000033 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000033">
-        <rdfs:label>Soil_related_growth</rdfs:label>
+        <rdfs:label>Soil related growth</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000031"/>
     </owl:Class>
     
@@ -1367,7 +1488,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000034 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000034">
-        <rdfs:label>Survival_mechanism</rdfs:label>
+        <rdfs:label>Survival mechanism</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000027"/>
     </owl:Class>
     
@@ -1376,7 +1497,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000035 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000035">
-        <rdfs:label>Organism_mediated_survival_strategy</rdfs:label>
+        <rdfs:label>Organism mediated survival strategy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000034"/>
     </owl:Class>
     
@@ -1385,7 +1506,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000036 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000036">
-        <rdfs:label>Survival_in_perennial_host</rdfs:label>
+        <rdfs:label>Survival in perennial host</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000035"/>
     </owl:Class>
     
@@ -1394,7 +1515,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000037 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000037">
-        <rdfs:label>Survival_in_vectors_strategy</rdfs:label>
+        <rdfs:label>Survival in vectors strategy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000035"/>
     </owl:Class>
     
@@ -1403,7 +1524,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000038 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000038">
-        <rdfs:label>Survival_in_insects</rdfs:label>
+        <rdfs:label>Survival in insects</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000037"/>
     </owl:Class>
     
@@ -1412,7 +1533,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000039 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000039">
-        <rdfs:label>Soil_mediated_survival_strategy</rdfs:label>
+        <rdfs:label>Soil mediated survival strategy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000034"/>
     </owl:Class>
     
@@ -1421,7 +1542,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000040 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000040">
-        <rdfs:label>Survival_in_seeds</rdfs:label>
+        <rdfs:label>Survival in seeds</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000039"/>
     </owl:Class>
     
@@ -1430,7 +1551,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000041 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000041">
-        <rdfs:label>Survival_in_soil_surface_strategy</rdfs:label>
+        <rdfs:label>Survival in soil surface strategy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000039"/>
     </owl:Class>
     
@@ -1439,7 +1560,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000042 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000042">
-        <rdfs:label>Survival_in_plant_debris</rdfs:label>
+        <rdfs:label>Survival in plant debris</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000041"/>
     </owl:Class>
     
@@ -1448,7 +1569,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000043 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000043">
-        <rdfs:label>Water_mediated_mechanism</rdfs:label>
+        <rdfs:label>Water mediated mechanism</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000034"/>
     </owl:Class>
     
@@ -1457,7 +1578,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000044 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000044">
-        <rdfs:label>Entry_in_the_host_procedure</rdfs:label>
+        <rdfs:label>Entry in the host procedure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000026"/>
     </owl:Class>
     
@@ -1466,7 +1587,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000045 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000045">
-        <rdfs:label>Entry_through_natural_openings_procedure</rdfs:label>
+        <rdfs:label>Entry through natural openings procedure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000044"/>
     </owl:Class>
     
@@ -1475,7 +1596,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000046 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000046">
-        <rdfs:label>Entry_through_hydatodes</rdfs:label>
+        <rdfs:label>Entry through hydatodes</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000045"/>
     </owl:Class>
     
@@ -1484,7 +1605,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000047 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000047">
-        <rdfs:label>Entry_through_lenticels</rdfs:label>
+        <rdfs:label>Entry through lenticels</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000045"/>
     </owl:Class>
     
@@ -1493,7 +1614,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000048 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000048">
-        <rdfs:label>Entry_thorugh_stomata</rdfs:label>
+        <rdfs:label>Entry thorugh stomata</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000045"/>
     </owl:Class>
     
@@ -1502,7 +1623,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000049 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000049">
-        <rdfs:label>Entry_through_wounds</rdfs:label>
+        <rdfs:label>Entry through wounds</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000044"/>
     </owl:Class>
     
@@ -1512,6 +1633,19 @@ It is indispensable for the activation and spread of the bacterial pathogens.
 
     <owl:Class rdf:about="&PPIO;PPIO_0000050">
         <rdfs:label>Phenotype</rdfs:label>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;NCBITaxon_1"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000001"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000026"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000080"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
         <rdfs:comment>This class is refered to the value of the trait that corresponds. The phenotypic response is the outcome of the resistance response developed by the plant, but also can represent the susceptibility of the host to the attack of the bacteria. </rdfs:comment>
     </owl:Class>
     
@@ -1520,7 +1654,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000051 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000051">
-        <rdfs:label>Resistance_phenotype</rdfs:label>
+        <rdfs:label>Resistance phenotype</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000095"/>
@@ -1535,7 +1669,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000052 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000052">
-        <rdfs:label>Resistance_response_phenotype</rdfs:label>
+        <rdfs:label>Resistance response phenotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000051"/>
     </owl:Class>
     
@@ -1544,7 +1678,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000053 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000053">
-        <rdfs:label>Cell_wall_reinforcement</rdfs:label>
+        <rdfs:label>Cell wall reinforcement</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000052"/>
     </owl:Class>
     
@@ -1553,7 +1687,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000054 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000054">
-        <rdfs:label>Hypersensitive_response</rdfs:label>
+        <rdfs:label>Hypersensitive response</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000052"/>
         <rdfs:comment>The hypersensitive response (HR) is a resistance mechanism characterized by the cell death of the affected tissue in order to avoid the expansion of the pathogen to the surrounding cells.</rdfs:comment>
     </owl:Class>
@@ -1563,7 +1697,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000055 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000055">
-        <rdfs:label>Production_of_antimicrobial_compounds</rdfs:label>
+        <rdfs:label>Production of antimicrobial compounds</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000052"/>
     </owl:Class>
     
@@ -1572,7 +1706,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000056 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000056">
-        <rdfs:label>Production_of_antimicrobial_chemicals</rdfs:label>
+        <rdfs:label>Production of antimicrobial chemicals</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000055"/>
     </owl:Class>
     
@@ -1581,7 +1715,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000057 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000057">
-        <rdfs:label>Production_of_phytoalexins</rdfs:label>
+        <rdfs:label>Production of phytoalexins</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000056"/>
     </owl:Class>
     
@@ -1590,7 +1724,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000058 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000058">
-        <rdfs:label>Camalexin_production</rdfs:label>
+        <rdfs:label>Camalexin production</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000057"/>
     </owl:Class>
     
@@ -1599,7 +1733,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000059 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000059">
-        <rdfs:label>Genistein_production</rdfs:label>
+        <rdfs:label>Genistein production</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000057"/>
     </owl:Class>
     
@@ -1608,7 +1742,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000060 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000060">
-        <rdfs:label>Reactive_Oxygen_Species_production</rdfs:label>
+        <rdfs:label>Reactive Oxygen Species production</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000056"/>
     </owl:Class>
     
@@ -1617,7 +1751,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000061 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000061">
-        <rdfs:label>Production_of_antimicrobial_proteins</rdfs:label>
+        <rdfs:label>Production of antimicrobial proteins</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000055"/>
     </owl:Class>
     
@@ -1626,7 +1760,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000062 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000062">
-        <rdfs:label>Defensins_production</rdfs:label>
+        <rdfs:label>Defensins production</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000061"/>
     </owl:Class>
     
@@ -1635,7 +1769,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000063 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000063">
-        <rdfs:label>Thionins_production</rdfs:label>
+        <rdfs:label>Thionins production</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000061"/>
     </owl:Class>
     
@@ -1644,7 +1778,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000064 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000064">
-        <rdfs:label>Susceptibility_phenotype</rdfs:label>
+        <rdfs:label>Susceptibility phenotype</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000095"/>
@@ -1659,7 +1793,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000065 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000065">
-        <rdfs:label>Abnormal_growth_development_phenotype</rdfs:label>
+        <rdfs:label>Abnormal growth development phenotype</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1683,7 +1817,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000066 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000066">
-        <rdfs:label>Color_variation_phenotype</rdfs:label>
+        <rdfs:label>Color variation phenotype</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
@@ -1699,7 +1833,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000067 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000067">
-        <rdfs:label>Tissue_disintegration_phenotype</rdfs:label>
+        <rdfs:label>Tissue disintegration phenotype</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
@@ -1715,7 +1849,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000068 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000068">
-        <rdfs:label>Vascular_system_damage_phenotype</rdfs:label>
+        <rdfs:label>Vascular system damage phenotype</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
@@ -1730,13 +1864,26 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000069 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000069">
-        <rdfs:label>Phenotypic_process</rdfs:label>
+        <rdfs:label>Phenotypic process</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000091"/>
                 <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;NCBITaxon_1"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000001"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000026"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000050"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000080"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
         <rdfs:comment>The alterations at the cellular level the pathogen exerts in the host plant is reflected in symptoms that can be phenotypicallly observed in the affected plant.</rdfs:comment>
     </owl:Class>
     
@@ -1747,29 +1894,31 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <owl:Class rdf:about="&PPIO;PPIO_0000070">
         <rdfs:label>Blight</rdfs:label>
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000083"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0360921"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
-                        <owl:someValuesFrom rdf:resource="&obo;TO_0000299"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0360932"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&PPIO;PPIO_0360921"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                                <owl:someValuesFrom rdf:resource="&obo;TO_0000299"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000083"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0360923"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
                         <owl:someValuesFrom rdf:resource="&obo;TO_0000085"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0360932"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0360923"/>
                     </owl:Restriction>
                 </owl:unionOf>
             </owl:Class>
@@ -1778,13 +1927,13 @@ It is indispensable for the activation and spread of the bacterial pathogens.
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000091"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000067"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000091"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000067"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Water-soaked to yellowish stripes on leaf blades or starting at leaf tips; then later increase in length and width with a wavy margin. Lesions turn yellow to white as the disease advances. Leaves wilt and roll up and become grayish green to yellow.
@@ -1818,17 +1967,17 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000072 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000072">
-        <rdfs:label>Chlorotic_lesion</rdfs:label>
+        <rdfs:label>Chlorotic lesion</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000069"/>
@@ -1846,7 +1995,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000073 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000073">
-        <rdfs:label>Chlorotic_halo</rdfs:label>
+        <rdfs:label>Chlorotic halo</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000072"/>
     </owl:Class>
     
@@ -1870,7 +2019,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000075 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000075">
-        <rdfs:label>Necrotic_lesion</rdfs:label>
+        <rdfs:label>Necrotic lesion</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
@@ -1920,7 +2069,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                         </owl:unionOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000083"/>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0360932"/>
                         <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0360925"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1963,11 +2112,11 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <!-- http://purl.oclc.org/PPIO#PPIO_0000078 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000078">
-        <rdfs:label>Necrotic_spot_lesion</rdfs:label>
         <rdfs:label>Spot</rdfs:label>
+        <rdfs:label>Necrotic spot lesion</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;PPIO_0000083"/>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0360932"/>
                 <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000075"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -2014,7 +2163,20 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <!-- http://purl.oclc.org/PPIO#PPIO_0000080 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000080">
-        <rdfs:label>Soil_type_parameter</rdfs:label>
+        <rdfs:label>Soil type</rdfs:label>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;NCBITaxon_1"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000001"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000026"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000050"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
     </owl:Class>
     
 
@@ -2023,6 +2185,19 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
 
     <owl:Class rdf:about="&PPIO;PPIO_0000081">
         <rdfs:label>Trait</rdfs:label>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;NCBITaxon_1"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000001"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000026"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000050"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000080"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
         <rdfs:comment>Retrieved from Plant Trait Ontology or newly created terms, referred only to plants.</rdfs:comment>
     </owl:Class>
     
@@ -2031,7 +2206,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <!-- http://purl.oclc.org/PPIO#PPIO_0360921 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0360921">
-        <rdfs:label>Chlorotic_stripe_lesion</rdfs:label>
+        <rdfs:label>Chlorotic stripe lesion</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000072"/>
     </owl:Class>
     
@@ -2040,7 +2215,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <!-- http://purl.oclc.org/PPIO#PPIO_0360922 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0360922">
-        <rdfs:label>Leaf_spot</rdfs:label>
+        <rdfs:label>Leaf spot</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -2063,7 +2238,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <!-- http://purl.oclc.org/PPIO#PPIO_0360923 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0360923">
-        <rdfs:label>Leaf_wilting</rdfs:label>
+        <rdfs:label>Leaf wilting</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000079"/>
     </owl:Class>
     
@@ -2072,7 +2247,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <!-- http://purl.oclc.org/PPIO#PPIO_0360924 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0360924">
-        <rdfs:label>Water_soaked_lesion</rdfs:label>
+        <rdfs:label>Water soaked lesion</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
@@ -2087,7 +2262,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <!-- http://purl.oclc.org/PPIO#PPIO_0360925 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0360925">
-        <rdfs:label>Water_soaked_spot_lesion</rdfs:label>
+        <rdfs:label>Water soaked spot lesion</rdfs:label>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0360924"/>
     </owl:Class>
     
@@ -2096,7 +2271,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <!-- http://purl.oclc.org/PPIO#PPIO_0360926 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0360926">
-        <rdfs:label>High_relative_humidity_percentage</rdfs:label>
+        <rdfs:label>High relative humidity percentage</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0360929"/>
@@ -2600,8 +2775,8 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_552">
         <rdf:type rdf:resource="&obo;NCBITaxon_552"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
-        <PPIO_0000083 rdf:resource="&PPIO;PPIO_0000070"/>
-        <PPIO_0000083 rdf:resource="&PPIO;PPIO_0000071"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000070"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000071"/>
     </owl:NamedIndividual>
     
 
@@ -2690,8 +2865,8 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_615">
         <rdf:type rdf:resource="&obo;NCBITaxon_615"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
-        <PPIO_0000083 rdf:resource="&PPIO;PPIO_0000072"/>
-        <PPIO_0000083 rdf:resource="&PPIO;PPIO_0000079"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000072"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000079"/>
     </owl:NamedIndividual>
     
 
@@ -2701,7 +2876,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_65700">
         <rdf:type rdf:resource="&obo;NCBITaxon_65700"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
-        <PPIO_0000083 rdf:resource="&PPIO;PPIO_0000079"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000079"/>
     </owl:NamedIndividual>
     
 
@@ -2728,7 +2903,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_69222">
         <rdf:type rdf:resource="&obo;NCBITaxon_69222"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
-        <PPIO_0000083 rdf:resource="&PPIO;PPIO_0000078"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000078"/>
     </owl:NamedIndividual>
     
 
@@ -2782,7 +2957,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_79967">
         <rdf:type rdf:resource="&obo;NCBITaxon_79967"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
-        <PPIO_0000083 rdf:resource="&PPIO;PPIO_0000075"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000075"/>
     </owl:NamedIndividual>
     
 
@@ -2958,6 +3133,25 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;PPIO_0000079">
         <rdf:type rdf:resource="&PPIO;PPIO_0000079"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&PPIO;PPIO_0000018"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000019"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000020"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
