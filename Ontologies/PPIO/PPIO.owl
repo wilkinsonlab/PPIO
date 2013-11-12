@@ -113,7 +113,7 @@
 
     <owl:ObjectProperty rdf:about="&PPIO;PPIO_0000091">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label>part_of</rdfs:label>
+        <rdfs:label>part of</rdfs:label>
         <rdfs:range rdf:resource="&PPIO;PPIO_0000064"/>
         <rdfs:domain rdf:resource="&PPIO;PPIO_0000069"/>
     </owl:ObjectProperty>
@@ -176,7 +176,7 @@
     <owl:ObjectProperty rdf:about="&PPIO;PPIO_0360929">
         <rdfs:label>favours</rdfs:label>
         <rdfs:domain rdf:resource="&PPIO;PPIO_0000001"/>
-        <rdfs:range rdf:resource="&PPIO;PPIO_0000021"/>
+        <rdfs:range rdf:resource="&PPIO;PPIO_0000081"/>
     </owl:ObjectProperty>
     
 
@@ -185,14 +185,6 @@
 
     <owl:ObjectProperty rdf:about="&PPIO;PPIO_0360930">
         <rdfs:label>manifests</rdfs:label>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -201,6 +193,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -208,7 +208,7 @@
     <!-- http://purl.oclc.org/PPIO#PPIO_0360931 -->
 
     <owl:ObjectProperty rdf:about="&PPIO;PPIO_0360931">
-        <rdfs:label>causes_symptom</rdfs:label>
+        <rdfs:label>causes symptom</rdfs:label>
         <rdfs:domain rdf:resource="&PPIO;PPIO_0000025"/>
         <rdfs:range rdf:resource="&PPIO;PPIO_0000069"/>
         <rdfs:subPropertyOf rdf:resource="&PPIO;PPIO_0000083"/>
@@ -219,10 +219,19 @@
     <!-- http://purl.oclc.org/PPIO#PPIO_0360932 -->
 
     <owl:ObjectProperty rdf:about="&PPIO;PPIO_0360932">
-        <rdfs:label>causes_phenotype</rdfs:label>
+        <rdfs:label>causes phenotype</rdfs:label>
         <rdfs:range rdf:resource="&PPIO;PPIO_0000069"/>
         <rdfs:domain rdf:resource="&PPIO;PPIO_0000069"/>
         <rdfs:subPropertyOf rdf:resource="&PPIO;PPIO_0000083"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0360933 -->
+
+    <owl:ObjectProperty rdf:about="&PPIO;PPIO_0360933">
+        <rdfs:label>favoured by</rdfs:label>
+        <owl:inverseOf rdf:resource="&PPIO;PPIO_0360929"/>
     </owl:ObjectProperty>
     
 
@@ -240,20 +249,7 @@
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1 -->
 
-    <owl:Class rdf:about="&obo;NCBITaxon_1">
-        <owl:disjointWith>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000001"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000026"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000050"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000080"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:disjointWith>
-    </owl:Class>
+    <owl:Class rdf:about="&obo;NCBITaxon_1"/>
     
 
 
@@ -298,6 +294,15 @@
     <owl:Class rdf:about="&obo;NCBITaxon_12916">
         <rdfs:label xml:lang="en">Acidovorax</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_80864"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_131221 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_131221">
+        <rdfs:label xml:lang="en">Streptophytina</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_35493"/>
     </owl:Class>
     
 
@@ -527,6 +532,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2759 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2759">
+        <rdfs:label xml:lang="en">Eukaryota</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_131567"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_281458 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_281458">
@@ -626,6 +640,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_3193 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_3193">
+        <rdfs:label xml:lang="en">Embryophyta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_131221"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_32040 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_32040">
@@ -662,6 +685,33 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33090 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_33090">
+        <rdfs:label xml:lang="en">Viridiplantae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_2759"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_3398 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_3398">
+        <rdfs:label xml:lang="en">Magnoliophyta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_58024"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_35493 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_35493">
+        <rdfs:label xml:lang="en">Streptophyta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_33090"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_360920 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_360920">
@@ -680,6 +730,42 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_4069 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_4069">
+        <rdfs:label xml:lang="en">Solanales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_91888"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_4070 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_4070">
+        <rdfs:label xml:lang="en">Solanaceae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_4069"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_4081 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_4081">
+        <rdfs:label xml:lang="en">Solanum lycopersicum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_49274"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_4107 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_4107">
+        <rdfs:label xml:lang="en">Solanum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_424574"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_41297 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_41297">
@@ -689,11 +775,38 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_424551 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_424551">
+        <rdfs:label xml:lang="en">Solanoideae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_4070"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_424574 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_424574">
+        <rdfs:label xml:lang="en">Solaneae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_424551"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_47877 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_47877">
         <rdfs:label xml:lang="en">Pseudomonas amygdali</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_251698"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_49274 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_49274">
+        <rdfs:label xml:lang="en">Lycopersicon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_4107"/>
     </owl:Class>
     
 
@@ -815,6 +928,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_58023 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_58023">
+        <rdfs:label xml:lang="en">Tracheophyta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_3193"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_58024 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_58024">
+        <rdfs:label xml:lang="en">Spermatophyta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_78536"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_59510 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_59510">
@@ -905,6 +1036,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_71240 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_71240">
+        <rdfs:label xml:lang="en">eudicotyledons</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_3398"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_71274 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_71274">
+        <rdfs:label xml:lang="en">asterids</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_91827"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_72274 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_72274">
@@ -928,6 +1077,15 @@
     <owl:Class rdf:about="&obo;NCBITaxon_78398">
         <rdfs:label xml:lang="en">Pectobacterium carotovorum subsp. odoriferum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_554"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_78536 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_78536">
+        <rdfs:label xml:lang="en">Euphyllophyta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_58023"/>
     </owl:Class>
     
 
@@ -1022,6 +1180,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_91827 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_91827">
+        <rdfs:label xml:lang="en">core eudicotyledons</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_71240"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_91888 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_91888">
+        <rdfs:label xml:lang="en">lamiids</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_71274"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_97473 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_97473">
@@ -1056,19 +1232,6 @@
 
     <owl:Class rdf:about="&PPIO;PPIO_0000001">
         <rdfs:label>Environmental parameter</rdfs:label>
-        <owl:disjointWith>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;NCBITaxon_1"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000026"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000050"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000080"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:disjointWith>
         <rdfs:comment>The environment is one of the three components that form the Disease triangle: the existence of a disease caused by a biotic agent requires the interaction of a susceptible host plant, a virulent pathogen, and an environment favorable for disease development. </rdfs:comment>
     </owl:Class>
     
@@ -1264,18 +1427,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
 
     <owl:Class rdf:about="&PPIO;PPIO_0000021">
         <rdfs:label>Organism</rdfs:label>
-        <owl:disjointWith>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000001"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000026"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000050"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000080"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:disjointWith>
     </owl:Class>
     
 
@@ -1403,19 +1554,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                 <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000025"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <owl:disjointWith>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;NCBITaxon_1"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000001"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000050"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000080"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:disjointWith>
         <rdfs:comment>These biological traits refer to different aspects of the plant pathogenic bacteria, mainly related with physiological traits of the infection process.</rdfs:comment>
     </owl:Class>
     
@@ -1614,7 +1752,13 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <!-- http://purl.oclc.org/PPIO#PPIO_0000048 -->
 
     <owl:Class rdf:about="&PPIO;PPIO_0000048">
-        <rdfs:label>Entry thorugh stomata</rdfs:label>
+        <rdfs:label>Entry through stomata</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0360933"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0360926"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000045"/>
     </owl:Class>
     
@@ -1633,19 +1777,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
 
     <owl:Class rdf:about="&PPIO;PPIO_0000050">
         <rdfs:label>Phenotype</rdfs:label>
-        <owl:disjointWith>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;NCBITaxon_1"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000001"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000026"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000080"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:disjointWith>
         <rdfs:comment>This class is refered to the value of the trait that corresponds. The phenotypic response is the outcome of the resistance response developed by the plant, but also can represent the susceptibility of the host to the attack of the bacteria. </rdfs:comment>
     </owl:Class>
     
@@ -1658,7 +1789,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000095"/>
-                <owl:allValuesFrom rdf:resource="&PPIO;PPIO_0000024"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000024"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000050"/>
@@ -1782,7 +1913,7 @@ It is indispensable for the activation and spread of the bacterial pathogens.
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000095"/>
-                <owl:allValuesFrom rdf:resource="&PPIO;PPIO_0000023"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000023"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000050"/>
@@ -1871,19 +2002,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                 <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;NCBITaxon_1"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000001"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000026"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000050"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000080"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:disjointWith>
         <rdfs:comment>The alterations at the cellular level the pathogen exerts in the host plant is reflected in symptoms that can be phenotypicallly observed in the affected plant.</rdfs:comment>
     </owl:Class>
     
@@ -1893,6 +2011,20 @@ It is indispensable for the activation and spread of the bacterial pathogens.
 
     <owl:Class rdf:about="&PPIO;PPIO_0000070">
         <rdfs:label>Blight</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                        <owl:someValuesFrom rdf:resource="&obo;TO_0000085"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0360932"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0360923"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0360932"/>
@@ -1908,20 +2040,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
-                        <owl:someValuesFrom rdf:resource="&obo;TO_0000085"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0360932"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0360923"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000069"/>
         <rdfs:subClassOf>
@@ -1950,13 +2068,13 @@ It is indispensable for the activation and spread of the bacterial pathogens.
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000091"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000068"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000067"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000091"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000067"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Deep necrotic lesion produced in stem or branches. As the disease progresses, small spots appear in the young fruits. Bacterial cankers are often sunken and soft, as in the fungal cankers, but they may also appear as splits in the stem, as necrotic areas within the woody cylinder, or as scabby excrescences on the surface of the tissue.</rdfs:comment>
@@ -1971,13 +2089,13 @@ It is indispensable for the activation and spread of the bacterial pathogens.
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000069"/>
@@ -2044,12 +2162,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
     <owl:Class rdf:about="&PPIO;PPIO_0000076">
         <rdfs:label>Rotting</rdfs:label>
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0006015"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Class>
@@ -2079,6 +2191,12 @@ It is indispensable for the activation and spread of the bacterial pathogens.
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
                 <owl:someValuesFrom rdf:resource="&obo;TO_0002634"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0006015"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000069"/>
@@ -2164,19 +2282,6 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
 
     <owl:Class rdf:about="&PPIO;PPIO_0000080">
         <rdfs:label>Soil type</rdfs:label>
-        <owl:disjointWith>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;NCBITaxon_1"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000001"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000026"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000050"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000081"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:disjointWith>
     </owl:Class>
     
 
@@ -2185,19 +2290,6 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
 
     <owl:Class rdf:about="&PPIO;PPIO_0000081">
         <rdfs:label>Trait</rdfs:label>
-        <owl:disjointWith>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;NCBITaxon_1"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000001"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000026"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000050"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000080"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:disjointWith>
         <rdfs:comment>Retrieved from Plant Trait Ontology or newly created terms, referred only to plants.</rdfs:comment>
     </owl:Class>
     
@@ -2275,7 +2367,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0360929"/>
-                <owl:allValuesFrom rdf:resource="&PPIO;PPIO_0000025"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0020097"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000004"/>
@@ -2339,6 +2431,14 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_12916">
         <rdf:type rdf:resource="&obo;NCBITaxon_12916"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_131221 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_131221">
+        <rdf:type rdf:resource="&obo;NCBITaxon_131221"/>
     </owl:NamedIndividual>
     
 
@@ -2556,6 +2656,14 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_2759 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_2759">
+        <rdf:type rdf:resource="&obo;NCBITaxon_2759"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_281458 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_281458">
@@ -2649,6 +2757,14 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_3193 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3193">
+        <rdf:type rdf:resource="&obo;NCBITaxon_3193"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_32040 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_32040">
@@ -2685,6 +2801,30 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_33090 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_33090">
+        <rdf:type rdf:resource="&obo;NCBITaxon_33090"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_3398 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3398">
+        <rdf:type rdf:resource="&obo;NCBITaxon_3398"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_35493 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_35493">
+        <rdf:type rdf:resource="&obo;NCBITaxon_35493"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_360920 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_360920">
@@ -2703,6 +2843,38 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_4069 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4069">
+        <rdf:type rdf:resource="&obo;NCBITaxon_4069"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_4070 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4070">
+        <rdf:type rdf:resource="&obo;NCBITaxon_4070"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_4081 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4081">
+        <rdf:type rdf:resource="&obo;NCBITaxon_4081"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_4107 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4107">
+        <rdf:type rdf:resource="&obo;NCBITaxon_4107"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_41297 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_41297">
@@ -2711,10 +2883,34 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_424551 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_424551">
+        <rdf:type rdf:resource="&obo;NCBITaxon_424551"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_424574 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_424574">
+        <rdf:type rdf:resource="&obo;NCBITaxon_424574"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_47877 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_47877">
         <rdf:type rdf:resource="&obo;NCBITaxon_47877"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_49274 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_49274">
+        <rdf:type rdf:resource="&obo;NCBITaxon_49274"/>
     </owl:NamedIndividual>
     
 
@@ -2834,6 +3030,22 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_58023 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_58023">
+        <rdf:type rdf:resource="&obo;NCBITaxon_58023"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_58024 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_58024">
+        <rdf:type rdf:resource="&obo;NCBITaxon_58024"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_59510 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_59510">
@@ -2926,6 +3138,22 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_71240 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_71240">
+        <rdf:type rdf:resource="&obo;NCBITaxon_71240"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_71274 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_71274">
+        <rdf:type rdf:resource="&obo;NCBITaxon_71274"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_72274 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_72274">
@@ -2948,6 +3176,14 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_78398">
         <rdf:type rdf:resource="&obo;NCBITaxon_78398"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_78536 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_78536">
+        <rdf:type rdf:resource="&obo;NCBITaxon_78536"/>
     </owl:NamedIndividual>
     
 
@@ -3039,11 +3275,59 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_91827 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_91827">
+        <rdf:type rdf:resource="&obo;NCBITaxon_91827"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_91888 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_91888">
+        <rdf:type rdf:resource="&obo;NCBITaxon_91888"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_97473 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_97473">
         <rdf:type rdf:resource="&obo;NCBITaxon_97473"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000065 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;PPIO_0000065">
+        <rdf:type rdf:resource="&PPIO;PPIO_0000065"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000066 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;PPIO_0000066">
+        <rdf:type rdf:resource="&PPIO;PPIO_0000066"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000067 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;PPIO_0000067">
+        <rdf:type rdf:resource="&PPIO;PPIO_0000067"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0000068 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;PPIO_0000068">
+        <rdf:type rdf:resource="&PPIO;PPIO_0000068"/>
     </owl:NamedIndividual>
     
 
@@ -3132,6 +3416,414 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
 
     <owl:NamedIndividual rdf:about="&PPIO;PPIO_0000079">
         <rdf:type rdf:resource="&PPIO;PPIO_0000079"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0360921 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;PPIO_0360921">
+        <rdf:type rdf:resource="&PPIO;PPIO_0360921"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0360922 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;PPIO_0360922">
+        <rdf:type rdf:resource="&PPIO;PPIO_0360922"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0360923 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;PPIO_0360923">
+        <rdf:type rdf:resource="&PPIO;PPIO_0360923"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0360924 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;PPIO_0360924">
+        <rdf:type rdf:resource="&PPIO;PPIO_0360924"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#PPIO_0360925 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;PPIO_0360925">
+        <rdf:type rdf:resource="&PPIO;PPIO_0360925"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000059 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000059">
+        <rdf:type rdf:resource="&obo;TO_0000059"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000070 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000070">
+        <rdf:type rdf:resource="&obo;TO_0000070"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000078 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000078">
+        <rdf:type rdf:resource="&obo;TO_0000078"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000081 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000081">
+        <rdf:type rdf:resource="&obo;TO_0000081"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000140 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000140">
+        <rdf:type rdf:resource="&obo;TO_0000140"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000141 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000141">
+        <rdf:type rdf:resource="&obo;TO_0000141"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000145 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000145">
+        <rdf:type rdf:resource="&obo;TO_0000145"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000146 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000146">
+        <rdf:type rdf:resource="&obo;TO_0000146"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000149 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000149">
+        <rdf:type rdf:resource="&obo;TO_0000149"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000156 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000156">
+        <rdf:type rdf:resource="&obo;TO_0000156"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000190 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000190">
+        <rdf:type rdf:resource="&obo;TO_0000190"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000264 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000264">
+        <rdf:type rdf:resource="&obo;TO_0000264"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000288 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000288">
+        <rdf:type rdf:resource="&obo;TO_0000288"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000304 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000304">
+        <rdf:type rdf:resource="&obo;TO_0000304"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000336 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000336">
+        <rdf:type rdf:resource="&obo;TO_0000336"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000338 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000338">
+        <rdf:type rdf:resource="&obo;TO_0000338"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000346 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000346">
+        <rdf:type rdf:resource="&obo;TO_0000346"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000364 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000364">
+        <rdf:type rdf:resource="&obo;TO_0000364"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000399 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000399">
+        <rdf:type rdf:resource="&obo;TO_0000399"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000400 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000400">
+        <rdf:type rdf:resource="&obo;TO_0000400"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000411 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000411">
+        <rdf:type rdf:resource="&obo;TO_0000411"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000426 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000426">
+        <rdf:type rdf:resource="&obo;TO_0000426"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000552 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000552">
+        <rdf:type rdf:resource="&obo;TO_0000552"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000556 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000556">
+        <rdf:type rdf:resource="&obo;TO_0000556"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000571 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000571">
+        <rdf:type rdf:resource="&obo;TO_0000571"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000572 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000572">
+        <rdf:type rdf:resource="&obo;TO_0000572"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000573 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000573">
+        <rdf:type rdf:resource="&obo;TO_0000573"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000574 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000574">
+        <rdf:type rdf:resource="&obo;TO_0000574"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000576 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000576">
+        <rdf:type rdf:resource="&obo;TO_0000576"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000578 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000578">
+        <rdf:type rdf:resource="&obo;TO_0000578"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000579 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000579">
+        <rdf:type rdf:resource="&obo;TO_0000579"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000636 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000636">
+        <rdf:type rdf:resource="&obo;TO_0000636"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000644 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000644">
+        <rdf:type rdf:resource="&obo;TO_0000644"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000652 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000652">
+        <rdf:type rdf:resource="&obo;TO_0000652"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000661 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000661">
+        <rdf:type rdf:resource="&obo;TO_0000661"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000678 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000678">
+        <rdf:type rdf:resource="&obo;TO_0000678"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000692 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000692">
+        <rdf:type rdf:resource="&obo;TO_0000692"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0000693 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0000693">
+        <rdf:type rdf:resource="&obo;TO_0000693"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0001004 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0001004">
+        <rdf:type rdf:resource="&obo;TO_0001004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0001005 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0001005">
+        <rdf:type rdf:resource="&obo;TO_0001005"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0002663 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0002663">
+        <rdf:type rdf:resource="&obo;TO_0002663"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0002712 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0002712">
+        <rdf:type rdf:resource="&obo;TO_0002712"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0011003 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0011003">
+        <rdf:type rdf:resource="&obo;TO_0011003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0011004 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0011004">
+        <rdf:type rdf:resource="&obo;TO_0011004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0011010 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0011010">
+        <rdf:type rdf:resource="&obo;TO_0011010"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#TO_0020017 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;TO_0020017">
+        <rdf:type rdf:resource="&obo;TO_0020017"/>
     </owl:NamedIndividual>
     
 
