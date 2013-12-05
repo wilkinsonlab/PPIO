@@ -295,6 +295,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_102804 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_102804">
+        <rdfs:label xml:lang="en">Asteroideae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_4210"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_102814 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_102814">
+        <rdfs:label xml:lang="en">Heliantheae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_911341"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_117781 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_117781">
@@ -399,6 +417,24 @@
     <owl:Class rdf:about="&obo;NCBITaxon_13427">
         <rdfs:label xml:lang="en">Cichorium intybus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_13426"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_13442 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_13442">
+        <rdfs:label xml:lang="en">Coffea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_169640"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_13443 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_13443">
+        <rdfs:label xml:lang="en">Coffea arabica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_13442"/>
     </owl:Class>
     
 
@@ -547,6 +583,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_161934 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_161934">
+        <rdfs:label xml:lang="en">Beta vulgaris</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_3554"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_16360 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_16360">
@@ -570,6 +615,24 @@
     <owl:Class rdf:about="&obo;NCBITaxon_163743">
         <rdfs:label xml:lang="en">Fabeae</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_3814"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_169618 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_169618">
+        <rdfs:label xml:lang="en">Ixoroideae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_24966"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_169640 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_169640">
+        <rdfs:label xml:lang="en">Coffeeae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_169618"/>
     </owl:Class>
     
 
@@ -772,6 +835,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_227290 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_227290">
+        <rdfs:label xml:lang="en">Rhizobium/Agrobacterium group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_82115"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_235629 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_235629">
@@ -831,6 +903,15 @@
     <owl:Class rdf:about="&obo;NCBITaxon_241799">
         <rdfs:label xml:lang="en">Daucinae</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_241789"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_24966 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_24966">
+        <rdfs:label xml:lang="en">Rubiaceae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_4055"/>
     </owl:Class>
     
 
@@ -1114,6 +1195,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_338571 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_338571">
+        <rdfs:label xml:lang="en">Amaranthus blitum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_3564"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_3398 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_3398">
@@ -1141,6 +1231,42 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_3554 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_3554">
+        <rdfs:label xml:lang="en">Beta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_3563"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_356 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_356">
+        <rdfs:label xml:lang="en">Rhizobiales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_28211"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_3563 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_3563">
+        <rdfs:label xml:lang="en">Amaranthaceae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_3524"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_3564 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_3564">
+        <rdfs:label xml:lang="en">Amaranthus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_3563"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_3568 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_3568">
@@ -1159,6 +1285,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_357 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_357">
+        <rdfs:label xml:lang="en">Agrobacterium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_227290"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_3570 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_3570">
@@ -1173,6 +1308,15 @@
     <owl:Class rdf:about="&obo;NCBITaxon_357961">
         <rdfs:label xml:lang="en">Cucumis melo var. inodorus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_412675"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_358 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_358">
+        <rdfs:label xml:lang="en">Agrobacterium tumefaciens</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_357"/>
     </owl:Class>
     
 
@@ -1483,6 +1627,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_3754 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_3754">
+        <rdfs:label xml:lang="en">Prunus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_721805"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_3758 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_3758">
+        <rdfs:label xml:lang="en">Prunus domestica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_3754"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_3766 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_3766">
@@ -1515,6 +1677,24 @@
     <owl:Class rdf:about="&obo;NCBITaxon_3814">
         <rdfs:label xml:lang="en">Papilionoideae</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_3803"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_3846 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_3846">
+        <rdfs:label xml:lang="en">Glycine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_163735"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_3847 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_3847">
+        <rdfs:label xml:lang="en">Glycine max</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_3846"/>
     </owl:Class>
     
 
@@ -1641,6 +1821,15 @@
     <owl:Class rdf:about="&obo;NCBITaxon_4045">
         <rdfs:label xml:lang="en">Apium graveolens</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_4044"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_4055 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_4055">
+        <rdfs:label xml:lang="en">Gentianales</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_91888"/>
     </owl:Class>
     
 
@@ -1866,6 +2055,24 @@
     <owl:Class rdf:about="&obo;NCBITaxon_42196">
         <rdfs:label xml:lang="en">Dieffenbachia seguine</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_42195"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_4231 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_4231">
+        <rdfs:label xml:lang="en">Helianthus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_102814"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_4232 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_4232">
+        <rdfs:label xml:lang="en">Helianthus annuus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_4231"/>
     </owl:Class>
     
 
@@ -2455,6 +2662,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_721805 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_721805">
+        <rdfs:label xml:lang="en">Amygdaleae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_171637"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_721813 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_721813">
@@ -2599,6 +2815,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_82115 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_82115">
+        <rdfs:label xml:lang="en">Rhizobiaceae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_356"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_83167 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_83167">
@@ -2631,6 +2856,15 @@
     <owl:Class rdf:about="&obo;NCBITaxon_85011">
         <rdfs:label xml:lang="en">Streptomycineae</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_2037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_911341 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_911341">
+        <rdfs:label xml:lang="en">Heliantheae alliance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_102804"/>
     </owl:Class>
     
 
@@ -2963,8 +3197,8 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000094"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000025"/>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000085"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000064"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2974,8 +3208,8 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&PPIO;PPIO_0000022"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000085"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000064"/>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000094"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000025"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2991,14 +3225,14 @@ It is indispensable for the activation and spread of the bacterial pathogens.
         <rdfs:label>Resistant plant</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;PPIO_1003879"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000025"/>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000085"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000051"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;PPIO_0000085"/>
-                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000051"/>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_1003879"/>
+                <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000025"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000022"/>
@@ -3011,17 +3245,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
 
     <owl:Class rdf:about="&PPIO;PPIO_0000025">
         <rdfs:label>Plant pathogen</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000092"/>
-                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000022"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000083"/>
@@ -3037,6 +3260,17 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&PPIO;PPIO_0000021"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&PPIO;PPIO_0000092"/>
+                        <owl:someValuesFrom rdf:resource="&PPIO;PPIO_0000022"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000021"/>
     </owl:Class>
@@ -3624,13 +3858,13 @@ It is indispensable for the activation and spread of the bacterial pathogens.
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000495"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000326"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000069"/>
@@ -3661,12 +3895,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000361"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
                 <owl:someValuesFrom rdf:resource="&obo;TO_0000043"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -3674,6 +3902,12 @@ It is indispensable for the activation and spread of the bacterial pathogens.
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
                 <owl:someValuesFrom rdf:resource="&obo;TO_0000893"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000361"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000069"/>
@@ -3717,12 +3951,6 @@ It is indispensable for the activation and spread of the bacterial pathogens.
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0006015"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
                 <owl:someValuesFrom rdf:resource="&obo;TO_0002634"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -3751,6 +3979,12 @@ It is indispensable for the activation and spread of the bacterial pathogens.
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0006015"/>
+            </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000069"/>
         <rdfs:subClassOf>
@@ -3816,13 +4050,13 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000736"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000701"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&PPIO;PPIO_0000090"/>
-                <owl:someValuesFrom rdf:resource="&obo;TO_0000701"/>
+                <owl:someValuesFrom rdf:resource="&obo;TO_0000736"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&PPIO;PPIO_0000069"/>
@@ -3969,12 +4203,29 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_102804 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_102804">
+        <rdf:type rdf:resource="&obo;NCBITaxon_102804"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_102814 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_102814">
+        <rdf:type rdf:resource="&obo;NCBITaxon_102814"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_117781 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_117781">
         <rdf:type rdf:resource="&obo;NCBITaxon_117781"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
         <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_204038"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_36746"/>
     </owl:NamedIndividual>
     
 
@@ -3992,6 +4243,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_120290">
         <rdf:type rdf:resource="&obo;NCBITaxon_120290"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_69224"/>
     </owl:NamedIndividual>
     
 
@@ -4025,6 +4277,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_129138">
         <rdf:type rdf:resource="&obo;NCBITaxon_129138"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000071"/>
     </owl:NamedIndividual>
     
 
@@ -4066,6 +4319,25 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_13427">
         <rdf:type rdf:resource="&obo;NCBITaxon_13427"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_97473"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_13442 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_13442">
+        <rdf:type rdf:resource="&obo;NCBITaxon_13442"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_13443 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_13443">
+        <rdf:type rdf:resource="&obo;NCBITaxon_13443"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_251653"/>
     </owl:NamedIndividual>
     
 
@@ -4200,6 +4472,16 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_161934 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_161934">
+        <rdf:type rdf:resource="&obo;NCBITaxon_161934"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_83167"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_16360 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_16360">
@@ -4220,6 +4502,22 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_163743">
         <rdf:type rdf:resource="&obo;NCBITaxon_163743"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_169618 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_169618">
+        <rdf:type rdf:resource="&obo;NCBITaxon_169618"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_169640 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_169640">
+        <rdf:type rdf:resource="&obo;NCBITaxon_169640"/>
     </owl:NamedIndividual>
     
 
@@ -4245,6 +4543,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_187868">
         <rdf:type rdf:resource="&obo;NCBITaxon_187868"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0360925"/>
     </owl:NamedIndividual>
     
 
@@ -4414,6 +4713,16 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_226677">
         <rdf:type rdf:resource="&obo;NCBITaxon_226677"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_78229"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_80868"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_227290 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_227290">
+        <rdf:type rdf:resource="&obo;NCBITaxon_227290"/>
     </owl:NamedIndividual>
     
 
@@ -4474,11 +4783,22 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_24966 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_24966">
+        <rdf:type rdf:resource="&obo;NCBITaxon_24966"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_251653 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_251653">
         <rdf:type rdf:resource="&obo;NCBITaxon_251653"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000070"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000073"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000075"/>
     </owl:NamedIndividual>
     
 
@@ -4512,6 +4832,9 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_251705">
         <rdf:type rdf:resource="&obo;NCBITaxon_251705"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000073"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000075"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0360922"/>
     </owl:NamedIndividual>
     
 
@@ -4539,6 +4862,8 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_260674">
         <rdf:type rdf:resource="&obo;NCBITaxon_260674"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_80868"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_80869"/>
     </owl:NamedIndividual>
     
 
@@ -4649,6 +4974,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_29747">
         <rdf:type rdf:resource="&obo;NCBITaxon_29747"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_69222"/>
     </owl:NamedIndividual>
     
 
@@ -4674,6 +5000,8 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_318">
         <rdf:type rdf:resource="&obo;NCBITaxon_318"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000070"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000073"/>
     </owl:NamedIndividual>
     
 
@@ -4700,6 +5028,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_321">
         <rdf:type rdf:resource="&obo;NCBITaxon_321"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000078"/>
     </owl:NamedIndividual>
     
 
@@ -4709,6 +5038,8 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_322">
         <rdf:type rdf:resource="&obo;NCBITaxon_322"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000073"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0360924"/>
     </owl:NamedIndividual>
     
 
@@ -4718,6 +5049,9 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_33069">
         <rdf:type rdf:resource="&obo;NCBITaxon_33069"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000075"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000076"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000079"/>
     </owl:NamedIndividual>
     
 
@@ -4735,6 +5069,17 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_332388">
         <rdf:type rdf:resource="&obo;NCBITaxon_332388"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_79967"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_338571 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_338571">
+        <rdf:type rdf:resource="&obo;NCBITaxon_338571"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_33069"/>
     </owl:NamedIndividual>
     
 
@@ -4763,6 +5108,38 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_3554 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3554">
+        <rdf:type rdf:resource="&obo;NCBITaxon_3554"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_356 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_356">
+        <rdf:type rdf:resource="&obo;NCBITaxon_356"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_3563 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3563">
+        <rdf:type rdf:resource="&obo;NCBITaxon_3563"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_3564 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3564">
+        <rdf:type rdf:resource="&obo;NCBITaxon_3564"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_3568 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3568">
@@ -4779,11 +5156,20 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_357 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_357">
+        <rdf:type rdf:resource="&obo;NCBITaxon_357"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_3570 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3570">
         <rdf:type rdf:resource="&obo;NCBITaxon_3570"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_204039"/>
     </owl:NamedIndividual>
     
 
@@ -4793,6 +5179,16 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_357961">
         <rdf:type rdf:resource="&obo;NCBITaxon_357961"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_152682"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_358 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_358">
+        <rdf:type rdf:resource="&obo;NCBITaxon_358"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
     </owl:NamedIndividual>
     
 
@@ -4810,6 +5206,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_360920">
         <rdf:type rdf:resource="&obo;NCBITaxon_360920"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000074"/>
     </owl:NamedIndividual>
     
 
@@ -4860,6 +5257,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
         <rdf:type rdf:resource="&obo;NCBITaxon_3649"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
         <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_206499"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_55209"/>
         <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_69222"/>
     </owl:NamedIndividual>
     
@@ -4902,6 +5300,10 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3656">
         <rdf:type rdf:resource="&obo;NCBITaxon_3656"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_33069"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_53707"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_553"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_80869"/>
     </owl:NamedIndividual>
     
 
@@ -4911,6 +5313,11 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3659">
         <rdf:type rdf:resource="&obo;NCBITaxon_3659"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_53707"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_55212"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_65700"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_80869"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_97473"/>
     </owl:NamedIndividual>
     
 
@@ -4928,6 +5335,8 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3661">
         <rdf:type rdf:resource="&obo;NCBITaxon_3661"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_53707"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_65700"/>
     </owl:NamedIndividual>
     
 
@@ -4954,6 +5363,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3665">
         <rdf:type rdf:resource="&obo;NCBITaxon_3665"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_53707"/>
     </owl:NamedIndividual>
     
 
@@ -4963,6 +5373,9 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_36746">
         <rdf:type rdf:resource="&obo;NCBITaxon_36746"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000070"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000076"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0360922"/>
     </owl:NamedIndividual>
     
 
@@ -4972,6 +5385,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_36774">
         <rdf:type rdf:resource="&obo;NCBITaxon_36774"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_204038"/>
     </owl:NamedIndividual>
     
 
@@ -4989,6 +5403,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3684">
         <rdf:type rdf:resource="&obo;NCBITaxon_3684"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_251705"/>
     </owl:NamedIndividual>
     
 
@@ -5038,6 +5453,8 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3715">
         <rdf:type rdf:resource="&obo;NCBITaxon_3715"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_55212"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_59511"/>
     </owl:NamedIndividual>
     
 
@@ -5047,6 +5464,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3716">
         <rdf:type rdf:resource="&obo;NCBITaxon_3716"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_55212"/>
     </owl:NamedIndividual>
     
 
@@ -5064,6 +5482,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3726">
         <rdf:type rdf:resource="&obo;NCBITaxon_3726"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_204038"/>
     </owl:NamedIndividual>
     
 
@@ -5080,6 +5499,24 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3745">
         <rdf:type rdf:resource="&obo;NCBITaxon_3745"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_3754 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3754">
+        <rdf:type rdf:resource="&obo;NCBITaxon_3754"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_3758 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3758">
+        <rdf:type rdf:resource="&obo;NCBITaxon_3758"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_129138"/>
     </owl:NamedIndividual>
     
 
@@ -5116,6 +5553,24 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_3846 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3846">
+        <rdf:type rdf:resource="&obo;NCBITaxon_3846"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_3847 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3847">
+        <rdf:type rdf:resource="&obo;NCBITaxon_3847"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_318"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_38820 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_38820">
@@ -5137,6 +5592,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3885">
         <rdf:type rdf:resource="&obo;NCBITaxon_3885"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_321"/>
     </owl:NamedIndividual>
     
 
@@ -5154,6 +5610,8 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_3888">
         <rdf:type rdf:resource="&obo;NCBITaxon_3888"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_55211"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_59510"/>
     </owl:NamedIndividual>
     
 
@@ -5171,6 +5629,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_39473">
         <rdf:type rdf:resource="&obo;NCBITaxon_39473"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_53707"/>
     </owl:NamedIndividual>
     
 
@@ -5212,6 +5671,8 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4039">
         <rdf:type rdf:resource="&obo;NCBITaxon_4039"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_204038"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_55212"/>
     </owl:NamedIndividual>
     
 
@@ -5228,6 +5689,14 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4045">
         <rdf:type rdf:resource="&obo;NCBITaxon_4045"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_4055 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4055">
+        <rdf:type rdf:resource="&obo;NCBITaxon_4055"/>
     </owl:NamedIndividual>
     
 
@@ -5269,6 +5738,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4072">
         <rdf:type rdf:resource="&obo;NCBITaxon_4072"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_204038"/>
     </owl:NamedIndividual>
     
 
@@ -5278,6 +5748,9 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4081">
         <rdf:type rdf:resource="&obo;NCBITaxon_4081"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_204038"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_204039"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_33069"/>
     </owl:NamedIndividual>
     
 
@@ -5295,6 +5768,8 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4097">
         <rdf:type rdf:resource="&obo;NCBITaxon_4097"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_204038"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_322"/>
     </owl:NamedIndividual>
     
 
@@ -5312,6 +5787,9 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4111">
         <rdf:type rdf:resource="&obo;NCBITaxon_4111"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_204038"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_33069"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_36746"/>
     </owl:NamedIndividual>
     
 
@@ -5377,6 +5855,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4146">
         <rdf:type rdf:resource="&obo;NCBITaxon_4146"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_360920"/>
     </owl:NamedIndividual>
     
 
@@ -5442,6 +5921,27 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_42196">
         <rdf:type rdf:resource="&obo;NCBITaxon_42196"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_204040"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_4231 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4231">
+        <rdf:type rdf:resource="&obo;NCBITaxon_4231"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_4232 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4232">
+        <rdf:type rdf:resource="&obo;NCBITaxon_4232"/>
+        <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_251721"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_36746"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_83167"/>
     </owl:NamedIndividual>
     
 
@@ -5459,6 +5959,9 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4236">
         <rdf:type rdf:resource="&obo;NCBITaxon_4236"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_36746"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_55212"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_97473"/>
     </owl:NamedIndividual>
     
 
@@ -5548,6 +6051,9 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4530">
         <rdf:type rdf:resource="&obo;NCBITaxon_4530"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_204042"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_553"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_80868"/>
     </owl:NamedIndividual>
     
 
@@ -5582,6 +6088,9 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4577">
         <rdf:type rdf:resource="&obo;NCBITaxon_4577"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_553"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_66271"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_80868"/>
     </owl:NamedIndividual>
     
 
@@ -5607,6 +6116,8 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4615">
         <rdf:type rdf:resource="&obo;NCBITaxon_4615"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_553"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_97473"/>
     </owl:NamedIndividual>
     
 
@@ -5632,6 +6143,8 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4679">
         <rdf:type rdf:resource="&obo;NCBITaxon_4679"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_553"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_97473"/>
     </owl:NamedIndividual>
     
 
@@ -5650,6 +6163,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_4682">
         <rdf:type rdf:resource="&obo;NCBITaxon_4682"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_97473"/>
     </owl:NamedIndividual>
     
 
@@ -5691,6 +6205,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_51350">
         <rdf:type rdf:resource="&obo;NCBITaxon_51350"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_55212"/>
     </owl:NamedIndividual>
     
 
@@ -5700,6 +6215,8 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_53064">
         <rdf:type rdf:resource="&obo;NCBITaxon_53064"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_55209"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_80868"/>
     </owl:NamedIndividual>
     
 
@@ -5726,6 +6243,9 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_53707">
         <rdf:type rdf:resource="&obo;NCBITaxon_53707"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000073"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0360922"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0360925"/>
     </owl:NamedIndividual>
     
 
@@ -5857,6 +6377,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_59166">
         <rdf:type rdf:resource="&obo;NCBITaxon_59166"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_187868"/>
     </owl:NamedIndividual>
     
 
@@ -5866,6 +6387,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_59510">
         <rdf:type rdf:resource="&obo;NCBITaxon_59510"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000070"/>
     </owl:NamedIndividual>
     
 
@@ -5903,6 +6425,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_61885">
         <rdf:type rdf:resource="&obo;NCBITaxon_61885"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000022"/>
+        <PPIO_0000094 rdf:resource="&PPIO;NCBITaxon_53707"/>
     </owl:NamedIndividual>
     
 
@@ -6013,6 +6536,14 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_721805 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_721805">
+        <rdf:type rdf:resource="&obo;NCBITaxon_721805"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_721813 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_721813">
@@ -6058,6 +6589,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_78229">
         <rdf:type rdf:resource="&obo;NCBITaxon_78229"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0360922"/>
     </owl:NamedIndividual>
     
 
@@ -6127,6 +6659,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_80868">
         <rdf:type rdf:resource="&obo;NCBITaxon_80868"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000070"/>
     </owl:NamedIndividual>
     
 
@@ -6151,11 +6684,21 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     
 
 
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_82115 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_82115">
+        <rdf:type rdf:resource="&obo;NCBITaxon_82115"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.oclc.org/PPIO#NCBITaxon_83167 -->
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_83167">
         <rdf:type rdf:resource="&obo;NCBITaxon_83167"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000078"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0360922"/>
     </owl:NamedIndividual>
     
 
@@ -6165,6 +6708,7 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_83964">
         <rdf:type rdf:resource="&obo;NCBITaxon_83964"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000070"/>
     </owl:NamedIndividual>
     
 
@@ -6181,6 +6725,14 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_85011">
         <rdf:type rdf:resource="&obo;NCBITaxon_85011"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.oclc.org/PPIO#NCBITaxon_911341 -->
+
+    <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_911341">
+        <rdf:type rdf:resource="&obo;NCBITaxon_911341"/>
     </owl:NamedIndividual>
     
 
@@ -6238,6 +6790,9 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
     <owl:NamedIndividual rdf:about="&PPIO;NCBITaxon_97473">
         <rdf:type rdf:resource="&obo;NCBITaxon_97473"/>
         <rdf:type rdf:resource="&PPIO;PPIO_0000025"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000076"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0000079"/>
+        <PPIO_0360931 rdf:resource="&PPIO;PPIO_0360922"/>
     </owl:NamedIndividual>
     
 
@@ -7064,6 +7619,374 @@ diameter and depth. Decaying tissue, which may be opaque, white, cream-colored, 
             <rdf:Description rdf:about="&PPIO;PPIO_0000019"/>
             <rdf:Description rdf:about="&PPIO;PPIO_0000020"/>
         </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_1"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_1003877"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_1003878"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_102804"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_102814"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_117781"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_120289"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_120290"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_122277"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_1224"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_1236"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_129138"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_12916"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_131221"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_131567"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_13426"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_13427"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_13442"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_13443"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_135621"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_136841"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_136843"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_136849"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_13687"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_147367"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_147369"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_147370"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_147380"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_147429"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_148545"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_152682"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_158330"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_158332"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_158397"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_158424"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_161934"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_16360"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_163735"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_163743"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_169618"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_169640"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_171637"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_1760"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_187868"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_1883"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_192088"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_1930"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_199199"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_2"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_201174"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_20202"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_2037"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_204037"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_204038"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_204039"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_204040"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_204042"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_204457"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_2062"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_206499"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_219120"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_219121"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_226677"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_227290"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_235629"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_235880"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_241778"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_241780"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_241789"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_241793"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_241799"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_24966"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_251653"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_251695"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_251698"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_251701"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_251705"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_251707"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_251721"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_260674"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_2759"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_281458"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_28151"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_28211"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_28216"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_284552"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_286"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_287"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_293473"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_293488"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_29438"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_29471"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_29747"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_298"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_317"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_318"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3193"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_32040"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_321"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_322"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_33069"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_33090"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_332388"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_338571"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3398"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3524"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_35493"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3554"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_356"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3563"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3564"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3568"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3569"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_357"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3570"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_357961"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_358"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_359160"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_360920"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_364270"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_36459"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3646"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3647"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3648"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3649"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3650"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3653"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3654"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3655"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3656"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3659"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3660"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3661"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3663"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3664"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3665"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_36746"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_36774"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3683"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3684"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3699"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3700"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3705"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3711"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3712"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3715"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3716"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3725"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3726"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3744"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3745"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3754"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3758"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3766"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3767"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3803"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3814"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3846"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3847"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_38820"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3883"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3885"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3887"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3888"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3931"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_39473"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_3977"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4036"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4037"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4038"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4039"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4044"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4045"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4055"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_40553"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4069"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4070"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4071"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4072"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4081"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4085"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4097"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4107"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4111"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4113"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_412675"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_41297"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4143"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4144"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4145"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4146"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_41944"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4199"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4200"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4209"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4210"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_421921"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_42195"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_42196"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4231"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4232"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4235"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4236"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_424551"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_424554"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_424562"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_424564"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_424574"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_426106"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4447"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4454"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4479"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4527"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4530"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4557"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4558"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4575"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4577"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4613"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4614"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4615"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4668"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4678"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4679"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4681"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4682"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4734"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_4747"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_47877"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_49274"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_51350"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_53064"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_53335"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_53409"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_53707"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_543"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_549"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_551"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_552"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_55209"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_55211"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_55212"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_553"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_554"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_555"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_58023"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_58024"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_59165"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_59166"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_59510"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_59511"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_613"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_615"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_61885"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_65700"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_66269"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_66271"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_69222"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_69223"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_69224"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_703248"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_71239"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_71240"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_71274"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_71275"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_72025"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_721805"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_721813"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_72274"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_73496"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_745062"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_745090"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_78229"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_78377"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_78398"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_78536"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_79967"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_80840"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_80864"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_80867"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_80868"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_80869"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_80870"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_82115"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_83167"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_83964"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_85003"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_85011"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_911341"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_91347"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_91827"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_91835"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_91836"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_91882"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_91888"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_97473"/>
+            <rdf:Description rdf:about="&PPIO;NCBITaxon_981071"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000065"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000066"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000067"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000068"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000069"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000070"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000071"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000072"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000073"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000074"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000075"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000076"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000077"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000078"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0000079"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0360921"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0360922"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0360923"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0360924"/>
+            <rdf:Description rdf:about="&PPIO;PPIO_0360925"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000059"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000070"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000078"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000081"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000140"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000141"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000145"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000146"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000149"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000156"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000190"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000264"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000288"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000304"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000336"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000338"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000346"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000364"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000399"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000400"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000411"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000426"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000552"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000556"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000571"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000572"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000573"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000574"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000576"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000578"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000579"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000636"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000644"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000652"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000661"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000678"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000692"/>
+            <rdf:Description rdf:about="&PPIO;TO_0000693"/>
+            <rdf:Description rdf:about="&PPIO;TO_0001004"/>
+            <rdf:Description rdf:about="&PPIO;TO_0001005"/>
+            <rdf:Description rdf:about="&PPIO;TO_0002663"/>
+            <rdf:Description rdf:about="&PPIO;TO_0002712"/>
+            <rdf:Description rdf:about="&PPIO;TO_0011003"/>
+            <rdf:Description rdf:about="&PPIO;TO_0011004"/>
+            <rdf:Description rdf:about="&PPIO;TO_0011010"/>
+            <rdf:Description rdf:about="&PPIO;TO_0020017"/>
+        </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
