@@ -1,0 +1,46 @@
+new_classes(number) and new related properties(number.number):
+
+1) sequence.
+	-AA_sequence.
+	-NT_sequence.
+
+1.1) has_sequence.
+	-has_AA_sequence.
+	-has_NT_sequence.
+
+2) gene (this class will englobe others, like accesion, essential_gene, function, gene name, locus ID, ¿phenotype of mutant?)
+	-gene name.
+	-function.
+	-locus ID.
+	-accesion?
+	-essential_gene_Lethal_knockout?
+	-phenotype of mutant?
+	-experimental_evidence?
+
+2.2) has_gene:
+	- has_gene_name
+	- has_function
+	- has_locus_ID
+	- has_accesion
+	- has_essential_gene_(lethal_knockout)
+	- has_mutant_phenotype
+
+3) disease name (maybe merge with phenotypic process).
+
+3.3) has_disease_name.
+
+4) experimental_host (merge with host_plant?)
+
+5) host_response (merge with resistance/susceptibility_phenotype?)
+
+6) reference.
+	- has_reference.
+	- has_literature_source/ID?.
+
+7) Host_NCBI_Taxonomy_ID and Pathogen_NCBI_Taxonomy_ID (all the new organisms we are going to extract) should be in the NCBITaxon_1 class.
+
+8) Comments (in the comments section for each class?)
+
+
+
+	

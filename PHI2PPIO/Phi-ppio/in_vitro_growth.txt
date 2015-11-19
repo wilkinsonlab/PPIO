@@ -1,0 +1,59 @@
+WILD TYPE	wild_type	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000005	
+WILD-TYPE	wild_type	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000005
+WT	wild_type	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000005
+WILDTYPE	wild_type	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000005
+WT IN LIQUID	wild_type_in_liquid (subclass of wild_type)	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000006
+75% OF WILD TYPE	75%_of_wild_type (subclass of wild_type)	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000007
+
+REDUCED	reduced	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000008
+SLIGHTLY REDUCED	slightly_reduced	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000012
+REDUCED BY UP TO 40%	reduced_up_to_40%	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000015
+SLIGHTLY REDUCED UNTIL 48H	slightly_reduced_until_48h	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000016
+REDUCED ON PLATE	reduced_on_plate	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000029
+	-->chemical_compound related_reduction (ésta la creo yo de cero, las siguientes son subclases):	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000023
+REDUCED ON SOLID MEDIA	reduced_on_solid_media	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000025
+REDUCED ON PECTIN	reduced_on_pectin	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000026
+REDUCED BY 20% ON SOLID MEDIA, 30% IN LIQUID CULTURE	reduced_by_20%_on_solid_media,30%_in_liquid_culture	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000027
+REDUCED ON SOLID MEDIUM, NOT IN LIQUID MEDIUM	reduced_on_solid_medium,not_in_liquid_medium	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000028
+REDUCED ON CM MEDIUM	reduced_on_cm_medium	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000030
+REDUCED ON MANNITOL	reduced_on_mannitol	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000031
+	-->fungal_structures_related_reduction (ésta la creo yo de cero, las siguientes son subclases):	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000032
+REDUCED AERIAL HYPHAE	reduced_aerial_hyphae	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000033
+REDUCED AERIAL MYCELIUM	reduced_aerial_mycelium	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000034
+
+
+DIFFERENT COLONY MORPHOLOGY	different_colony_morphology	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000036
+ALTERED CELL MORPHOLOGY	altered_cell_morphology	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000039
+ALTERED HYPHAL MORPHOLOGY	altered_hyphal_morphology	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000050
+ALTERED MORPHOLOGY	altered_morphology	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000052
+
+
+ARGININE AUXOTROPH	arginine_auxotroph	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000035
+BEIGE COLONIES	beige_colonies	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000037
+UNABLE TO METABOLISE ACETATE AND FATTY ACIDS	unable_to_metabolise_acetate_and_fatty_acids	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000038
+UNAFFECTED	unaffected	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000040
+INCREASED	increased	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000041	
+MATING, PHEROMONE RESPONSE AND FILAMENTATION DEFECTS	mating,pheromone_response_and_filamentation_defects	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000042
+NORMAL GROWTH RATE	normal_growth_rate	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000043
+NO	no	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000044	
+SOME IMPAIRMENT	some_impairment	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000045
+DEFECTIVE	defective	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000046
+SLOWED	slowed	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000047
+SLIGHTLY AFFECTED	slighthly_affected	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000048
+HYPERBRANCHING	hyperbranching	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000049
+SLIGHTLY FASTER	slightly_faster	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000051
+UNABLE TO GROW ON MANNITOL	unable_to_grow_on_mannitol	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000053
+
+	-->yeast_like_cells(ésta la creo yo de cero, las siguientes son subclases):	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000056
+YEAST LIKE CELLS DEFECTIVE	yeast_like_cells_defective	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000054	
+YEAST LIKE CELLS DEFECTIVE, DEFECTIVE HYPHAL GROWTH	yeast_like_cells_defective,defective_hyphal_growth	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000055
+YEAST-LIKE CELLS THICK	yeast_like_cells_thick	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000057
+YEAST-LIKE CELLS SLIGHTLY SHORT	yeast-like_cells_slightly_short	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000058
+YEAST LIKE CELLS THICK	yeast_like_cells_thick	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000057
+
+SLOW GERMINATION RATE. INCREASED SPORULATION	slow_germination_rate.increased_sporulation	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000059
+ABERRANT	aberrant	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000060
+ABERANT	aberrant	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000060
+ENHANCED	enhanced	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000061
+ABERRANT, ENHANCED	aberrant,enhanced	http://www.cbgp.upm.es/phibase/PPIO_00000000000000000062
+

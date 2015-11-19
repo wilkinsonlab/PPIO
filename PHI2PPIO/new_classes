@@ -1,0 +1,37 @@
+Biological terms:
+
+AA_sequence
+Accesion
+Associated_strain
+Comments (this can go in the comments in the different ontology terms)
+Disease_name
+Essential_gene_Lethal_knockout
+Experimental_evidences
+Experimental_host
+Function
+Gene_name
+GO annotation
+Host_response
+Host_target
+In vitro_growth (we could include it as a new subclass of the pathogen_physiology_trait --> growth_type)
+Locus_ID
+NT_sequence
+Phenotype_of_mutant
+
+
+Publication-related terms: (I don't know if we will need them all, we can download them just in case)
+
+Reference
+Literature_source
+Literature_ID
+Year_published
+
+
+Doubts:
+
+Strain? (I guess the NCBI taxonomy ID for each case reaches until the level of strain, so not neccesary maybe)
+Host_NCBI_Taxonomy_ID? (not neccesary as a class, if the species is going to be automatically obtained)
+Pathogen_NCBI_Taxonomy_ID? (same as with Host_NCBI_Taxonomy_ID)
+Pathogen_species? (same as previous)
+PHI-base_accession_no? (to acknowledge PHI. In phidump.txt, is "Phi accesion number")
+

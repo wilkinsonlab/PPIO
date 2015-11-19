@@ -1,0 +1,1798 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.cbgp.upm.es/phibase"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.cbgp.upm.es/phibase">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://edamontology.org</Import>
+    <Import>http://semanticscience.org/ontology/sio.owl</Import>
+    <Import>http://www.ebi.ac.uk/efo/efo.owl</Import>
+    <Declaration>
+        <Class IRI="http://edamontology.org/data_1176"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://edamontology.org/data_1893"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://edamontology.org/data_2044"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://edamontology.org/data_2299"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_010035"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#host_species"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#phi_base_accession"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#species"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000000"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000010"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000011"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000013"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000014"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000017"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000018"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000020"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000021"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000022"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AASEQ_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ACC_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ASS_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EXPEVID_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EXPHOST_00001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FUNC_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GENENAME_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GENE_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GMP_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GOA_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HR_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HSTNCBITAXID_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HSTSPECIES_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#INT_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MUTPHE_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NTSEQ_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PATNCBITAXID_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PATSPECIES_00001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PAT_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PHIBA_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#STR_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000005"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000006"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000007"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000008"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000012"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000016"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000023"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000025"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000026"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000027"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000028"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000029"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000030"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000031"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000032"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000033"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000034"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000035"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000036"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000037"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000038"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000039"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000040"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000041"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000042"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000043"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000044"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000045"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000046"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000047"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000048"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000049"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000050"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000051"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000052"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000053"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000054"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000055"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000056"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000057"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000058"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000059"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000060"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000061"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000062"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000063"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000064"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000065"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000066"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000067"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000068"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000069"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000070"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000071"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PPIO_00000000000000000072"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#host_species"/>
+        <Class IRI="#species"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000000"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_010415"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000009"/>
+        <Class IRI="http://edamontology.org/data_2044"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000010"/>
+        <Class IRI="http://edamontology.org/data_2044"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000019"/>
+        <Class IRI="#species"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000009"/>
+        <NamedIndividual IRI="#AASEQ_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000011"/>
+        <NamedIndividual IRI="#ACC_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000017"/>
+        <NamedIndividual IRI="#ASS_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000014"/>
+        <NamedIndividual IRI="#EXPEVID_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000000"/>
+        <NamedIndividual IRI="#EXPHOST_00001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000004"/>
+        <NamedIndividual IRI="#FUNC_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://edamontology.org/data_2299"/>
+        <NamedIndividual IRI="#GENENAME_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <NamedIndividual IRI="#GENE_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://semanticscience.org/resource/SIO_010035"/>
+        <NamedIndividual IRI="#GENE_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000024"/>
+        <NamedIndividual IRI="#GMP_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://edamontology.org/data_1176"/>
+        <NamedIndividual IRI="#GOA_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000002"/>
+        <NamedIndividual IRI="#HR_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000021"/>
+        <NamedIndividual IRI="#HSTNCBITAXID_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#host_species"/>
+        <NamedIndividual IRI="#HSTSPECIES_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000022"/>
+        <NamedIndividual IRI="#INT_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000015"/>
+        <NamedIndividual IRI="#MUTPHE_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000020"/>
+        <NamedIndividual IRI="#PATNCBITAXID_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://semanticscience.org/resource/SIO_000120"/>
+        <NamedIndividual IRI="#PATSPECIES_00001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://semanticscience.org/resource/SIO_010414"/>
+        <NamedIndividual IRI="#PAT_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#phi_base_accession"/>
+        <NamedIndividual IRI="#PHIBA_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://semanticscience.org/resource/SIO_010055"/>
+        <NamedIndividual IRI="#STR_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0005135"/>
+        <NamedIndividual IRI="#STR_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000022"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000005"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#phi_base_accession"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000006"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000013"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000007"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000011"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000008"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000017"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000012"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://edamontology.org/data_2299"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000016"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000023"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://semanticscience.org/resource/SIO_010035"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000023"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://semanticscience.org/resource/SIO_010414"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000025"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000020"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000026"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://semanticscience.org/resource/SIO_000120"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000027"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://semanticscience.org/resource/SIO_010055"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000028"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0005135"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000028"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000001"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000029"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000001"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000030"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000002"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000031"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#host_species"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000032"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000021"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000033"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000022"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000034"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000004"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000036"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://edamontology.org/data_1176"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000037"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000015"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000038"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000024"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000039"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000009"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000040"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000010"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000041"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000014"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000042"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000022"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000043"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#phi_base_accession"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000044"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://semanticscience.org/resource/SIO_010277"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000045"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000046"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://semanticscience.org/resource/SIO_010035"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000046"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000011"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000047"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://semanticscience.org/resource/SIO_010055"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000049"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0005135"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000049"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://edamontology.org/data_2299"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000050"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000020"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000051"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://semanticscience.org/resource/SIO_000120"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000052"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000017"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000053"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000001"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000054"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000021"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000055"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://semanticscience.org/resource/SIO_010414"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000056"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000000"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000057"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#host_species"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000058"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://edamontology.org/data_1176"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000059"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000004"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000060"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000024"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000061"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000015"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000062"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000014"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000063"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://edamontology.org/data_1179"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000064"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000000"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000065"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://edamontology.org/data_1179"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000066"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000018"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000067"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://edamontology.org/data_2907"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000068"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000069"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://semanticscience.org/resource/SIO_010035"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000069"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PPIO_00000000000000000000"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000070"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://edamontology.org/data_2299"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000071"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://edamontology.org/data_1893"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000072"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="#EXPHOST_00001"/>
+        <NamedIndividual IRI="#HSTSPECIES_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="#EXPHOST_00001"/>
+        <NamedIndividual IRI="#HR_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="#EXPHOST_00001"/>
+        <NamedIndividual IRI="#HSTNCBITAXID_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="#GENE_000001"/>
+        <NamedIndividual IRI="#FUNC_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="#GENE_000001"/>
+        <NamedIndividual IRI="#NTSEQ_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="#GENE_000001"/>
+        <NamedIndividual IRI="#AASEQ_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="#GENE_000001"/>
+        <NamedIndividual IRI="#GMP_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="#GENE_000001"/>
+        <NamedIndividual IRI="#GENENAME_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="#GENE_000001"/>
+        <NamedIndividual IRI="#GOA_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="#GENE_000001"/>
+        <NamedIndividual IRI="#ACC_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="#GMP_000001"/>
+        <NamedIndividual IRI="#MUTPHE_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="#GMP_000001"/>
+        <NamedIndividual IRI="#EXPEVID_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="#INT_000001"/>
+        <NamedIndividual IRI="#EXPHOST_00001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="#INT_000001"/>
+        <NamedIndividual IRI="#PAT_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="#INT_000001"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000029"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="#INT_000001"/>
+        <NamedIndividual IRI="#PHIBA_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="#PAT_000001"/>
+        <NamedIndividual IRI="#PATSPECIES_00001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="#PAT_000001"/>
+        <NamedIndividual IRI="#STR_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="#PAT_000001"/>
+        <NamedIndividual IRI="#GENE_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="#PAT_000001"/>
+        <NamedIndividual IRI="#ASS_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="#PAT_000001"/>
+        <NamedIndividual IRI="#PATNCBITAXID_000001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000005"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000025"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000005"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000030"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000005"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000035"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000005"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000006"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000023"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000040"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000023"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000041"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000023"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000036"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000023"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000039"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000023"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000008"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000023"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000016"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000023"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000037"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000025"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000012"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000025"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000023"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000025"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000027"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000025"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000028"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000025"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000026"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000034"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000045"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000034"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000065"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000035"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000031"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000035"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000032"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000035"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000039"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000042"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000039"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000038"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000043"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000048"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000043"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000054"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000043"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000057"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000043"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000044"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000045"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000067"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000093"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000045"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000056"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000272"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000045"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000069"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000046"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000061"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000046"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000060"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000046"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000050"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000046"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000047"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000046"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000059"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000048"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000046"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000048"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000052"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000048"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000053"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000048"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000049"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000048"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000051"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000056"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000064"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000057"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000058"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000057"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000055"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000061"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000063"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000061"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000062"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000008"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000065"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000070"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000065"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000066"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000069"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000068"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000069"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000072"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://semanticscience.org/resource/SIO_000673"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000069"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000071"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#AASEQ_000001"/>
+        <Literal datatypeIRI="&xsd;string">null</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#ACC_000001"/>
+        <Literal datatypeIRI="&xsd;string">G7TK09</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#ASS_000001"/>
+        <Literal datatypeIRI="&xsd;string">BLS256</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#EXPEVID_000001"/>
+        <Literal datatypeIRI="&xsd;string">functional test in host: transient expression</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#FUNC_000001"/>
+        <Literal datatypeIRI="&xsd;string">Effector protein</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#GENENAME_000001"/>
+        <Literal datatypeIRI="&xsd;string">tal2a</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#GOA_000001"/>
+        <Literal datatypeIRI="&xsd;string">null</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#HR_000001"/>
+        <Literal datatypeIRI="&xsd;string">null</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#HSTNCBITAXID_000001"/>
+        <Literal datatypeIRI="&xsd;string">4530</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#HSTSPECIES_000001"/>
+        <Literal datatypeIRI="&xsd;string">Rice</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#MUTPHE_000001"/>
+        <Literal datatypeIRI="&xsd;string">Effector (plant avirulence determinant)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#NTSEQ_000001"/>
+        <Literal datatypeIRI="&xsd;string">null</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#PATNCBITAXID_000001"/>
+        <Literal datatypeIRI="&xsd;string">64187</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#PATSPECIES_00001"/>
+        <Literal datatypeIRI="&xsd;string">Xanthomonas oryzae pv. oryzae</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#PHIBA_000001"/>
+        <Literal datatypeIRI="&xsd;string">PHI:2721</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="#STR_000001"/>
+        <Literal datatypeIRI="&xsd;string">X11-5A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000006"/>
+        <Literal datatypeIRI="&xsd;string">PHI:2722</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000007"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000008"/>
+        <Literal datatypeIRI="&xsd;string">G7TJZ8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000012"/>
+        <Literal datatypeIRI="&xsd;string">BLS256</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000016"/>
+        <Literal datatypeIRI="&xsd;string">tal2g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000026"/>
+        <Literal datatypeIRI="&xsd;string">64187</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000027"/>
+        <Literal datatypeIRI="&xsd;string">Xanthomonas oryzae pv. oryzae</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000028"/>
+        <Literal datatypeIRI="&xsd;string">X11-5A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000029"/>
+        <Literal datatypeIRI="&xsd;string">Bacterial leaf blight</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000030"/>
+        <Literal datatypeIRI="&xsd;string">Bacterial leaf blight</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000031"/>
+        <Literal datatypeIRI="&xsd;string"> null</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000032"/>
+        <Literal datatypeIRI="&xsd;string">Rice</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000033"/>
+        <Literal datatypeIRI="&xsd;string">4530</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000036"/>
+        <Literal datatypeIRI="&xsd;string"> Effector protein</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000037"/>
+        <Literal datatypeIRI="&xsd;string">null</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000038"/>
+        <Literal datatypeIRI="&xsd;string">Effector (plant avirulence determinant)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000040"/>
+        <Literal datatypeIRI="&xsd;string">null</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000041"/>
+        <Literal datatypeIRI="&xsd;string">null</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000042"/>
+        <Literal datatypeIRI="&xsd;string">functional test in host: transient expression</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000044"/>
+        <Literal datatypeIRI="&xsd;string">PHI:538</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000047"/>
+        <Literal datatypeIRI="&xsd;string">AAU87358</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000049"/>
+        <Literal datatypeIRI="&xsd;string">null</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000050"/>
+        <Literal datatypeIRI="&xsd;string">FRT1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000051"/>
+        <Literal datatypeIRI="&xsd;string">40559</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000052"/>
+        <Literal datatypeIRI="&xsd;string">Botrytis cinerea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000053"/>
+        <Literal datatypeIRI="&xsd;string">SAS56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000054"/>
+        <Literal datatypeIRI="&xsd;string">Grey mold rot</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000055"/>
+        <Literal datatypeIRI="&xsd;string">4081</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000058"/>
+        <Literal datatypeIRI="&xsd;string">Tomato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000059"/>
+        <Literal datatypeIRI="&xsd;string">GO:0005353</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000060"/>
+        <Literal datatypeIRI="&xsd;string">Fructose transporter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000062"/>
+        <Literal datatypeIRI="&xsd;string">Unaffected pathogenicity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000063"/>
+        <Literal datatypeIRI="&xsd;string">gene disruption</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000064"/>
+        <Literal datatypeIRI="&xsd;string">5599</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000066"/>
+        <Literal datatypeIRI="&xsd;string">64884</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000067"/>
+        <Literal datatypeIRI="&xsd;string">wild type</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000068"/>
+        <Literal datatypeIRI="&xsd;string">F8R4Y0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000070"/>
+        <Literal datatypeIRI="&xsd;string">Rough lemon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000071"/>
+        <Literal datatypeIRI="&xsd;string">ACRTS2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://semanticscience.org/resource/SIO_000300"/>
+        <NamedIndividual IRI="/PPIO_00000000000000000072"/>
+        <Literal datatypeIRI="&xsd;string">AB725683</Literal>
+    </DataPropertyAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>http://edamontology.org/data_1176</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: list of all appropriate GO terms with their corresponding evidence codes and / or EC numbers (GO terms separate from evidence code by comma, GO terms separate from GO terms or EC numbers by semicolon).
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://edamontology.org/data_1176</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GO_annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>http://edamontology.org/data_1893</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: obtained from genomic sequence
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://edamontology.org/data_1893</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">locus_id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://edamontology.org/data_2044</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>http://edamontology.org/data_2299</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: if there are synonyms, write them in brackets like “CaHK1(CHK1)”.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://edamontology.org/data_2299</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gene_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://semanticscience.org/resource/SIO_010035</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gene</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>http://semanticscience.org/resource/SIO_010055</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: strain, isolate, subspecies etc. of organism used in the experiment.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>/PPIO_00000000000000000000</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: common name of experimental host.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000000</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">experimental_host</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>/PPIO_00000000000000000001</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: common name of disease.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000001</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">disease_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000002</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">host_response</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000003</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">host_target</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>/PPIO_00000000000000000004</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: function of the disrupted gene.
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000004</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000005</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">INT_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000006</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHIBA_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000007</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GENEKNOCKOUT_000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000008</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ACC_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>/PPIO_00000000000000000009</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: amino acid sequence, in case there is no submission to EMBL.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000009</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">aa_sequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>/PPIO_00000000000000000010</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: nucleotide sequence, in case there is no submission to EMBL.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000010</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">nt_sequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>/PPIO_00000000000000000011</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag descrption: use the accession number of the protein with three letters like “AAC64374” (without the number after the dot!). If there is no EMBL accession number available use “Not available”.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000011</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">accession</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000012</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ASS_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000013</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">essential_gene_lethal_knockout</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>/PPIO_00000000000000000014</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag desdription: describe the experimental procedure trying to use one of the following terms (see Guideline file to see all the possibilities)
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000014</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">experimental_evidences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>/PPIO_00000000000000000015</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag descpription: use following terms to describe the aggressiveness of analysed mutants (see Guideline file to see all the possibilities)
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000015</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">mutant_phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000016</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GENENAME_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>/PPIO_00000000000000000017</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: strain, isolate, subspecies etc., of organism used for the submission of the gene/protein sequence. This field is the only field also experimentally annotated by automatic extraction
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000017</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">associated_strain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000018</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">in_vitro_growth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>/PPIO_00000000000000000019</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: names of pathogen species (without names of subspecies, strains, isolates etc.).
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000019</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">pathogen_species</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PPIO_00000000000000000020</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: NCBI taxonomy ID of the pathogen organism.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000020</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">pathogen_NCBI_taxonomy_id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PPIO_00000000000000000021</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: NCBI taxonomy ID of the host organism.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000021</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">host_NCBI_taxonomy_id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000022</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">pahogenic_interaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000023</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GENE_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000024</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gene_mutation_parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000025</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PAT_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000026</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PATNCBITAXID_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000027</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PATSPECIES_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000028</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">STR_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000029</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DISNAME_000001</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000030</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DISNAME_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000031</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HR_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000032</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HSTSPECIES_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000033</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HSTNCBITAXID_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000034</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">INT_000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000035</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EXPHOST_00002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000036</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FUNC_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000037</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GOA_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000038</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MUTPHE_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000039</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GMP_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000040</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AASEQ_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000041</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NTSEQ_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000042</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EXPEVID_000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000043</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">INT_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000044</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHIBA_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000045</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ALLELE_000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000046</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GENE_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000047</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ACC_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000048</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PAT_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000049</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">STR_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000050</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GENENAME_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000051</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PATNCBITAXID_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000052</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PATSPECIES_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000053</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ASS_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000054</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DISNAME_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000055</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HSTNCBITAXID_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000056</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PAT_000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000057</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EXPHOST_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000058</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HSTSPECIES_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000059</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GOA_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000060</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FUNC_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000061</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GMP_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000062</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MUTPHE_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000063</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EXPEVID_000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000064</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PATNCBITAXID_000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000065</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EXPHOST_000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000066</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HSTNCBITAXID_000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000067</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">INVITROGROWTH_000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000068</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ACC_000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000069</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GENE_000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000070</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HSTSPECIES_000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000071</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GENENAME_000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000072</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LOCUS_000004</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

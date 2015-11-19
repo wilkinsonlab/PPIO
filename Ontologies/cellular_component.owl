@@ -1,0 +1,2624 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace">
+    <Prefix name="" IRI="http://www.biocyc.org/owl/ontologies/ocelot/cco/#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="jms" IRI="http://jena.hpl.hp.com/2003/08/jms#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rss" IRI="http://purl.org/rss/1.0/"/>
+    <Prefix name="daml" IRI="http://www.daml.org/2001/03/daml+oil#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="vcard" IRI="http://www.w3.org/2001/vcard-rdf/3.0#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CE-BAC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELL-FRACT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELLWALL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-MEM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-THY"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-MEM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CLATH-VES"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COATED-VES"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPI-VES"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPII-VES"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CW-BAC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CW-PLANT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-LUM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-MEM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOCYT-VES"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOSOME"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENVELOPE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-LUM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-MEM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-CIST"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-VES"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MBODY-MEM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEM-ORG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEMBRANE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICRO-LUM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICROBODY"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MIT-MEM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NON-MEM-ORG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NUC-MEM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ORGANEL-ENV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ORGANELLE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PERIPLASM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASMA-MEM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-OMEM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-THY"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PM-BACTERIA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SPACE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SUBORG-CMPT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SUPER-COMP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SURFACE-MAT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-LUM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-MEM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VACUOLE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#FRAMES"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#COMPONENT-OF"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#COMPONENTS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#HISTORY"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#SURROUNDED-BY"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#SURROUNDS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#COMMENT"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#COMMON-NAME"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#DEFINITION"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#DEFINITION-REFERENCE"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#GOID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#SENSU"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#SYNONYMS"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#FRAMES"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#DEFINITION"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CE-BAC"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENVELOPE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELL-FRACT"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELLWALL"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SURFACE-MAT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-MEM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-THY"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-THY"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-MEM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CLATH-VES"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COATED-VES"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COATED-VES"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPI-VES"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COATED-VES"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPII-VES"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COATED-VES"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CW-BAC"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELLWALL"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CW-PLANT"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELLWALL"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-LUM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SPACE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-MEM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEMBRANE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOCYT-VES"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOSOME"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEM-ORG"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENVELOPE"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEM-ORG"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-LUM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SPACE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-MEM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEMBRANE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-CIST"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SUBORG-CMPT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-VES"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MBODY-MEM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEMBRANE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEM-ORG"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ORGANELLE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEMBRANE"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICRO-LUM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SPACE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICROBODY"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEM-ORG"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MIT-MEM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEMBRANE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NON-MEM-ORG"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ORGANELLE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NUC-MEM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEMBRANE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ORGANEL-ENV"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENVELOPE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ORGANELLE"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PERIPLASM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SPACE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASMA-MEM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEMBRANE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SPACE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-OMEM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-THY"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SUBORG-CMPT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEM-ORG"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ORGANEL-ENV"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEMBRANE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SPACE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PM-BACTERIA"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASMA-MEM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SPACE"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SUBORG-CMPT"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SUPER-COMP"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SURFACE-MAT"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-LUM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SPACE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-MEM"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEMBRANE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VACUOLE"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEM-ORG"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEM-ORG"/>
+    </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#COMPONENTS"/>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#COMPONENT-OF"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#SURROUNDED-BY"/>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#SURROUNDS"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#COMPONENT-OF"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#FRAMES"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#COMPONENTS"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#FRAMES"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#HISTORY"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#FRAMES"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#SURROUNDED-BY"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#SURROUNDS"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#COMPONENT-OF"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#FRAMES"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#COMPONENTS"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#FRAMES"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#HISTORY"/>
+        <ObjectUnionOf>
+            <Class IRI="Thing"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#SURROUNDED-BY"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#FRAMES"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#SURROUNDS"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#FRAMES"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#COMMENT"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#FRAMES"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#COMMON-NAME"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#DEFINITION"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#DEFINITION-REFERENCE"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#GOID"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#SENSU"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#SYNONYMS"/>
+        <Class IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#FRAMES"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#COMMENT"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#DEFINITION"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#DEFINITION-REFERENCE"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#GOID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://brg.ai.sri.com/CCO/downloads/cco.owl#SYNONYMS"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO</IRI>
+        <Literal datatypeIRI="&xsd;string">CELLULAR_COMPONENT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMENT"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CE-BAC</IRI>
+        <Literal datatypeIRI="&xsd;string">GO definition of cell envelope does not include the cell membrane.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CE-BAC</IRI>
+        <Literal datatypeIRI="&xsd;string">cell envelope (sensu Bacteria)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CE-BAC</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PM-BACTERIA</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CE-BAC</IRI>
+        <Literal datatypeIRI="&xsd;string">The cell envelope of a bacteria is defined as the cell membrane (plasma membrane) and cell wall plus an outer membrane if one is present.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CE-BAC</IRI>
+        <Literal datatypeIRI="&xsd;string">http://www.med.sc.edu:85/fox/cell_envelope.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CE-BAC</IRI>
+        <Literal datatypeIRI="&xsd;string">Bacteria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CE-BAC</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMENT"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELL-FRACT</IRI>
+        <Literal datatypeIRI="&xsd;string">Refers to artificial cell components that are derived from disruptive cell biological techniques. The components are not present within any cells. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELL-FRACT</IRI>
+        <Literal datatypeIRI="&xsd;string">cell fraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELL-FRACT</IRI>
+        <Literal datatypeIRI="&xsd;string">A generic term for parts of cells prepared by disruptive biochemical techniques.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELL-FRACT</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELL-FRACT</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0000267</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELL-FRACT</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELLWALL</IRI>
+        <Literal datatypeIRI="&xsd;string">cell wall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELLWALL</IRI>
+        <Literal datatypeIRI="&xsd;string">The rigid or semi-rigid envelope lying outside the cell membrane of plant, fungal, and most prokaryotic cells, maintaining their shape and protecting them from osmotic lysis. In plants it is made of cellulose and, often, lignin; in fungi it is composed largely of polysaccharides; in bacteria it is composed of peptidoglycan.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELLWALL</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELLWALL</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0005618</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CELLWALL</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMENT"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">This term does not include the intermembrane space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">chloroplast membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-ENV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOROPLAST</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Either of the two membranes, inner and outer, of a chloroplast.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-THY</IRI>
+        <Literal datatypeIRI="&xsd;string">chloroplast thylakoid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-THY</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOROPLAST</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-THY</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-THY</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHL-THY-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-THY</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHL-THY-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-THY</IRI>
+        <Literal datatypeIRI="&xsd;string">Any thylakoid within a chloroplast.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-THY</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-THY</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-STR</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMENT"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">This term does not include the intermembrane space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">chromoplast membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-ENV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROMOPLAST</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">The outer or inner membrane of a chromoplast.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0046862</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CLATH-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">clathrin-coated vesicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CLATH-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOPLASM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CLATH-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VES-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CLATH-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CLATH-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">A vesicle with a coat formed of clathrin connected to the membrane via one of the clathrin adaptor complexes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CLATH-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CLATH-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0030136</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CLATH-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CLATH-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COATED-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">coated vesicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COATED-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOPLASM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COATED-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VES-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COATED-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COATED-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">Small membrane-bounded organelle formed by pinching off of a coated region of membrane. Some coats are made of clathrin, whereas others are made from other proteins.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COATED-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COATED-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0030135</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COATED-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COATED-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPI-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">COPI-coated vesicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPI-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOPLASM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPI-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VES-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPI-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPI-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">A vesicle with a coat formed of the COPI coat complex proteins. COPI-coated vesicles are found associated with Golgi membranes at steady state, are involved in Golgi to endoplasmic reticulum (retrograde) vesicle transport, and possibly also in intra-Golgi transport.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPI-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPI-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0030137</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPI-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPI-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPII-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">COPII-coated vesicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPII-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOPLASM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPII-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VES-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPII-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPII-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">A vesicle with a coat formed of the COPII coat complex proteins; COPII-coated vesicles are found associated with endoplasmic reticulum (ER) membranes at steady state, and are involved in ER to Golgi (anterograde) vesicle transport.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPII-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPII-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0030138</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPII-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-COPII-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CW-BAC</IRI>
+        <Literal datatypeIRI="&xsd;string">cell wall (sensu Bacteria)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CW-BAC</IRI>
+        <Literal datatypeIRI="&xsd;string">A protective structure outside the cytoplasmic membrane composed of peptidoglycan, a molecule made up of a glycan (sugar) backbone of repetitively alternating N-acetylglucosamine and N-acetylmuramic acid with short, attached, cross-linked peptide chains containing unusual amino acids; also called murein. As in, but not restricted to, the taxon Eubacteria (Bacteria, ncbi_taxonomy_id:2).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CW-BAC</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CW-BAC</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0009274</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CW-BAC</IRI>
+        <Literal datatypeIRI="&xsd;string">Bacteria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CW-PLANT</IRI>
+        <Literal datatypeIRI="&xsd;string">cell wall (sensu Magnoliophyta)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CW-PLANT</IRI>
+        <Literal datatypeIRI="&xsd;string">A more or less rigid membrane enclosing the protoplast of a cell and composed of cellulose and other organic and inorganic substances. As in, but not restricted to, the flowering plants (Magnoliophyta, ncbi_taxonomy_id:3398).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CW-PLANT</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CW-PLANT</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0009505</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CW-PLANT</IRI>
+        <Literal datatypeIRI="&xsd;string">Magnoliophyta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CW-PLANT</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PM-PLANT</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-LUM</IRI>
+        <Literal datatypeIRI="&xsd;string">endosome lumen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-LUM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOSOME</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-LUM</IRI>
+        <Literal datatypeIRI="&xsd;string">The space enclosed by the endosome membrane.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-LUM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-LUM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-EARLY-ENDO-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-LUM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-LUM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LATE-ENDO-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">endosome membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOSOME</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">The lipid bilayer surrounding an endosome.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0010008</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOCYT-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">endocytic vesicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOCYT-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOPLASM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOCYT-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VES-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOCYT-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOCYT-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">A membrane-bounded intracellular vesicle formed by invagination of the plasma membrane around an extracellular substance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOCYT-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOCYT-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0030139</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOCYT-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOCYT-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOSOME</IRI>
+        <Literal datatypeIRI="&xsd;string">endosome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOSOME</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOPLASM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOSOME</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-EARLY-END-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOSOME</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOSOME</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDO-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOSOME</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LATE-END-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOSOME</IRI>
+        <Literal datatypeIRI="&xsd;string">A membrane-bound organelle that carries materials newly ingested by endocytosis. It passes many of the materials to lysosomes for degradation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOSOME</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOSOME</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0005768</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOSOME</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENDOSOME</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENVELOPE</IRI>
+        <Literal datatypeIRI="&xsd;string">envelope</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENVELOPE</IRI>
+        <Literal datatypeIRI="&xsd;string">The multi-membrane structure including the space between the membranes that surrounds some cells and organelles.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ENVELOPE</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER</IRI>
+        <Literal datatypeIRI="&xsd;string">endoplasmic reticulum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOPLASM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-RGH-ER-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SMTH-ER-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER</IRI>
+        <Literal datatypeIRI="&xsd;string">The irregular network of unit membranes, visible only by electron microscopy, that occurs in the cytoplasm of many eukaryotic cells. The membranes form a complex meshwork of tubular channels, which are often expanded into slitlike cavities called cisternae. The ER takes two forms, rough (or granular), with ribosomes adhering to the outer surface, and smooth (with no ribosomes attached).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0005783</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SYNONYMS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER</IRI>
+        <Literal datatypeIRI="&xsd;string">ER</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-LUM</IRI>
+        <Literal datatypeIRI="&xsd;string">endoplasmic reticulum lumen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-LUM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-LUM</IRI>
+        <Literal datatypeIRI="&xsd;string">The volume enclosed by the membranes of the endoplasmic reticulum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-LUM</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-LUM</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0005788</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-LUM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-LUM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-LUM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-RGH-ER-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-LUM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SMTH-ER-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SYNONYMS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-LUM</IRI>
+        <Literal datatypeIRI="&xsd;string">ER lumen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">endoplasmic reticulum membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">The lipid bilayer surrounding the endoplasmic reticulum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0005789</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SYNONYMS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ER-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">ER membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-CIST</IRI>
+        <Literal datatypeIRI="&xsd;string">Golgi cisterna</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-CIST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-CIST</IRI>
+        <Literal datatypeIRI="&xsd;string">The membrane-limited component of the Golgi apparatus which is typically flattened, usually with a central plate-like region which is often continuous with peripheral tubules and vesicles.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-CIST</IRI>
+        <Literal datatypeIRI="&xsd;string">ISBN:0412631504</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-CIST</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-CIST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">Golgi vesicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOPLASM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VES-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">Any vesicle associated with the Golgi complex and involved in mediating transport within the Golgi or between the Golgi and other parts of the cell.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0005798</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-VES</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GOLGI-VES</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <Literal datatypeIRI="&xsd;string">leucoplast</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOPLASM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHL-STKD-THY</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHL-STR-THY</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-STR</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-THY</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-STR</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-OMEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-THY</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <Literal datatypeIRI="&xsd;string">A non-pigmented plastid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <Literal datatypeIRI="&xsd;string"> GO:0009516</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-LEUCOPLAST</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MBODY-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">microbody membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MBODY-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICROBODY</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MBODY-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">the membrane surrounding a microbody.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MBODY-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MBODY-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MBODY-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICRO-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEM-ORG</IRI>
+        <Literal datatypeIRI="&xsd;string">membrane-bound organelle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEM-ORG</IRI>
+        <Literal datatypeIRI="&xsd;string">A discrete structure of a cell specialized to carry out a particular function, bounded by a membrane so that sets of enzymes can operate without interference from reactions occurring in other compartments.      </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEM-ORG</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0043227</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEM-ORG</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEM-ORG</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEMBRANE</IRI>
+        <Literal datatypeIRI="&xsd;string">membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEMBRANE</IRI>
+        <Literal datatypeIRI="&xsd;string">Double layer of lipid molecules that encloses all cells, and, in eukaryotes, many organelles; may be a single or double lipid bilayer, also includes associated proteins.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEMBRANE</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEMBRANE</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0016020</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MEMBRANE</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICRO-LUM</IRI>
+        <Literal datatypeIRI="&xsd;string">microbody lumen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICRO-LUM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICROBODY</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICRO-LUM</IRI>
+        <Literal datatypeIRI="&xsd;string">The space enclosed by the microbody membrane.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICRO-LUM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICRO-LUM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GLYOX-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICRO-LUM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MBODY-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICRO-LUM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PEROX-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICROBODY</IRI>
+        <Literal datatypeIRI="&xsd;string">microbody</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICROBODY</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOPLASM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICROBODY</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-GLYOX-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICROBODY</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MBODY-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICROBODY</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICRO-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICROBODY</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PEROX-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICROBODY</IRI>
+        <Literal datatypeIRI="&xsd;string">Cytoplasmic organelles, spherical or oval in shape, that are bounded by a single membrane and contain oxidative enzymes, especially those utilizing hydrogen peroxide (H2O2).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICROBODY</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICROBODY</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0042579</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICROBODY</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MICROBODY</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MIT-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">mitochondrial membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MIT-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MIT</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MIT-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MIT-ENV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MIT-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Either of the inner and outer membranes, comprising the mitochondrial envelope. Note that the term mitochondrial membrane is a classification term for the inner and outer mitochondrial membranes. It does not include the intermembrane space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-MIT-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NON-MEM-ORG</IRI>
+        <Literal datatypeIRI="&xsd;string">non-membrane-bound organelle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NON-MEM-ORG</IRI>
+        <Literal datatypeIRI="&xsd;string">A discrete structure of a cell specialized to carry out a particular function, not bounded by a membrane.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NON-MEM-ORG</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0043228</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NON-MEM-ORG</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NON-MEM-ORG</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMENT"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NUC-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">some sources use the same term refer to nuclear envelope. We distinguish them. The term nuclear membrane is a classification term for the inner and outer nuclear membranes. It does not include the perinuclear space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NUC-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">nuclear membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NUC-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NUC-ENV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NUC-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NUCLEUS</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NUC-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Either of the inner and outer membranes, comprising the nuclear envelope.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-NUC-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ORGANEL-ENV</IRI>
+        <Literal datatypeIRI="&xsd;string">organellar envelope</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ORGANEL-ENV</IRI>
+        <Literal datatypeIRI="&xsd;string">Any double membrane structure including the intermembrane space that surrounds an organelle. In some cases, an organellar envelope may have more than two membranes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ORGANEL-ENV</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ORGANELLE</IRI>
+        <Literal datatypeIRI="&xsd;string">organelle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ORGANELLE</IRI>
+        <Literal datatypeIRI="&xsd;string">A discrete structure of a cell specialized to carry out a particular function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ORGANELLE</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0043226</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ORGANELLE</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-ORGANELLE</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PERIPLASM</IRI>
+        <Literal datatypeIRI="&xsd;string">periplasmic space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PERIPLASM</IRI>
+        <Literal datatypeIRI="&xsd;string">The region between the inner (cytoplasmic) and outer membrane (Gram-negative bacteria) or inner membrane and cell wall (fungi).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PERIPLASM</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PERIPLASM</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0042597</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PERIPLASM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SYNONYMS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PERIPLASM</IRI>
+        <Literal datatypeIRI="&xsd;string">periplasm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASMA-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">plasma membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASMA-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">The membrane surrounding a cell that separates the cell from its external environment. It consists of a phospholipid bilayer and associated proteins.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASMA-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASMA-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0005886</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASMA-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASMA-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOPLASM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASMA-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SYNONYMS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASMA-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">cell membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SYNONYMS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASMA-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">cytoplasmic membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SYNONYMS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASMA-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">plasmalemma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+        <Literal datatypeIRI="&xsd;string">plastid intermembrane space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+        <Literal datatypeIRI="&xsd;string">The region between the plastid inner membrane and plastid outer membrane.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0009529</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-OMEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-OMEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-OMEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+        <Literal datatypeIRI="&xsd;string">plastid inner membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+        <Literal datatypeIRI="&xsd;string">The portion of the plastid envelope that faces the plastid stroma and the plastid intermembrane space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0009528</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHL-IM-SPC</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHR-IM-SPC</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-OMEM</IRI>
+        <Literal datatypeIRI="&xsd;string">plastid outer membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-OMEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-OMEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-OMEM</IRI>
+        <Literal datatypeIRI="&xsd;string">The portion of the plastid envelope that faces the cytoplasm and the plastid intermembrane space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-OMEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-OMEM</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0009527</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-OMEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-OMEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-OMEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-THY</IRI>
+        <Literal datatypeIRI="&xsd;string">plastid thylakoid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-THY</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-THY</IRI>
+        <Literal datatypeIRI="&xsd;string">Any thylakoid within a plastid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-THY</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-THY</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-STR</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-THY</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-STR</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-THY</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <Literal datatypeIRI="&xsd;string">plastid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOPLASM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHL-STKD-THY</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHL-STR-THY</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-STR</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-THY</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-STR</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-OMEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-THY</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <Literal datatypeIRI="&xsd;string">Any member of a family of organelles found in the cytoplasm of plants and some protists, which are membrane-bounded and contain DNA. Plant plastids develop from a common type, the proplastid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0009536</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+        <Literal datatypeIRI="&xsd;string">plastid envelope</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IM-SPC</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-OMEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+        <Literal datatypeIRI="&xsd;string">Double membrane structure of plastid, including the intermembrane space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0009526</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMENT"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">The term plastid membrane is a classification term for the inner and outer mitochondrial membranes. It does not include the intermembrane space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">plastid membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Double membrane structure of a plastid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0042170</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+        <Literal datatypeIRI="&xsd;string">plastid stroma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+        <Literal datatypeIRI="&xsd;string">The proteinaceous ground substance of plastids.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0009532</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-ENV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHLOR-IMEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-ENV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHROM-IMEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-IMEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-ENV</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLASTID-STR</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PLAST-THY</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PM-BACTERIA</IRI>
+        <Literal datatypeIRI="&xsd;string">plasma membrane (sensu Bacteria)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PM-BACTERIA</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CE-BAC</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PM-BACTERIA</IRI>
+        <Literal datatypeIRI="&xsd;string">The plasma membrane of a bacteria cell.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PM-BACTERIA</IRI>
+        <Literal datatypeIRI="&xsd;string">Bacteria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PM-BACTERIA</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOPLASM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PM-BACTERIA</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SYNONYMS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PM-BACTERIA</IRI>
+        <Literal datatypeIRI="&xsd;string">cell membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SYNONYMS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PM-BACTERIA</IRI>
+        <Literal datatypeIRI="&xsd;string">cytoplasmic membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SYNONYMS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-PM-BACTERIA</IRI>
+        <Literal datatypeIRI="&xsd;string">plasmalemma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SPACE</IRI>
+        <Literal datatypeIRI="&xsd;string">space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SPACE</IRI>
+        <Literal datatypeIRI="&xsd;string">A three-dimensional extent in which objects and events occur.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SPACE</IRI>
+        <Literal datatypeIRI="&xsd;string">Merriam-Webster</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SPACE</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SUBORG-CMPT</IRI>
+        <Literal datatypeIRI="&xsd;string">suborganelle compartment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SUBORG-CMPT</IRI>
+        <Literal datatypeIRI="&xsd;string">A membrane-enclosed compartment that is a part of an organelle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SUBORG-CMPT</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SUPER-COMP</IRI>
+        <Literal datatypeIRI="&xsd;string">super component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SUPER-COMP</IRI>
+        <Literal datatypeIRI="&xsd;string">space plus other components that are located in the space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SUPER-COMP</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SURFACE-MAT</IRI>
+        <Literal datatypeIRI="&xsd;string">cell surface matrix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SURFACE-MAT</IRI>
+        <Literal datatypeIRI="&xsd;string">The structured network of macromolecules secreted outside of the cell membrane (plasma membrane).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-SURFACE-MAT</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-LUM</IRI>
+        <Literal datatypeIRI="&xsd;string">thylakoid lumen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-LUM</IRI>
+        <Literal datatypeIRI="&xsd;string">The space enclosed by the thylakoid membrane.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-LUM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-LUM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CHL-THY-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-LUM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-LUM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-MEM-CYA</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">thylakoid membrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">The pigmented membrane of any thylakoid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0042651</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-MEM</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-MEM</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-THY-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VACUOLE</IRI>
+        <Literal datatypeIRI="&xsd;string">vacuole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VACUOLE</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOPLASM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VACUOLE</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VAC-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VACUOLE</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VAC-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VACUOLE</IRI>
+        <Literal datatypeIRI="&xsd;string">A closed structure, found only in eukaryotic cells, that is completely surrounded by unit membrane and contains liquid material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION-REFERENCE"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VACUOLE</IRI>
+        <Literal datatypeIRI="&xsd;string">Gene Ontology Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":GOID"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VACUOLE</IRI>
+        <Literal datatypeIRI="&xsd;string">GO:0005773</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VACUOLE</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VACUOLE</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMMON-NAME"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE</IRI>
+        <Literal datatypeIRI="&xsd;string">vesicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENT-OF"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOPLASM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VES-LUM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":COMPONENTS"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE-MEM</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":DEFINITION"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE</IRI>
+        <Literal datatypeIRI="&xsd;string">Any small, fluid-filled, membrane-limited spherical organelle in the cytoplasm. Vesicle store, transport, or digest cellular products or wastes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SENSU"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE</IRI>
+        <Literal datatypeIRI="&xsd;string">Organisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":SURROUNDED-BY"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-VESICLE</IRI>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#CCO-CYTOSOL</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#COMMENT</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Comment slot stores a general comment about the object that
+contains the slot.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#COMPONENT-OF</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This slot specifies an object that contains this object as a smaller
+part.  For example, this slot points from a monomer to a larger
+complex that contains it.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#COMPONENTS</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This slot lists the components of some physical assembly, such as
+the subunits of a protein complex or the genes within a chromosome.
+The coefficient of each component (when known) is listed as an 
+annotation of the component value under the label coefficient.
+
+When a modified protein is created to reflect a chemically modified
+alternate form of the protein, if that protein is a complex, its subunit
+structure need not be mirrored in the modified-protein frame.  The
+subunit structure should be defined only once, for the frame that
+represents the unmodified form of the protein.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#HISTORY</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Contains a textual history of changes made to this frame.  Each item is either a string or a note frame.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#SENSU</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Restricts the cellular compartment to organisms that match one of the values of this slot.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://brg.ai.sri.com/CCO/downloads/cco.owl#SYNONYMS</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">One or more secondary names for an object -- names
+that a scientist might attempt to use to retrieve the object.  
+The Synonyms should include any name a user might use to
+try to retrieve an object.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

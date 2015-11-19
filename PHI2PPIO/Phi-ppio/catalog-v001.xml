@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/TEMP" uri="po.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/TEMP" uri="eso.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.ebi.ac.uk/efo/efo.owl" uri="file:/home/alexx/PPIO/PHI2PPIO/Ontologies/efo.owl"/>
+    <uri id="Imports Wizard Entry" name="http://edamontology.org" uri="file:/home/alexx/Downloads/EDAM_1.9.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1434543813460" name="duplicate:http://purl.obolibrary.org/obo/TEMP" uri="po.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1434543813460" name="duplicate:http://purl.obolibrary.org/obo/TEMP" uri="eso.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1434543813460" name="duplicate:http://www.cbgp.upm.es/phibase" uri="PHI_final.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1434543813460" name="duplicate:http://www.cbgp.upm.es/phibase" uri="PHI_classes.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1434543813460" name="duplicate:http://www.cbgp.upm.es/phibase" uri="PHI_clean.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1434543813460" name="duplicate:http://www.cbgp.upm.es/phibase" uri="PHI_classes_new.owl"/>
+    </group>
+</catalog>

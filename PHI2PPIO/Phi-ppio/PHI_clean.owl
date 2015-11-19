@@ -1,0 +1,1084 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.cbgp.upm.es/phibase"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.cbgp.upm.es/phibase">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://edamontology.org</Import>
+    <Import>http://semanticscience.org/ontology/sio.owl</Import>
+    <Import>http://www.ebi.ac.uk/efo/efo.owl</Import>
+    <Declaration>
+        <Class IRI="http://edamontology.org/data_1176"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://edamontology.org/data_1893"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://edamontology.org/data_2044"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://edamontology.org/data_2299"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_010035"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#phi_base_accession"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000000"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000010"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000011"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000013"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000014"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000017"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000018"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000020"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000021"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000022"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000024"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000073"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000074"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000075"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000087"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000088"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000089"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000090"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000091"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000092"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000093"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000094"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000095"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000096"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000097"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000098"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000099"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000100"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000101"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000102"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000103"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000104"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000105"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000106"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000107"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000108"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000109"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000110"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000111"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000112"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000113"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000114"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000115"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000116"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000117"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000118"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000000"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_010415"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000010"/>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000011"/>
+        <Class IRI="/PPIO_00000000000000000010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000017"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_010055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000019"/>
+        <Class IRI="/PPIO_00000000000000000010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000020"/>
+        <Class IRI="/PPIO_00000000000000000010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000021"/>
+        <Class IRI="/PPIO_00000000000000000010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000074"/>
+        <Class IRI="/PPIO_00000000000000000073"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000075"/>
+        <Class IRI="/PPIO_00000000000000000073"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000087"/>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000088"/>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000089"/>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000090"/>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000091"/>
+        <Class IRI="/PPIO_00000000000000000090"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000092"/>
+        <Class IRI="/PPIO_00000000000000000090"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000093"/>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000094"/>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000095"/>
+        <Class IRI="/PPIO_00000000000000000094"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000096"/>
+        <Class IRI="/PPIO_00000000000000000094"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000097"/>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000098"/>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000099"/>
+        <Class IRI="/PPIO_00000000000000000098"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000100"/>
+        <Class IRI="/PPIO_00000000000000000098"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000101"/>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000102"/>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000103"/>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000104"/>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000105"/>
+        <Class IRI="/PPIO_00000000000000000104"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000106"/>
+        <Class IRI="/PPIO_00000000000000000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000107"/>
+        <Class IRI="/PPIO_00000000000000000106"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000109"/>
+        <Class IRI="/PPIO_00000000000000000108"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000110"/>
+        <Class IRI="/PPIO_00000000000000000108"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000111"/>
+        <Class IRI="/PPIO_00000000000000000108"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000112"/>
+        <Class IRI="/PPIO_00000000000000000108"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000113"/>
+        <Class IRI="/PPIO_00000000000000000108"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000114"/>
+        <Class IRI="/PPIO_00000000000000000108"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000115"/>
+        <Class IRI="/PPIO_00000000000000000108"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000116"/>
+        <Class IRI="/PPIO_00000000000000000108"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000117"/>
+        <Class IRI="/PPIO_00000000000000000108"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PPIO_00000000000000000118"/>
+        <Class IRI="/PPIO_00000000000000000108"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>http://edamontology.org/data_1176</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: list of all appropriate GO terms with their corresponding evidence codes and / or EC numbers (GO terms separate from evidence code by comma, GO terms separate from GO terms or EC numbers by semicolon).
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://edamontology.org/data_1176</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GO_annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>http://edamontology.org/data_1893</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: obtained from genomic sequence
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://edamontology.org/data_1893</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">locus_id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://edamontology.org/data_2044</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>http://edamontology.org/data_2299</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: if there are synonyms, write them in brackets like “CaHK1(CHK1)”.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://edamontology.org/data_2299</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gene_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://semanticscience.org/resource/SIO_010035</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gene</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>http://semanticscience.org/resource/SIO_010055</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: strain, isolate, subspecies etc. of organism used in the experiment.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>/PPIO_00000000000000000000</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: common name of experimental host.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000000</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">experimental_host</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>/PPIO_00000000000000000001</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: common name of disease.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000001</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">disease_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000002</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">host_response</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000003</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">host_target</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>/PPIO_00000000000000000004</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: function of the disrupted gene.
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000004</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000009</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000000</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PPIO_00000000000000000009</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000009</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">experiment_specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000010</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PPIO_00000000000000000010</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000010</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">altered_gene_expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000011</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000012</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PPIO_00000000000000000011</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000011</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gene_downregulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000013</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">essential_gene_lethal_knockout</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>/PPIO_00000000000000000014</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag desdription: describe the experimental procedure trying to use one of the following terms (see Guideline file to see all the possibilities)
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000014</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">experimental_evidences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <IRI>/PPIO_00000000000000000017</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PHI-tag description: strain, isolate, subspecies etc., of organism used for the submission of the gene/protein sequence. This field is the only field also experimentally annotated by automatic extraction
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000017</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">associated_strain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000018</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">in_vitro_growth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000019</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000011</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PPIO_00000000000000000019</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000019</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gene_overexpression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000020</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000013</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PPIO_00000000000000000020</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000020</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gene_silencing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000021</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000024</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PPIO_00000000000000000021</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000021</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unknown_gene_expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000022</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">pahogenic_interaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000024</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gene_mutation_parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000073</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000074</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">host_context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000075</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">pathogen_context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000087</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000087</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000005</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000087</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">biochemical_analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000088</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000088</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000026</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000088</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">chemical_complementation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000089</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000089</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000023</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000089</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">cluster_deletion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000090</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000090</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000006</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000090</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">functional_test_in_host_organism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000091</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000091</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000014</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000091</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">direct_injection_into_host_organism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000092</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000092</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000015</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000092</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">transient_expression_into_host_organism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000093</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000093</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000007</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000093</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gene_complementation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000094</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000094</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000094</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gene_deletion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000095</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000095</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000020</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000095</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">full_gene_deletion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000096</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000096</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000021</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000096</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">partial_gene_deletion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000097</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000097</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000001</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000097</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gene_disruption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000098</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000098</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000098</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gene_mutation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000099</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000099</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000016</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000099</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">characterised_gene_mutation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000100</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000100</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000019</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000100</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">uncharacterised_gene_mutation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000101</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000101</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000025</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000101</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">heterelogous_expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000102</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000102</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000010</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000102</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">other_evidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000103</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000103</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000022</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000103</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">promoter_mutation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000104</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000104</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000008</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000104</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sequence_analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000105</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000105</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000017</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000105</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sequence_analysis_of_sensitive_and_resistant_strains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000106</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000106</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000009</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000106</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sexual_cross</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000107</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000107</IRI>
+        <Literal datatypeIRI="&xsd;string">ESO:0000018</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000107</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sequencing_of_resistance_conferring_allele</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000108</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000108</IRI>
+        <Literal datatypeIRI="&xsd;string">POO:0000000</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000108</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">phenotype_outcome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000109</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000109</IRI>
+        <Literal datatypeIRI="&xsd;string">POO:0000005</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000109</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">effector_(plant_avirulence_determinant)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000110</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000110</IRI>
+        <Literal datatypeIRI="&xsd;string">POO:0000007</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000110</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">enhanced_antagonism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000111</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000111</IRI>
+        <Literal datatypeIRI="&xsd;string">POO:0000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000111</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">increased_virulence_(hypervirulence)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000112</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000112</IRI>
+        <Literal datatypeIRI="&xsd;string">POO:0000006</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000112</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">lethal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000113</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000113</IRI>
+        <Literal datatypeIRI="&xsd;string">POO:0000001</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000113</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">loss_of_pathogenicity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000114</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000114</IRI>
+        <Literal datatypeIRI="&xsd;string">POO:0000010</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000114</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">mixed_outcome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000115</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000115</IRI>
+        <Literal datatypeIRI="&xsd;string">POO:0000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000115</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">reduced_virulence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000116</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000116</IRI>
+        <Literal datatypeIRI="&xsd;string">PO:0000008</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000116</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">resistant_to_chemical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000117</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000117</IRI>
+        <Literal datatypeIRI="&xsd;string">POO:0000009</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000117</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sensitive_to_chemical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://semanticscience.org/resource/comment"/>
+        <IRI>/PPIO_00000000000000000118</IRI>
+        <Literal datatypeIRI="&xsd;string">Part of a controlled vocabulary provided by the PHI-base consortium (http://www.phi-base.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>/PPIO_00000000000000000118</IRI>
+        <Literal datatypeIRI="&xsd;string">POO:0000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000118</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unaffected_pathogenicity</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

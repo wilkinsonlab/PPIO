@@ -1,0 +1,34 @@
+1) Context, host context and pathogen context classes: comment, definition or description.
+
+2) Essential gene lethal knockout. Add description -> PHI-tag description: lethal effect from gene disruption.
+
+3) Experimental evidences out.
+
+4) gene mutation parameter: comment, definition or description. Specify is "ours" (not from PHI-base).
+
+5) host response: Add description -> PHI-tag description: details any difference in the host defence response to a pathogen with a disrupted gene.
+
+6) host target -> import Cellular Component Ontology??
+
+7) host target: comment, definition or description.
+
+8) in vitro growth. Add description-> PHI-tag description: Growth defects in culture caused by the gene disruption e.g. reduced growth.
+
+9) pathogenic interaction. Add description -> composed of three components: plant pathogenic entity, host plant and gene involved.
+
+10) phenotype outcome. Change description to -> description of the different phenotypes observed after the mutagenesis of the gene/s of interest.
+
+11) phi-base accession. Add description -> PHI-tag description: stable accession number for each database entry to aid curation.
+
+12) all host species with scientific names (map with scientific_names.txt)
+
+13) in vitro growth mapping?
+
+
+Things to improve in PHI itself:
+
+1) Common names of organisms -> only allow scientific names entries.
+
+2) Control over capitalization of names, hyphen/low hyphen names ,etc -> urgent refinement!
+
+3) Allow entries with "null" pathogen / "null" host??

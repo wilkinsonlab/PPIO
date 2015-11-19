@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/alexx/ontologies/2015/4/untitled-ontology-31"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/alexx/ontologies/2015/4/untitled-ontology-31">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://edamontology.org/data_1056"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://edamontology.org/data_1176"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://edamontology.org/data_1179"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://edamontology.org/data_1893"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_000008"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0000506"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0002694"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000000"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000006"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000007"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000008"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000013"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000014"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000020"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000021"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000022"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PPIO_00000000000000000024"/>
+    </Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://edamontology.org/data_1056</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DB_type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://edamontology.org/data_1176</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GO_annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://edamontology.org/data_1179</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">pathogen_NCBI_taxonomy_id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://edamontology.org/data_1893</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">locus_ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://semanticscience.org/resource/SIO_000008</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">mutant_phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ebi.ac.uk/efo/EFO_0000506</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">essential_gene_lethal_knockout</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ebi.ac.uk/efo/EFO_0002694</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">experimental_evidences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000000</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gene</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000001</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">interaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000002</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gmp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000003</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">experimental_host</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000004</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">disease_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000005</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">host_response</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000006</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">host_target</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000007</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gene_name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000008</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000012</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">aa_sequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000013</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">nt_sequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000014</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">accession</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000019</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">associated_strain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000020</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">strain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000021</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">in_vitro_growth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000022</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">pathogen_species</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PPIO_00000000000000000024</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">host_NCBI_taxonomy_id</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

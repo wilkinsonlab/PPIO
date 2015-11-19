@@ -1,0 +1,1030 @@
+<rdf:RDF
+    xmlns:rss="http://purl.org/rss/1.0/"
+    xmlns:jms="http://jena.hpl.hp.com/2003/08/jms#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns="http://www.biocyc.org/owl/ontologies/ocelot/cco/#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <owl:Class rdf:ID="CCO-MIT-MEM">
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Either of the inner and outer membranes, comprising the mitochondrial envelope. Note that the term mitochondrial membrane is a classification term for the inner and outer mitochondrial membranes. It does not include the intermembrane space.</DEFINITION>
+    <COMPONENT-OF rdf:resource="#CCO-MIT"/>
+    <COMPONENT-OF rdf:resource="#CCO-MIT-ENV"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mitochondrial membrane</COMMON-NAME>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-MEMBRANE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-NON-MEM-ORG">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-ORGANELLE"/>
+    </rdfs:subClassOf>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0043228</GOID>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >non-membrane-bound organelle</COMMON-NAME>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A discrete structure of a cell specialized to carry out a particular function, not bounded by a membrane.</DEFINITION>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-ENDO-MEM">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >endosome membrane</COMMON-NAME>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-MEMBRANE"/>
+    </rdfs:subClassOf>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The lipid bilayer surrounding an endosome.</DEFINITION>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMPONENT-OF>
+      <owl:Class rdf:about="#CCO-ENDOSOME"/>
+    </COMPONENT-OF>
+    <SURROUNDS>
+      <owl:Class rdf:about="#CCO-ENDO-LUM"/>
+    </SURROUNDS>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0010008</GOID>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-ER">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >endoplasmic reticulum</COMMON-NAME>
+    <COMPONENTS rdf:resource="#CCO-SMTH-ER-LUM"/>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0005783</GOID>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <COMPONENTS>
+      <owl:Class rdf:about="#CCO-ER-MEM"/>
+    </COMPONENTS>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The irregular network of unit membranes, visible only by electron microscopy, that occurs in the cytoplasm of many eukaryotic cells. The membranes form a complex meshwork of tubular channels, which are often expanded into slitlike cavities called cisternae. The ER takes two forms, rough (or granular), with ribosomes adhering to the outer surface, and smooth (with no ribosomes attached).</DEFINITION>
+    <SYNONYMS rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ER</SYNONYMS>
+    <COMPONENTS>
+      <owl:Class rdf:about="#CCO-ER-LUM"/>
+    </COMPONENTS>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMPONENTS rdf:resource="#CCO-RGH-ER-LUM"/>
+    <COMPONENT-OF rdf:resource="#CCO-CYTOPLASM"/>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-MEM-ORG"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-PLAST-OMEM">
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The portion of the plastid envelope that faces the cytoplasm and the plastid intermembrane space.</DEFINITION>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-PLASTID-MEM"/>
+    </rdfs:subClassOf>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0009527</GOID>
+    <COMPONENT-OF>
+      <owl:Class rdf:about="#CCO-PLASTID"/>
+    </COMPONENT-OF>
+    <SURROUNDS>
+      <owl:Class rdf:about="#CCO-PLAST-IM-SPC"/>
+    </SURROUNDS>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >plastid outer membrane</COMMON-NAME>
+    <COMPONENT-OF>
+      <owl:Class rdf:about="#CCO-PLASTID-ENV"/>
+    </COMPONENT-OF>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-CW-PLANT">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-CELLWALL"/>
+    </rdfs:subClassOf>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0009505</GOID>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Magnoliophyta</SENSU>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A more or less rigid membrane enclosing the protoplast of a cell and composed of cellulose and other organic and inorganic substances. As in, but not restricted to, the flowering plants (Magnoliophyta, ncbi_taxonomy_id:3398).</DEFINITION>
+    <SURROUNDS rdf:resource="#CCO-PM-PLANT"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cell wall (sensu Magnoliophyta)</COMMON-NAME>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-PLAST-IMEM">
+    <COMPONENT-OF>
+      <owl:Class rdf:about="#CCO-PLASTID-ENV"/>
+    </COMPONENT-OF>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <SURROUNDED-BY>
+      <owl:Class rdf:about="#CCO-PLAST-IM-SPC"/>
+    </SURROUNDED-BY>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0009528</GOID>
+    <SURROUNDED-BY rdf:resource="#CCO-CHL-IM-SPC"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-PLASTID-MEM"/>
+    </rdfs:subClassOf>
+    <SURROUNDED-BY rdf:resource="#CCO-CHR-IM-SPC"/>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The portion of the plastid envelope that faces the plastid stroma and the plastid intermembrane space.</DEFINITION>
+    <SURROUNDS>
+      <owl:Class rdf:about="#CCO-PLASTID-STR"/>
+    </SURROUNDS>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >plastid inner membrane</COMMON-NAME>
+    <COMPONENT-OF>
+      <owl:Class rdf:about="#CCO-PLASTID"/>
+    </COMPONENT-OF>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-MBODY-MEM">
+    <SURROUNDS>
+      <owl:Class rdf:about="#CCO-MICRO-LUM"/>
+    </SURROUNDS>
+    <COMPONENT-OF>
+      <owl:Class rdf:about="#CCO-MICROBODY"/>
+    </COMPONENT-OF>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microbody membrane</COMMON-NAME>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-MEMBRANE"/>
+    </rdfs:subClassOf>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >the membrane surrounding a microbody.</DEFINITION>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-CHLOR-THY">
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >chloroplast thylakoid</COMMON-NAME>
+    <COMPONENT-OF>
+      <owl:Class rdf:about="#CCO-PLASTID"/>
+    </COMPONENT-OF>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Any thylakoid within a chloroplast.</DEFINITION>
+    <COMPONENTS rdf:resource="#CCO-CHL-THY-MEM"/>
+    <COMPONENT-OF rdf:resource="#CCO-CHLOROPLAST"/>
+    <COMPONENTS rdf:resource="#CCO-CHL-THY-LUM"/>
+    <SURROUNDED-BY rdf:resource="#CCO-CHLOR-STR"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-PLAST-THY"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-PLAST-THY">
+    <SURROUNDED-BY>
+      <owl:Class rdf:about="#CCO-PLASTID-STR"/>
+    </SURROUNDED-BY>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMPONENT-OF>
+      <owl:Class rdf:about="#CCO-PLASTID"/>
+    </COMPONENT-OF>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Any thylakoid within a plastid.</DEFINITION>
+    <SURROUNDED-BY rdf:resource="#CCO-CHLOR-STR"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-SUBORG-CMPT"/>
+    </rdfs:subClassOf>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >plastid thylakoid</COMMON-NAME>
+    <SURROUNDED-BY rdf:resource="#CCO-CHROM-STR"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-SUBORG-CMPT">
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >suborganelle compartment</COMMON-NAME>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A membrane-enclosed compartment that is a part of an organelle.</DEFINITION>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-MICROBODY">
+    <COMPONENTS rdf:resource="#CCO-PEROX-LUM"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microbody</COMMON-NAME>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0042579</GOID>
+    <COMPONENTS rdf:resource="#CCO-GLYOX-LUM"/>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cytoplasmic organelles, spherical or oval in shape, that are bounded by a single membrane and contain oxidative enzymes, especially those utilizing hydrogen peroxide (H2O2).</DEFINITION>
+    <COMPONENT-OF rdf:resource="#CCO-CYTOPLASM"/>
+    <COMPONENTS rdf:resource="#CCO-MBODY-MEM"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-MEM-ORG"/>
+    </rdfs:subClassOf>
+    <COMPONENTS>
+      <owl:Class rdf:about="#CCO-MICRO-LUM"/>
+    </COMPONENTS>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-PLASTID">
+    <COMPONENTS rdf:resource="#CCO-CHROM-STR"/>
+    <COMPONENTS rdf:resource="#CCO-PLAST-IMEM"/>
+    <COMPONENTS>
+      <owl:Class rdf:about="#CCO-PLAST-IM-SPC"/>
+    </COMPONENTS>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMPONENTS>
+      <owl:Class rdf:about="#CCO-PLASTID-ENV"/>
+    </COMPONENTS>
+    <COMPONENTS rdf:resource="#CCO-CHL-STKD-THY"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-MEM-ORG"/>
+    </rdfs:subClassOf>
+    <COMPONENTS>
+      <owl:Class rdf:about="#CCO-PLASTID-STR"/>
+    </COMPONENTS>
+    <COMPONENTS rdf:resource="#CCO-CHLOR-STR"/>
+    <COMPONENTS rdf:resource="#CCO-PLAST-THY"/>
+    <COMPONENTS rdf:resource="#CCO-CHLOR-THY"/>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0009536</GOID>
+    <COMPONENTS>
+      <owl:Class rdf:about="#CCO-PLASTID-MEM"/>
+    </COMPONENTS>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Any member of a family of organelles found in the cytoplasm of plants and some protists, which are membrane-bounded and contain DNA. Plant plastids develop from a common type, the proplastid.</DEFINITION>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <COMPONENT-OF rdf:resource="#CCO-CYTOPLASM"/>
+    <COMPONENTS rdf:resource="#CCO-CHL-STR-THY"/>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <COMPONENTS rdf:resource="#CCO-PLAST-OMEM"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >plastid</COMMON-NAME>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-NUC-MEM">
+    <COMPONENT-OF rdf:resource="#CCO-NUCLEUS"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >nuclear membrane</COMMON-NAME>
+    <COMPONENT-OF rdf:resource="#CCO-NUC-ENV"/>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Either of the inner and outer membranes, comprising the nuclear envelope.</DEFINITION>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >some sources use the same term refer to nuclear envelope. We distinguish them. The term nuclear membrane is a classification term for the inner and outer nuclear membranes. It does not include the perinuclear space.</COMMENT>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-MEMBRANE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-ORGANEL-ENV">
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >organellar envelope</COMMON-NAME>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Any double membrane structure including the intermembrane space that surrounds an organelle. In some cases, an organellar envelope may have more than two membranes.</DEFINITION>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-ENVELOPE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="FRAMES"/>
+  <owl:Class rdf:ID="CCO-ENDO-LUM">
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The space enclosed by the endosome membrane.</DEFINITION>
+    <SURROUNDED-BY rdf:resource="#CCO-LATE-ENDO-MEM"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >endosome lumen</COMMON-NAME>
+    <COMPONENT-OF>
+      <owl:Class rdf:about="#CCO-ENDOSOME"/>
+    </COMPONENT-OF>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <SURROUNDED-BY rdf:resource="#CCO-EARLY-ENDO-MEM"/>
+    <SURROUNDED-BY rdf:resource="#CCO-ENDO-MEM"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-SPACE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-PLASTID-MEM">
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The term plastid membrane is a classification term for the inner and outer mitochondrial membranes. It does not include the intermembrane space.</COMMENT>
+    <COMPONENT-OF rdf:resource="#CCO-PLASTID"/>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Double membrane structure of a plastid.</DEFINITION>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >plastid membrane</COMMON-NAME>
+    <COMPONENT-OF>
+      <owl:Class rdf:about="#CCO-PLASTID-ENV"/>
+    </COMPONENT-OF>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0042170</GOID>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-MEMBRANE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-ER-LUM">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >endoplasmic reticulum lumen</COMMON-NAME>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0005788</GOID>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-SPACE"/>
+    </rdfs:subClassOf>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <COMPONENT-OF rdf:resource="#CCO-ER"/>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The volume enclosed by the membranes of the endoplasmic reticulum.</DEFINITION>
+    <SURROUNDED-BY>
+      <owl:Class rdf:about="#CCO-ER-MEM"/>
+    </SURROUNDED-BY>
+    <SURROUNDED-BY rdf:resource="#CCO-SMTH-ER-MEM"/>
+    <SURROUNDED-BY rdf:resource="#CCO-RGH-ER-MEM"/>
+    <SYNONYMS rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ER lumen</SYNONYMS>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-MEM-ORG">
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0043227</GOID>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-ORGANELLE"/>
+    </rdfs:subClassOf>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A discrete structure of a cell specialized to carry out a particular function, bounded by a membrane so that sets of enzymes can operate without interference from reactions occurring in other compartments.      </DEFINITION>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >membrane-bound organelle</COMMON-NAME>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-PLASMA-MEM">
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0005886</GOID>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >plasma membrane</COMMON-NAME>
+    <SURROUNDS rdf:resource="#CCO-CYTOSOL"/>
+    <SYNONYMS rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >plasmalemma</SYNONYMS>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The membrane surrounding a cell that separates the cell from its external environment. It consists of a phospholipid bilayer and associated proteins.</DEFINITION>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-MEMBRANE"/>
+    </rdfs:subClassOf>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <SYNONYMS rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cytoplasmic membrane</SYNONYMS>
+    <SURROUNDS rdf:resource="#CCO-CYTOPLASM"/>
+    <SYNONYMS rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cell membrane</SYNONYMS>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#DEFINITION"/>
+        </owl:onProperty>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CELLULAR_COMPONENT</COMMON-NAME>
+    <rdfs:subClassOf rdf:resource="#FRAMES"/>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-CELL-FRACT">
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0000267</GOID>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A generic term for parts of cells prepared by disruptive biochemical techniques.</DEFINITION>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cell fraction</COMMON-NAME>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Refers to artificial cell components that are derived from disruptive cell biological techniques. The components are not present within any cells. </COMMENT>
+    <rdfs:subClassOf rdf:resource="#CCO"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-CHLOR-MEM">
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This term does not include the intermembrane space.</COMMENT>
+    <rdfs:subClassOf rdf:resource="#CCO-PLASTID-MEM"/>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Either of the two membranes, inner and outer, of a chloroplast.</DEFINITION>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >chloroplast membrane</COMMON-NAME>
+    <COMPONENT-OF rdf:resource="#CCO-CHLOR-ENV"/>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMPONENT-OF rdf:resource="#CCO-CHLOROPLAST"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-THY-MEM">
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The pigmented membrane of any thylakoid.</DEFINITION>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >thylakoid membrane</COMMON-NAME>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-MEMBRANE"/>
+    </rdfs:subClassOf>
+    <SURROUNDS>
+      <owl:Class rdf:about="#CCO-THY-LUM"/>
+    </SURROUNDS>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0042651</GOID>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-COPII-VES">
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A vesicle with a coat formed of the COPII coat complex proteins; COPII-coated vesicles are found associated with endoplasmic reticulum (ER) membranes at steady state, and are involved in ER to Golgi (anterograde) vesicle transport.</DEFINITION>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0030138</GOID>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-COATED-VES"/>
+    </rdfs:subClassOf>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <COMPONENTS rdf:resource="#CCO-VESICLE-MEM"/>
+    <COMPONENT-OF rdf:resource="#CCO-CYTOPLASM"/>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >COPII-coated vesicle</COMMON-NAME>
+    <COMPONENTS rdf:resource="#CCO-VES-LUM"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-PLASTID-STR">
+    <SURROUNDED-BY rdf:resource="#CCO-CHLOR-IMEM"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-SPACE"/>
+    </rdfs:subClassOf>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The proteinaceous ground substance of plastids.</DEFINITION>
+    <SURROUNDED-BY rdf:resource="#CCO-CHLOR-ENV"/>
+    <SURROUNDED-BY rdf:resource="#CCO-PLAST-IMEM"/>
+    <SURROUNDED-BY>
+      <owl:Class rdf:about="#CCO-PLASTID-ENV"/>
+    </SURROUNDED-BY>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0009532</GOID>
+    <SURROUNDED-BY rdf:resource="#CCO-CHROM-ENV"/>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMPONENT-OF rdf:resource="#CCO-PLASTID"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >plastid stroma</COMMON-NAME>
+    <SURROUNDS rdf:resource="#CCO-PLAST-THY"/>
+    <SURROUNDED-BY rdf:resource="#CCO-CHROM-IMEM"/>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-SURFACE-MAT">
+    <rdfs:subClassOf rdf:resource="#CCO"/>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The structured network of macromolecules secreted outside of the cell membrane (plasma membrane).</DEFINITION>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cell surface matrix</COMMON-NAME>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-SUPER-COMP">
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >space plus other components that are located in the space.</DEFINITION>
+    <rdfs:subClassOf rdf:resource="#CCO"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >super component</COMMON-NAME>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-PERIPLASM">
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >periplasmic space</COMMON-NAME>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-SPACE"/>
+    </rdfs:subClassOf>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0042597</GOID>
+    <SYNONYMS rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >periplasm</SYNONYMS>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The region between the inner (cytoplasmic) and outer membrane (Gram-negative bacteria) or inner membrane and cell wall (fungi).</DEFINITION>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-ER-MEM">
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The lipid bilayer surrounding the endoplasmic reticulum.</DEFINITION>
+    <COMPONENT-OF rdf:resource="#CCO-ER"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >endoplasmic reticulum membrane</COMMON-NAME>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-MEMBRANE"/>
+    </rdfs:subClassOf>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0005789</GOID>
+    <SYNONYMS rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ER membrane</SYNONYMS>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <SURROUNDS rdf:resource="#CCO-ER-LUM"/>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-COPI-VES">
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A vesicle with a coat formed of the COPI coat complex proteins. COPI-coated vesicles are found associated with Golgi membranes at steady state, are involved in Golgi to endoplasmic reticulum (retrograde) vesicle transport, and possibly also in intra-Golgi transport.</DEFINITION>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >COPI-coated vesicle</COMMON-NAME>
+    <COMPONENTS rdf:resource="#CCO-VESICLE-MEM"/>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0030137</GOID>
+    <COMPONENTS rdf:resource="#CCO-VES-LUM"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-COATED-VES"/>
+    </rdfs:subClassOf>
+    <COMPONENT-OF rdf:resource="#CCO-CYTOPLASM"/>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-CE-BAC">
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The cell envelope of a bacteria is defined as the cell membrane (plasma membrane) and cell wall plus an outer membrane if one is present.</DEFINITION>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cell envelope (sensu Bacteria)</COMMON-NAME>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.med.sc.edu:85/fox/cell_envelope.htm</DEFINITION-REFERENCE>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bacteria</SENSU>
+    <SURROUNDS rdf:resource="#CCO-CYTOSOL"/>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO definition of cell envelope does not include the cell membrane.</COMMENT>
+    <COMPONENTS>
+      <owl:Class rdf:about="#CCO-PM-BACTERIA"/>
+    </COMPONENTS>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-ENVELOPE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-PLASTID-ENV">
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0009526</GOID>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMPONENTS rdf:resource="#CCO-PLASTID-MEM"/>
+    <COMPONENTS rdf:resource="#CCO-PLAST-OMEM"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >plastid envelope</COMMON-NAME>
+    <SURROUNDS rdf:resource="#CCO-PLASTID-STR"/>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Double membrane structure of plastid, including the intermembrane space.</DEFINITION>
+    <COMPONENTS>
+      <owl:Class rdf:about="#CCO-PLAST-IM-SPC"/>
+    </COMPONENTS>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <COMPONENT-OF rdf:resource="#CCO-PLASTID"/>
+    <COMPONENTS rdf:resource="#CCO-PLAST-IMEM"/>
+    <rdfs:subClassOf rdf:resource="#CCO-ORGANEL-ENV"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-VACUOLE">
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A closed structure, found only in eukaryotic cells, that is completely surrounded by unit membrane and contains liquid material.</DEFINITION>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vacuole</COMMON-NAME>
+    <COMPONENT-OF rdf:resource="#CCO-CYTOPLASM"/>
+    <COMPONENTS rdf:resource="#CCO-VAC-LUM"/>
+    <COMPONENTS rdf:resource="#CCO-VAC-MEM"/>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <rdfs:subClassOf rdf:resource="#CCO-MEM-ORG"/>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0005773</GOID>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-CHROM-MEM">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >chromoplast membrane</COMMON-NAME>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMPONENT-OF rdf:resource="#CCO-CHROMOPLAST"/>
+    <COMPONENT-OF rdf:resource="#CCO-CHROM-ENV"/>
+    <rdfs:subClassOf rdf:resource="#CCO-PLASTID-MEM"/>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0046862</GOID>
+    <COMMENT rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This term does not include the intermembrane space.</COMMENT>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The outer or inner membrane of a chromoplast.</DEFINITION>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-ENVELOPE">
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The multi-membrane structure including the space between the membranes that surrounds some cells and organelles.</DEFINITION>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >envelope</COMMON-NAME>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <rdfs:subClassOf rdf:resource="#CCO"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-LEUCOPLAST">
+    <COMPONENTS rdf:resource="#CCO-PLASTID-STR"/>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >leucoplast</COMMON-NAME>
+    <COMPONENTS rdf:resource="#CCO-CHL-STR-THY"/>
+    <COMPONENTS rdf:resource="#CCO-PLAST-IMEM"/>
+    <COMPONENTS rdf:resource="#CCO-PLAST-THY"/>
+    <COMPONENT-OF rdf:resource="#CCO-CYTOPLASM"/>
+    <COMPONENTS rdf:resource="#CCO-CHLOR-THY"/>
+    <COMPONENTS rdf:resource="#CCO-CHL-STKD-THY"/>
+    <rdfs:subClassOf rdf:resource="#CCO-PLASTID"/>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A non-pigmented plastid.</DEFINITION>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    > GO:0009516</GOID>
+    <COMPONENTS rdf:resource="#CCO-CHLOR-STR"/>
+    <COMPONENTS rdf:resource="#CCO-PLAST-OMEM"/>
+    <COMPONENTS rdf:resource="#CCO-CHROM-STR"/>
+    <COMPONENTS>
+      <owl:Class rdf:about="#CCO-PLAST-IM-SPC"/>
+    </COMPONENTS>
+    <COMPONENTS rdf:resource="#CCO-PLASTID-ENV"/>
+    <COMPONENTS rdf:resource="#CCO-PLASTID-MEM"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-GOLGI-CIST">
+    <COMPONENT-OF rdf:resource="#CCO-GOLGI"/>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The membrane-limited component of the Golgi apparatus which is typically flattened, usually with a central plate-like region which is often continuous with peripheral tubules and vesicles.</DEFINITION>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Golgi cisterna</COMMON-NAME>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ISBN:0412631504</DEFINITION-REFERENCE>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <rdfs:subClassOf rdf:resource="#CCO-SUBORG-CMPT"/>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-PLAST-IM-SPC">
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <SURROUNDED-BY rdf:resource="#CCO-PLAST-OMEM"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >plastid intermembrane space</COMMON-NAME>
+    <COMPONENT-OF rdf:resource="#CCO-PLASTID-ENV"/>
+    <COMPONENT-OF rdf:resource="#CCO-PLASTID"/>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <SURROUNDED-BY rdf:resource="#CCO-CHLOR-OMEM"/>
+    <SURROUNDS rdf:resource="#CCO-PLAST-IMEM"/>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The region between the plastid inner membrane and plastid outer membrane.</DEFINITION>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0009529</GOID>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-SPACE"/>
+    </rdfs:subClassOf>
+    <SURROUNDED-BY rdf:resource="#CCO-CHROM-OMEM"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-THY-LUM">
+    <SURROUNDED-BY rdf:resource="#CCO-THY-MEM-CYA"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-SPACE"/>
+    </rdfs:subClassOf>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >thylakoid lumen</COMMON-NAME>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The space enclosed by the thylakoid membrane.</DEFINITION>
+    <SURROUNDED-BY rdf:resource="#CCO-THY-MEM"/>
+    <SURROUNDED-BY rdf:resource="#CCO-CHL-THY-MEM"/>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-COATED-VES">
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Small membrane-bounded organelle formed by pinching off of a coated region of membrane. Some coats are made of clathrin, whereas others are made from other proteins.</DEFINITION>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >coated vesicle</COMMON-NAME>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0030135</GOID>
+    <COMPONENT-OF rdf:resource="#CCO-CYTOPLASM"/>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <COMPONENTS rdf:resource="#CCO-VES-LUM"/>
+    <COMPONENTS rdf:resource="#CCO-VESICLE-MEM"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-VESICLE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-GOLGI-VES">
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Any vesicle associated with the Golgi complex and involved in mediating transport within the Golgi or between the Golgi and other parts of the cell.</DEFINITION>
+    <COMPONENT-OF rdf:resource="#CCO-GOLGI"/>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Golgi vesicle</COMMON-NAME>
+    <COMPONENT-OF rdf:resource="#CCO-CYTOPLASM"/>
+    <COMPONENTS rdf:resource="#CCO-VESICLE-MEM"/>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0005798</GOID>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMPONENTS rdf:resource="#CCO-VES-LUM"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-VESICLE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-ENDOCYT-VES">
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CCO-VESICLE"/>
+    </rdfs:subClassOf>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >endocytic vesicle</COMMON-NAME>
+    <COMPONENT-OF rdf:resource="#CCO-CYTOPLASM"/>
+    <COMPONENTS rdf:resource="#CCO-VES-LUM"/>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0030139</GOID>
+    <COMPONENTS rdf:resource="#CCO-VESICLE-MEM"/>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A membrane-bounded intracellular vesicle formed by invagination of the plasma membrane around an extracellular substance.</DEFINITION>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-CELLWALL">
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The rigid or semi-rigid envelope lying outside the cell membrane of plant, fungal, and most prokaryotic cells, maintaining their shape and protecting them from osmotic lysis. In plants it is made of cellulose and, often, lignin; in fungi it is composed largely of polysaccharides; in bacteria it is composed of peptidoglycan.</DEFINITION>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cell wall</COMMON-NAME>
+    <rdfs:subClassOf rdf:resource="#CCO-SURFACE-MAT"/>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0005618</GOID>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-PM-BACTERIA">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >plasma membrane (sensu Bacteria)</COMMON-NAME>
+    <SURROUNDS rdf:resource="#CCO-CYTOPLASM"/>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The plasma membrane of a bacteria cell.</DEFINITION>
+    <SURROUNDS rdf:resource="#CCO-CYTOSOL"/>
+    <rdfs:subClassOf rdf:resource="#CCO-PLASMA-MEM"/>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bacteria</SENSU>
+    <SYNONYMS rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >plasmalemma</SYNONYMS>
+    <SYNONYMS rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cytoplasmic membrane</SYNONYMS>
+    <COMPONENT-OF rdf:resource="#CCO-CE-BAC"/>
+    <SYNONYMS rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cell membrane</SYNONYMS>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-SPACE">
+    <rdfs:subClassOf rdf:resource="#CCO"/>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A three-dimensional extent in which objects and events occur.</DEFINITION>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Merriam-Webster</DEFINITION-REFERENCE>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >space</COMMON-NAME>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-ORGANELLE">
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A discrete structure of a cell specialized to carry out a particular function.</DEFINITION>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <rdfs:subClassOf rdf:resource="#CCO"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >organelle</COMMON-NAME>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0043226</GOID>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-MEMBRANE">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >membrane</COMMON-NAME>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <rdfs:subClassOf rdf:resource="#CCO"/>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Double layer of lipid molecules that encloses all cells, and, in eukaryotes, many organelles; may be a single or double lipid bilayer, also includes associated proteins.</DEFINITION>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0016020</GOID>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-CW-BAC">
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cell wall (sensu Bacteria)</COMMON-NAME>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A protective structure outside the cytoplasmic membrane composed of peptidoglycan, a molecule made up of a glycan (sugar) backbone of repetitively alternating N-acetylglucosamine and N-acetylmuramic acid with short, attached, cross-linked peptide chains containing unusual amino acids; also called murein. As in, but not restricted to, the taxon Eubacteria (Bacteria, ncbi_taxonomy_id:2).</DEFINITION>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0009274</GOID>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bacteria</SENSU>
+    <rdfs:subClassOf rdf:resource="#CCO-CELLWALL"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-MICRO-LUM">
+    <SURROUNDED-BY rdf:resource="#CCO-PEROX-MEM"/>
+    <COMPONENT-OF rdf:resource="#CCO-MICROBODY"/>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <SURROUNDED-BY rdf:resource="#CCO-GLYOX-MEM"/>
+    <rdfs:subClassOf rdf:resource="#CCO-SPACE"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microbody lumen</COMMON-NAME>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The space enclosed by the microbody membrane.</DEFINITION>
+    <SURROUNDED-BY rdf:resource="#CCO-MBODY-MEM"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-ENDOSOME">
+    <COMPONENTS rdf:resource="#CCO-ENDO-LUM"/>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A membrane-bound organelle that carries materials newly ingested by endocytosis. It passes many of the materials to lysosomes for degradation.</DEFINITION>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <COMPONENTS rdf:resource="#CCO-LATE-END-LUM"/>
+    <rdfs:subClassOf rdf:resource="#CCO-MEM-ORG"/>
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0005768</GOID>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMPONENT-OF rdf:resource="#CCO-CYTOPLASM"/>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >endosome</COMMON-NAME>
+    <COMPONENTS rdf:resource="#CCO-ENDO-MEM"/>
+    <COMPONENTS rdf:resource="#CCO-EARLY-END-LUM"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-VESICLE">
+    <COMPONENTS rdf:resource="#CCO-VES-LUM"/>
+    <rdfs:subClassOf rdf:resource="#CCO-MEM-ORG"/>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vesicle</COMMON-NAME>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Any small, fluid-filled, membrane-limited spherical organelle in the cytoplasm. Vesicle store, transport, or digest cellular products or wastes.</DEFINITION>
+    <COMPONENTS rdf:resource="#CCO-VESICLE-MEM"/>
+    <COMPONENT-OF rdf:resource="#CCO-CYTOPLASM"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CCO-CLATH-VES">
+    <GOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GO:0030136</GOID>
+    <COMPONENTS rdf:resource="#CCO-VES-LUM"/>
+    <DEFINITION-REFERENCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gene Ontology Consortium</DEFINITION-REFERENCE>
+    <rdfs:subClassOf rdf:resource="#CCO-COATED-VES"/>
+    <SURROUNDED-BY rdf:resource="#CCO-CYTOSOL"/>
+    <COMMON-NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >clathrin-coated vesicle</COMMON-NAME>
+    <DEFINITION rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A vesicle with a coat formed of clathrin connected to the membrane via one of the clathrin adaptor complexes.</DEFINITION>
+    <SENSU rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Organisms</SENSU>
+    <COMPONENTS rdf:resource="#CCO-VESICLE-MEM"/>
+    <COMPONENT-OF rdf:resource="#CCO-CYTOPLASM"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="HISTORY">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Resource">
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >STRING</rdf:first>
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Notes</rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </rdf:rest>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:comment xml:lang="en">Contains a textual history of changes made to this frame.  Each item is either a string or a note frame.</rdfs:comment>
+    <rdfs:domain rdf:resource="#FRAMES"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="SURROUNDS">
+    <rdfs:domain rdf:resource="#CCO"/>
+    <rdfs:range rdf:resource="#FRAMES"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="COMPONENT-OF">
+    <rdfs:range rdf:resource="#FRAMES"/>
+    <rdfs:domain rdf:resource="#FRAMES"/>
+    <rdfs:comment xml:lang="en">This slot specifies an object that contains this object as a smaller
+part.  For example, this slot points from a monomer to a larger
+complex that contains it.
+</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="COMPONENTS">
+    <rdfs:comment xml:lang="en">This slot lists the components of some physical assembly, such as
+the subunits of a protein complex or the genes within a chromosome.
+The coefficient of each component (when known) is listed as an 
+annotation of the component value under the label coefficient.
+
+When a modified protein is created to reflect a chemically modified
+alternate form of the protein, if that protein is a complex, its subunit
+structure need not be mirrored in the modified-protein frame.  The
+subunit structure should be defined only once, for the frame that
+represents the unmodified form of the protein.
+</rdfs:comment>
+    <rdfs:domain rdf:resource="#FRAMES"/>
+    <rdfs:range rdf:resource="#FRAMES"/>
+    <owl:inverseOf rdf:resource="#COMPONENT-OF"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="SURROUNDED-BY">
+    <owl:inverseOf rdf:resource="#SURROUNDS"/>
+    <rdfs:domain rdf:resource="#CCO"/>
+    <rdfs:range rdf:resource="#FRAMES"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="COMMENT">
+    <rdfs:comment xml:lang="en">The Comment slot stores a general comment about the object that
+contains the slot.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#FRAMES"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="GOID">
+    <rdfs:domain rdf:resource="#CCO"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="DEFINITION-REFERENCE">
+    <rdfs:domain rdf:resource="#CCO"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="COMMON-NAME">
+    <rdfs:domain rdf:resource="#CCO"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="SENSU">
+    <rdfs:domain rdf:resource="#CCO"/>
+    <rdfs:comment xml:lang="en">Restricts the cellular compartment to organisms that match one of the values of this slot.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="DEFINITION">
+    <rdfs:domain rdf:resource="#CCO"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="SYNONYMS">
+    <rdfs:domain rdf:resource="#FRAMES"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">One or more secondary names for an object -- names
+that a scientist might attempt to use to retrieve the object.  
+The Synonyms should include any name a user might use to
+try to retrieve an object.</rdfs:comment>
+  </owl:DatatypeProperty>
+</rdf:RDF>

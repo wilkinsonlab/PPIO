@@ -1,0 +1,83 @@
+Xanthomonas oryzae pv. oryzae is pathogen of Rice [Bacterial leaf blight]
+	Phi Accession number: 2721
+	Phi Base Accession: PHI:2721
+	DB Type: Uniprot
+	Accession: G7TK09
+	Associated Strain: BLS256
+	Gene name: tal2a
+	Pathogen NCBI Taxonomy ID: 64187
+	Pathogen species: Xanthomonas oryzae pv. oryzae
+	Strain: X11-5A
+	Disease name: Bacterial leaf blight
+	Host response: null
+	Monocot Dicot Plant: null
+	Host NCBI Taxonomy ID: 4530
+	Experimental host: Rice
+	Function: Effector protein
+	GO Annotation: null
+	Database: null
+	Phenotype of mutant: Effector (plant avirulence determinant)
+	Is pre-penetration defect: false
+	Is prenetration defect: false
+	Is post penetration defect: false
+	Inducer: null
+	AA Sequence: null
+	NT Sequence: null
+	Experimental evidences: functional test in host: transient expression
+	Provenance data: es.upm.cbgp.phi2ppio.phiextractor.ProvenanceData@f381794
+
+Xanthomonas oryzae pv. oryzae is pathogen of Rice [Bacterial leaf blight]
+	Phi Accession number: 2722
+	Phi Base Accession: PHI:2722
+	DB Type: Uniprot
+	Accession: G7TJZ8
+	Associated Strain: BLS256
+	Gene name: tal2g
+	Pathogen NCBI Taxonomy ID: 64187
+	Pathogen species: Xanthomonas oryzae pv. oryzae
+	Strain: X11-5A
+	Disease name: Bacterial leaf blight
+	Host response: null
+	Monocot Dicot Plant: null
+	Host NCBI Taxonomy ID: 4530
+	Experimental host: Rice
+	Function: Effector protein
+	GO Annotation: null
+	Database: null
+	Phenotype of mutant: Effector (plant avirulence determinant)
+	Is pre-penetration defect: false
+	Is prenetration defect: false
+	Is post penetration defect: false
+	Inducer: null
+	AA Sequence: null
+	NT Sequence: null
+	Experimental evidences: functional test in host: transient expression
+	Provenance data: es.upm.cbgp.phi2ppio.phiextractor.ProvenanceData@2cdd0d4b
+
+Magnaporthe oryzae (related: Magnaporthe grisea) is pathogen of Barley [Rice blast]
+	Phi Accession number: 2037
+	Phi Base Accession: PHI:2037
+	DB Type: Entrez Protein
+	Accession: XP_001405357
+	Associated Strain: Guy11
+	Gene name: MoRic8
+	Pathogen NCBI Taxonomy ID: 148305
+	Pathogen species: Magnaporthe oryzae (related: Magnaporthe grisea)
+	Strain: Q-10C
+	Disease name: Rice blast
+	Host response: null
+	Monocot Dicot Plant: Monocot
+	Host NCBI Taxonomy ID: 112509
+	Experimental host: Barley
+	Function: G-Protein Signaling
+	GO Annotation: null
+	Database: null
+	Phenotype of mutant: Loss of pathogenicity
+	Is pre-penetration defect: true
+	Is prenetration defect: true
+	Is post penetration defect: false
+	Inducer: cAMP; IBMX; 1,16-hexadecanediol(Diol)
+	AA Sequence: null
+	NT Sequence: null
+	Experimental evidences: gene deletion complementation
+	Provenance data: es.upm.cbgp.phi2ppio.phiextractor.ProvenanceData@52e677af

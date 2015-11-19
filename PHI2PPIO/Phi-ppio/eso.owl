@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;TEMP#"
+     xml:base="&obo;TEMP"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="&obo;TEMP">
+        <oboInOwl:hasOBOFormatVersion rdf:datatype="&xsd;string">1.2</oboInOwl:hasOBOFormatVersion>
+        <oboInOwl:date rdf:datatype="&xsd;string">15:06:2015 10:26</oboInOwl:date>
+        <oboInOwl:auto-generated-by rdf:datatype="&xsd;string">OBO-Edit 2.3.1</oboInOwl:auto-generated-by>
+        <oboInOwl:saved-by rdf:datatype="&xsd;string">alejandro</oboInOwl:saved-by>
+        <oboInOwl:default-namespace rdf:datatype="&xsd;string">default_namespace</oboInOwl:default-namespace>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#auto-generated-by -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;auto-generated-by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#date -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#default-namespace -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;default-namespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBOFormatVersion">
+        <rdfs:label rdf:datatype="&xsd;string">has_obo_format_version</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace">
+        <rdfs:label rdf:datatype="&xsd;string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#saved-by -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;saved-by"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000000 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000000">
+        <rdfs:label rdf:datatype="&xsd;string">experiment specification</rdfs:label>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:27:26Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000000</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000002 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000002">
+        <rdfs:label rdf:datatype="&xsd;string">gene deletion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000000"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:31:59Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000002</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000003 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000003">
+        <rdfs:label rdf:datatype="&xsd;string">gene mutation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000000"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:31:59Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000003</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000004 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000004">
+        <rdfs:label rdf:datatype="&xsd;string">altered gene expression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000000"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:31:59Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000004</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">gene regulation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000005 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000005">
+        <rdfs:label rdf:datatype="&xsd;string">biochemical analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000000"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:31:59Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000005</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000006 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000006">
+        <rdfs:label rdf:datatype="&xsd;string">functional test in host organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000000"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:31:59Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000006</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The function of the gene was investigated by applying the protein to the host using a biological delivery system (i.e. expression of a stable transgene from the host, transient delivery with a virus, or transient delivery with Agrobacterium).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000007 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000007">
+        <rdfs:label rdf:datatype="&xsd;string">gene complementation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000000"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:31:59Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000007</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The mutant phenotype was restored to wild-type by introducing a copy of the wild-type gene.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000008 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000008">
+        <rdfs:label rdf:datatype="&xsd;string">sequence analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000000"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:31:59Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000008</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000009 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000009">
+        <rdfs:label rdf:datatype="&xsd;string">sexual cross</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000000"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:31:59Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000009</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000010 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000010">
+        <rdfs:label rdf:datatype="&xsd;string">other evidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000000"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:31:59Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000010</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000011 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000011">
+        <rdfs:label rdf:datatype="&xsd;string">gene overexpression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000004"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:33:54Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000011</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Gene expression was altered by changing the promoter/regulatory sequences. Gene expression is increased as a consequence.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">upregulation</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000012 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000012">
+        <rdfs:label rdf:datatype="&xsd;string">gene downregulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000004"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:34:56Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000012</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Gene expression was altered by changing the promoter/regulatory sequences. Gene expression is reduced as a consequence.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">underexpression</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000013 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000013">
+        <rdfs:label rdf:datatype="&xsd;string">gene silencing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000004"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:36:06Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000013</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Gene expression is reduced by gene silencing using an RNAi approach.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000014 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000014">
+        <rdfs:label rdf:datatype="&xsd;string">direct injection into host organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000006"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:38:27Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000014</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The protein was injected into the host using a device (i.e. syringe needle).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000016 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000016">
+        <rdfs:label rdf:datatype="&xsd;string">characterised gene mutation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000003"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:42:51Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000016</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The UV or chemical gene mutation was characterised by sequencing or biochemistry.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000017 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000017">
+        <rdfs:label rdf:datatype="&xsd;string">sequence analysis of sensitive and resistant strains</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000008"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T10:43:55Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000017</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Sequence information of both strains were analysed to infer the gene function.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000018 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000018">
+        <rdfs:label rdf:datatype="&xsd;string">sequencing of resistance conferring allele</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000009"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T15:15:07Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000018</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Mendelian crossing was used to delineate the function of an allele.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000019 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000019">
+        <rdfs:label rdf:datatype="&xsd;string">uncharacterised gene mutation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000003"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T11:05:17Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000019</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The gene was mutated using radiation (UV) or a chemical agent. The mutation itself is unknown.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000020 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000020">
+        <rdfs:label rdf:datatype="&xsd;string">full gene deletion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000002"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T14:50:35Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000020</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The entire gene was replaced with a resistance gene cassette.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000021 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000021">
+        <rdfs:label rdf:datatype="&xsd;string">partial gene deletion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000002"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T14:50:35Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A part of the gene was replaced with a resistance gene cassette.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000021</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000022 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000022">
+        <rdfs:label rdf:datatype="&xsd;string">promoter mutation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000000"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T14:54:51Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000022</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Putative promoter region upstream of a gene was disrupted due to transposon insertion or by the insertion of a resistance gene cassette.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000023 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000023">
+        <rdfs:label rdf:datatype="&xsd;string">cluster deletion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000000"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T14:56:51Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A small chromosomal region containing more than one gene was replaced using a resistance gene cassette.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000023</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000024 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000024">
+        <rdfs:label rdf:datatype="&xsd;string">unknown gene expression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000004"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T15:05:41Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000024</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Gene expression was altered by changing the promoter/regulatory sequences. It is not reported if the gene is down- or up-regulated as a consequence.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000025 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000025">
+        <rdfs:label rdf:datatype="&xsd;string">heterologous expression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000000"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T15:21:32Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000025</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">default_namespace</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ESO_0000026 -->
+
+    <owl:Class rdf:about="&obo;ESO_0000026">
+        <rdfs:label rdf:datatype="&xsd;string">chemical complementation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ESO_0000000"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-02T15:22:02Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">ESO:0000026</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">experiment_specification_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">irvinea</oboInOwl:created_by>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

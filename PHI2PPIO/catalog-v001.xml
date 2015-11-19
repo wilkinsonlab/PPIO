@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://edamontology.org" uri="Ontologies/EDAM_1.9.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1432746038023" name="http://edamontology.org/" uri="Ontologies/EDAM_1.9.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1432746038023" name="http://purl.obolibrary.org/obo/obi.owl" uri="Ontologies/obi.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1432746038023" name="http://purl.obolibrary.org/obo/so-xp.obo.owl" uri="Ontologies/so.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1432746038023" name="duplicate:http://purl.oclc.org/PPIO" uri="PPIO_PHI.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1432746038023" name="duplicate:http://purl.oclc.org/PPIO" uri="PPIO_PHIv2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1432746038023" name="http://semanticscience.org/ontology/sio.owl" uri="Ontologies/sio.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1432746038023" name="http://www.ebi.ac.uk/efo/efo.owl" uri="Ontologies/efo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1432746038023" name="http://www.semanticweb.org/alexx/ontologies/2015/4/untitled-ontology-31" uri="PHI_schema.owl"/>
+    </group>
+</catalog>
