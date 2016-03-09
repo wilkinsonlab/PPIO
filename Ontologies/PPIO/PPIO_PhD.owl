@@ -24,7 +24,8 @@
     <Prefix name="PPIO" IRI="http://purl.oclc.org/PPIO#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/to.owl</Import>
-    <Declaration>
+<imports rdf:resource="http://linkeddata.systems/ontologies/SemanticPHIBase"/>
+   <Declaration>
         <Class abbreviatedIRI="obo:NCBITaxon_1"/>
     </Declaration>
     <Declaration>
